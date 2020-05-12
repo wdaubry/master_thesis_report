@@ -1,0 +1,64 @@
+%%%%%%%%%%%%%%%%%%
+% 			 
+%			Master Thesis - UWB
+%				Preamble code
+%
+%			Author : Wilson Daubry
+%
+%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, 12pt]{report}
+
+% --- PACKAGES FOR LANGUAGES AND ENCODING
+
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% --- PACKAGES FOR DISPLAY
+
+\usepackage{color}
+\usepackage[top=2.5cm, bottom=1.5cm, left=2.5cm, right=1cm]{geometry}
+\usepackage[justification=centering]{caption}
+\geometry{hmargin=2.5cm,vmargin=2cm}
+\usepackage{indentfirst} % package used to indent first paragraph
+\usepackage{appendix} % package for appendixes
+\usepackage{tikz}
+\usepackage{subcaption}
+\graphicspath{{../shared-resources/pictures/},{pictures/}}
+\usepackage{appendix}
+\usepackage{xspace} % add spaces in newcommand
+\usepackage{pdflscape} % landscape mode
+\usepackage{dirtytalk} % quotes
+
+% --------- PACKAGES FOR SCIENTIFIC WRITINGS ---------
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+
+% Declaring Volts peak to peak
+
+\sisetup{detect-all}
+\DeclareSIQualifier\peaktopeak{PP}
+\DeclareSIUnit\voltptp{\volt\peaktopeak}
+\DeclareSIUnit\dbm{dBm}
+\DeclareSIUnit\au{a.u.}
+
+% --------- PACKAGES FOR REFERENCES AND BIBLIOGRAPHY ----------
+
+\usepackage{hyperref}
+\usepackage[
+	backend=biber
+]{biblatex}
+\addbibresource{../shared-resources/biblio/biblio.bib}
+
+% ----- GLOSSARY -------
+
+\usepackage[toc,nopostdot]{glossaries} % needs to be placed after hyperref package to have clickable references
+\makeglossary
+\input{src/acronyms.tex}
+
+% --- Functions ---
+
+\input{src/functions.tex}

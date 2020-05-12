@@ -1,0 +1,64 @@
+%%%%%%%%%%%%%%%%%%
+% 			 
+%			Master Thesis - UWB
+%				Main code
+%
+%			Author : Wilson Daubry
+%
+%%%%%%%%%%%%%%%%%%
+
+
+% --- Preamble
+
+\input{src/preamble}
+
+% --- Beginning of the document 
+
+\begin{document}
+
+% --- Title page 
+
+\input{src/front_page}
+
+\clearpage\null\newpage
+
+% --- Abstract 
+
+\input{src/abstract.tex}
+
+% --- Acknowledgements 
+
+\input{src/ack.tex}
+
+% --- TOC
+
+\tableofcontents
+
+% --- Introduction 
+
+\input{src/introduction.tex}
+
+% --- State of the art
+
+\input{src/stateoftheart.tex}
+
+% --- Appendices 
+
+\begin{appendices}
+
+	
+\end{appendices}
+
+\printglossary[title=Acronyms, 
+toctitle=Acronyms,
+type=\acronymtype]
+
+% --- bibliography 
+
+\printbibliography
+	
+\end{document}
+
+
+
+
