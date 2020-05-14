@@ -30,6 +30,8 @@
 \usepackage{xspace} % add spaces in newcommand
 \usepackage{pdflscape} % landscape mode
 \usepackage{dirtytalk} % quotes
+\usepackage{graphicx}
+\usepackage{float}
 
 % --------- PACKAGES FOR SCIENTIFIC WRITINGS ---------
 
@@ -48,15 +50,14 @@
 % --------- PACKAGES FOR REFERENCES AND BIBLIOGRAPHY ----------
 
 \usepackage{hyperref}
-\usepackage[
-	backend=biber
-]{biblatex}
-\addbibresource{../shared-resources/biblio/biblio.bib}
+\usepackage{csquotes}
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{biblio/biblio.bib}
 
 % ----- GLOSSARY -------
 
 \usepackage[toc,nopostdot]{glossaries} % needs to be placed after hyperref package to have clickable references
-\makeglossary
+\makeglossaries
 \input{src/acronyms.tex}
 
 % --- Functions ---
