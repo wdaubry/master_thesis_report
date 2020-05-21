@@ -6,5 +6,5 @@
 \contentsline {section}{\numberline {2.2}Real Time Locating Systems}{8}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Symmetric double sided two-way ranging}{8}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Trilateration}{9}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Project advancement}{9}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Virtual Anchor}{9}{section.2.4}%
+\contentsline {section}{\numberline {2.3}Project advancement}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Virtual Anchor}{10}{section.2.4}%

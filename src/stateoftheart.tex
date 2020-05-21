@@ -13,7 +13,7 @@
 This sections has the purpose to explain the state of the art.
 
 \section{Ultra-Wideband Technology}
-
+\label{uwb}
 \gls{uwb} is a communication technology using, as the name states, a large bandwidth. This is not a new technology as it is the one used by  Guglielmo Marconi for the first transatlantic communication using radio waves \cite{nekoogar2005uwb}. As define by the \gls{itu-r} to be considered as \gls{uwb}, the bandwidth of communication must be at least 20 \% of the arithmetic center frequency \cite{itur2006characteristics}.
 
 One interesting feature of \gls{uwb} is the possible coexistence with other radio waves already present in the environment such as \gls{wifi}. As it can be seen on Fig. \ref{fig:UWB_Techonology}, the extension of the \gls{uwb} in the spectral domain is quite huge. 
@@ -34,13 +34,30 @@ Knowing this and based on the time-frequency duality reminded in eq. \ref{fig:eq
 
 HERE - ADD THE IMAGE FOR TIME EXTENSION OF UWB
 
-The Fig. \ref{fig:UWB_time} shows the theoretical duration of an impulse of the \gls{uwb}. An advantage of the \gls{uwb} is its robustness in regard of the \gls{mpc}. This can be understood by looking at Fig. \ref{fig:UWB_MPC_Theo}, where peaks several peaks can be distinguished, each corresponding either to a different path travelled by the wave. Indeed, the probability to have a collision depends on the size of the pulse sent. 
+The Fig. \ref{fig:UWB_time} shows the theoretical duration of an impulse of the \gls{uwb}.
+% TODO : Ajouter une précision sur la longueur d'une impulsion.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
+\caption{Theoritical duration of an UWB pulse}
+\label{fig:UWB_time}
+\end{figure}
+
+An advantage of the \gls{uwb} is its robustness in regard of the \gls{mpc}. This can be understood by looking at Fig. \ref{fig:UWB_MPC_Theo}, where several peaks can be distinguished, each corresponding either to a different path travelled by the wave. Indeed, the probability to have a collision depends on the size of the pulse sent. From this, the interest of the \gls{uwb} in confined area appears as a lot of \gls{mpc} are present due to the reflections to all the wall of a room.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
+\caption{Example of an MPC}
+\label{fig:UWB_MPC_Theo}
+\end{figure}
 
 \section{Real Time Locating Systems}
-
+\label{rtls}
 \gls{rtls} are systems used to track and identify the location of objects in real time. This is a rather vague definition since nothing is specified concerning the means employed to achieve the localization. The \gls{rtls} that will be presented in this section will all have in common the use of wireless communications, between devices being called in this paper "anchor" and "tag". The tag being associated with the object to locate while the anchor is at a fixed and known location.
 
-Those \gls{rtls} can be separated in two categories : "Relative localization" and "Absolute localization". The only relative localization algorithm presented in \ref{sds2wr} is the \gls{tof} method that is used in this project to compute the distance between an anchor and a tag. This choice has been made and explained in \cite{fesler2018high}, \cite{hannotier2019indoor} along a presentation all several approach to determine the relative position of a tag relatively to an anchor.
+Those \gls{rtls} can be separated in two categories : "Relative localization" and "Absolute localization". The relative localization algorithm presented in \ref{sds2wr} is the \gls{tof} method that is used in this project to compute the distance between an anchor and a tag. This choice has been made and explained in \cite{fesler2018high}, \cite{hannotier2019indoor} alongside a presentation of several approach to determine the relative position of a tag relatively to an anchor.
 
 % Faire un lien vers la Thèse de Quentin F entre autre où tout est déjà expliqué et résumé brièvement l'idée.
 
@@ -51,7 +68,7 @@ Those \gls{rtls} can be separated in two categories : "Relative localization" an
 
 Each message contains the different timestamps previously computed, meaning that at the end of this exchange $RDEV_2$ possess all the informations about the timestamps, while $RDEV_1$ misses the last one. If one wants $RDEV_1$ to be able to compute the \gls{tof} then a last message with that $t_5$ in it should be exchanged.
 
-A scheme of \gls{sdstwr} is shown on Fig. \ref{sdstwr}. 
+A schematic of the exchanges between $RDEV_1$ and $RDEV_2$ that occurs in \gls{sdstwr} is shown on Fig. \ref{sdstwr}. 
 
 \begin{figure}[H]
 \centering
@@ -73,13 +90,28 @@ Since that \gls{tof} computed remains an estimation, it is important to know the
 	t_{true} - t_{est} = \frac{1}{4}*(t_{reply2} - t_{reply_1})*(e_1 - e_2)
 \end{equation}
 
+The term $e_1 - e_2$ being the difference between the internal clocks of both devices. \cite{dalce2011comparison}
+
 \subsection{Trilateration}
 
+Based on the relative localization performed using \gls{sdstwr}, a \gls{tof} can be computed. If the relative distance between a tag and three different anchors is known, it is possible to compute the intersection of three circle having as center the position of the anchor and radius the \gls{tof} associated to this anchor. A scheme displaying that solution can be seen on Fig. \ref{fig:triangulation}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
+\caption{Triangulation -> Ajouter photo}
+\label{fig:triangulation}
+\end{figure}
+
+As one can deduce, in a two dimensional  plan, three anchors are need to have an intersection of one point. In a three dimensional plan, four anchors would be needed.
 % Rappeler le concept avec un schéma concis. 
 
 \section{Project advancement}
 
+Using the technology briefly presented in sections \ref{uwb} and \ref{rtls} a locating system has been developed by ... INDIQUER LE NOM DES ETUDIANTS PRECEDENTS (Cedric, Quentin ?) ... [AJOUTER LES REFERENCES].
+
 % L'objectif de cette section est de faire part au lecteur de l'avancement du projet au moment où je l'ai prit en main.
+% Points à aborder : Matériel utilisé, précision obtenue
 
 \section{Virtual Anchor}
 

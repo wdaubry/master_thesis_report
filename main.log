@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  14 MAY 2020 21:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  17 MAY 2020 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1337,24 +1337,31 @@ File: Images/uwb_bandwidth.png Graphic file (type png)
 <use Images/uwb_bandwidth.png>
 Package pdftex.def Info: Images/uwb_bandwidth.png  used on input line 22.
 (pdftex.def)             Requested size: 273.14923pt x 147.95369pt.
-
-LaTeX Warning: Reference `fig:UWB_time' on page 7 undefined on input line 37.
-
-
-LaTeX Warning: Reference `fig:UWB_MPC_Theo' on page 7 undefined on input line 3
-7.
-
+<Images/Temporary_pic.png, id=97, 407.5225pt x 464.73625pt>
+File: Images/Temporary_pic.png Graphic file (type png)
+<use Images/Temporary_pic.png>
+Package pdftex.def Info: Images/Temporary_pic.png  used on input line 42.
+(pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
 [7
 
  <./Images/uwb_bandwidth.png>]
-<Images/sds-twr.png, id=129, 758.835pt x 626.34pt>
+File: Images/Temporary_pic.png Graphic file (type png)
+<use Images/Temporary_pic.png>
+Package pdftex.def Info: Images/Temporary_pic.png  used on input line 51.
+(pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
+ [8 <./Images/Temporary_pic.png>]
+<Images/sds-twr.png, id=152, 758.835pt x 626.34pt>
 File: Images/sds-twr.png Graphic file (type png)
 <use Images/sds-twr.png>
-Package pdftex.def Info: Images/sds-twr.png  used on input line 58.
+Package pdftex.def Info: Images/sds-twr.png  used on input line 75.
 (pdftex.def)             Requested size: 273.14923pt x 225.45355pt.
- [8 <./Images/sds-twr.png>])
+File: Images/Temporary_pic.png Graphic file (type png)
+<use Images/Temporary_pic.png>
+Package pdftex.def Info: Images/Temporary_pic.png  used on input line 101.
+(pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
+ [9 <./Images/sds-twr.png>])
 No file main.gls.
-[9] [10
+[10] [11
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 60.
@@ -1364,20 +1371,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 60.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 60.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 9E25D812B998B7F4087276F863297BB7;523.
-
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 60.
  ) 
 Here is how much of TeX's memory you used:
- 35627 strings out of 480608
- 695736 string characters out of 5903631
- 1344150 words of memory out of 5000000
- 50839 multiletter control sequences out of 15000+600000
+ 35640 strings out of 480608
+ 695977 string characters out of 5903631
+ 1344437 words of memory out of 5000000
+ 50847 multiletter control sequences out of 15000+600000
  545928 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,6n,79p,1020b,1700s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1422,10 +1425,10 @@ e/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/
 20/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2020
 /texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/t
 exmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (10 pages, 289588 bytes).
+Output written on main.pdf (11 pages, 1577320 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
- 191 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 87 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 246 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 92 words of extra memory for PDF output out of 10000 (max. 10000000)
 
