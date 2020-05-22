@@ -17,6 +17,23 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{adafruit}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+  \field{howpublished}{\url{https://cdn-learn.adafruit.com/downloads/pdf/adafruit-feather-huzzah-esp8266.pdf}}
+    \field{title}{{Adafruit} Feather Huzzah datasheet}
+    \field{year}{2020}
+  \endentry
+
+  \entry{busspi}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+  \field{howpublished}{\url{http://projet.eu.org/pedago/sin/term/8-bus_SPI.pdf}}
+    \field{title}{Bus SPI}
+  \endentry
+
   \entry{dalce2011comparison}{article}{}
     \name{author}{3}{}{%
       {{hash=DR}{%
@@ -52,6 +69,41 @@
     \field{year}{2011}
   \endentry
 
+  \entry{eulaw}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+  \field{howpublished}{\url{https://www.decawave.com/wp-content/uploads/2018/10/APR003_Certification-Guide-Europe_v1.1.pdf}}
+    \field{title}{{Decawave} Certification Guide Europe}
+  \endentry
+
+  \entry{decawave}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+  \field{howpublished}{\url{https://www.decawave.com/product/dwm1000-module/}}
+    \field{note}{Accessed: 05-2020}
+    \field{title}{{Decawave} DWM1000 module}
+  \endentry
+
+  \entry{usermanual}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+  \field{howpublished}{\url{https://www.decawave.com/sites/default/files/resources/dw1000_user_manual_2.11.pdf}}
+    \field{title}{{Decawave} DWM1000 User Manual}
+    \field{year}{2017}
+  \endentry
+
+  \entry{esp8266}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+  \field{howpublished}{\url{https://www.espressif.com/sites/default/files/documentation/0a-esp8266ex_datasheet_en.pdf}}
+    \field{title}{{ESP8266} Datasheet}
+    \field{year}{2020}
+  \endentry
+
   \entry{fesler2018high}{thesis}{}
     \name{author}{1}{}{%
       {{hash=FQ}{%
@@ -77,6 +129,32 @@
     }
     \field{type}{mathesis}
     \field{year}{2018}
+  \endentry
+
+  \entry{guyard2019navigation}{unpublished}{}
+    \name{author}{1}{}{%
+      {{hash=GL}{%
+         family={Guyard},
+         familyi={G\bibinitperiod},
+         given={Léon},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GL1}
+    \strng{fullhash}{GL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Navigation et localisation en intérieur grâce à
+  l’émission d’ondes à large bande fréquentielle}
+    \list{location}{1}{%
+      {Belgium}%
+    }
+    \list{institution}{1}{%
+      {ULB - INP Grenoble}%
+    }
+    \field{year}{2019}
   \endentry
 
   \entry{hannotier2019indoor}{thesis}{}

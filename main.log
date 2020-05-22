@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  17 MAY 2020 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  22 MAY 2020 12:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1316,52 +1316,111 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
-] (./src/abstract.tex) (./src/ack.tex [3
+] (./src/abstract.tex) (./src/ack.tex [1
 
-]) [4
+]) [2
 
 ] (./main.toc)
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
-(./src/introduction.tex [5
+(./src/introduction.tex [3
 
 ]
 Chapter 1.
-) (./src/stateoftheart.tex [6
+) (./src/stateoftheart.texpdfTeX warning (ext4): destination with the same iden
+tifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.10 \chapter
+             {State of the art} [1
 
 ]
 Chapter 2.
-<Images/uwb_bandwidth.png, id=90, 554.07pt x 300.12125pt>
+<Images/uwb_bandwidth.png, id=114, 554.07pt x 300.12125pt>
 File: Images/uwb_bandwidth.png Graphic file (type png)
 <use Images/uwb_bandwidth.png>
-Package pdftex.def Info: Images/uwb_bandwidth.png  used on input line 22.
+Package pdftex.def Info: Images/uwb_bandwidth.png  used on input line 23.
 (pdftex.def)             Requested size: 273.14923pt x 147.95369pt.
-<Images/Temporary_pic.png, id=97, 407.5225pt x 464.73625pt>
+<Images/Temporary_pic.png, id=121, 407.5225pt x 464.73625pt>
 File: Images/Temporary_pic.png Graphic file (type png)
 <use Images/Temporary_pic.png>
-Package pdftex.def Info: Images/Temporary_pic.png  used on input line 42.
+Package pdftex.def Info: Images/Temporary_pic.png  used on input line 43.
 (pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
-[7
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.47 
+      [2
 
  <./Images/uwb_bandwidth.png>]
 File: Images/Temporary_pic.png Graphic file (type png)
 <use Images/Temporary_pic.png>
-Package pdftex.def Info: Images/Temporary_pic.png  used on input line 51.
+Package pdftex.def Info: Images/Temporary_pic.png  used on input line 52.
 (pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
- [8 <./Images/Temporary_pic.png>]
-<Images/sds-twr.png, id=152, 758.835pt x 626.34pt>
+ [3 <./Images/Temporary_pic.png>]
+<Images/sds-twr.png, id=176, 758.835pt x 626.34pt>
 File: Images/sds-twr.png Graphic file (type png)
 <use Images/sds-twr.png>
-Package pdftex.def Info: Images/sds-twr.png  used on input line 75.
+Package pdftex.def Info: Images/sds-twr.png  used on input line 79.
 (pdftex.def)             Requested size: 273.14923pt x 225.45355pt.
 File: Images/Temporary_pic.png Graphic file (type png)
 <use Images/Temporary_pic.png>
-Package pdftex.def Info: Images/Temporary_pic.png  used on input line 101.
+Package pdftex.def Info: Images/Temporary_pic.png  used on input line 105.
 (pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
- [9 <./Images/sds-twr.png>])
+
+[4 <./Images/sds-twr.png>]
+File: Images/Temporary_pic.png Graphic file (type png)
+<use Images/Temporary_pic.png>
+Package pdftex.def Info: Images/Temporary_pic.png  used on input line 126.
+(pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
+ [5]
+<Images/SPI_scheme.png, id=244, 1279.78125pt x 293.095pt>
+File: Images/SPI_scheme.png Graphic file (type png)
+<use Images/SPI_scheme.png>
+Package pdftex.def Info: Images/SPI_scheme.png  used on input line 161.
+(pdftex.def)             Requested size: 273.14923pt x 62.55354pt.
+<Images/esp8266.png, id=249, 399.4925pt x 203.76125pt>
+File: Images/esp8266.png Graphic file (type png)
+<use Images/esp8266.png>
+Package pdftex.def Info: Images/esp8266.png  used on input line 172.
+(pdftex.def)             Requested size: 273.14923pt x 139.32687pt.
+ [6 <./Images/SPI_scheme.png> <./Images/esp8266.png>]
+File: Images/Temporary_pic.png Graphic file (type png)
+<use Images/Temporary_pic.png>
+Package pdftex.def Info: Images/Temporary_pic.png  used on input line 186.
+(pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
+File: Images/Temporary_pic.png Graphic file (type png)
+<use Images/Temporary_pic.png>
+Package pdftex.def Info: Images/Temporary_pic.png  used on input line 205.
+(pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
+)
 No file main.gls.
-[10] [11
+[7] [8]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
+8.
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+Overfull \hbox (6.93697pt too wide) in paragraph at lines 59--59
+[]\T1/cmr/m/it/12 Adafruit Feather Huz-zah datasheet\T1/cmr/m/n/12 . []$\T1/cmt
+t/m/n/12 https : / / cdn -[] learn . adafruit . com / downloads /
+ []
+
+
+Overfull \hbox (1.23389pt too wide) in paragraph at lines 59--59
+[]\T1/cmr/m/n/12 Quentin Fes-ler. ^^P  High-accuracy lo-cal-iza-tion of robotic
+ plat-forms with ultra-wideband
+ []
+
+
+Overfull \hbox (2.64894pt too wide) in paragraph at lines 59--59
+[]\T1/cmr/m/n/12 Josef Kul-mer et al. ^^P  Us-ing De-caWave UWB transceivers fo
+r high-accuracy multipath-
+ []
+
+[9
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 60.
@@ -1370,22 +1429,43 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 60.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 60.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 60.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9E25D812B998B7F4087276F863297BB7;523.
+(rerunfilecheck)             Checksum: 9210B573DA8F93A54E668816BA1DCAEE;865.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 60.
  ) 
 Here is how much of TeX's memory you used:
- 35640 strings out of 480608
- 695977 string characters out of 5903631
- 1344437 words of memory out of 5000000
- 50847 multiletter control sequences out of 15000+600000
- 545928 words of font info for 58 fonts, out of 8000000 for 9000
+ 35972 strings out of 480608
+ 701594 string characters out of 5903631
+ 1348056 words of memory out of 5000000
+ 51134 multiletter control sequences out of 15000+600000
+ 551981 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,6n,79p,1020b,1700s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:toa} has been referenced but does not exist, 
-replaced by a fixed one
+ 63i,8n,79p,1020b,1700s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{glo:ss} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{glo:sckl} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{glo:mosi} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{glo:miso} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{glo:eu} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{glo:prf} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:spi} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{glo:toa} has been referenced but does not exist, re
+placed by a fixed one
 
 pdfTeX warning (dest): name{glo:toe} has been referenced but does not exist, re
 placed by a fixed one
@@ -1411,24 +1491,31 @@ replaced by a fixed one
 pdfTeX warning (dest): name{glo:uwb} has been referenced but does not exist, re
 placed by a fixed one
 
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
-ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
-l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texliv
-e/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/
-2020/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/20
-20/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2020
-/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (11 pages, 1577320 bytes).
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
+usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
+cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
+texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/tex
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texliv
+e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2
+020/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/202
+0/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2020/
+texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2020/te
+xmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2020/texm
+f-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2020/texmf-
+dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2020/texmf-di
+st/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2020/texmf-dist
+/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/texmf-dist/f
+onts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2020/texmf-dist/fon
+ts/type1/public/cm-super/sftt1200.pfb>
+Output written on main.pdf (14 pages, 2575941 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 209 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 92 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 394 PDF objects out of 1000 (max. 8388607)
+ 342 compressed objects within 4 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
