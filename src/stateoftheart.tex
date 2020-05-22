@@ -127,6 +127,7 @@ Where $(x_i, y_i)$ corresponds to the position of the anchor $i$ and $d_i$ corre
 Due to the inaccuracy of the computed distances, the system \ref{eq:syst_exact} can not be solved exactly. There is not a single point as an output. As it stands, the system probably does not have a solution, each equations solved two-by-two would likely gives different answers. To avoid this problem, the trilateration estimator developed in \cite{zhou2009efficient} has been used.
 
 \begin{equation}
+\label{eq:syst_approx}
 S(p_0) = \sum_i^N[(p_i - p_0)^T(p_i-p_0)-d_i^2]^2
 \end{equation}
 
@@ -134,6 +135,7 @@ Where $p_k = (x_k, y_k) \forall x\in {0, ... , N}$ in the two dimensional case. 
 % Rappeler le concept avec un schéma concis. 
 
 \section{Implementation of a locating system}
+\label{loc_syst}
 
 Using the technology briefly presented in sections \ref{uwb} and \ref{rtls} a locating system has been developed by Quentin Fesler and Cédric Hannotier in  \cite{fesler2018high}, \cite{hannotier2019indoor}. This system is able to retrieve a localization with an error oscillating between twenty and fifty centimetres inside of a building \cite{guyard2019navigation}.
 \vspace{2mm}
@@ -254,13 +256,51 @@ The "Calibration" has been designed to enhanced the precision on the timestamps.
 
 \subsection{Precision obtained}
 
-\color{red}
-Précision obtenue avec le dispositif (voir chez Cedric et Leon)
-\color{black}
+The precision obtained with this locating system depends on several factors. It depends on the location of the anchors in the room, the distance of the tag to those anchors, the clutter of the room, etc...
+\vspace{2mm}
 
-The precision obtained with this locating system depends on several factors.
+Nonetheless, a statistical study has been conducted to assess the performances of the locating system. The tag has been placed at several location that can be observed in Fig. \ref{fig:test_map}
 
-\section{Virtual Anchor}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.35\linewidth]{Images/test_map.png}
+	\caption{Locations corresponding to the measures represented in Fig. \ref{fig:test_result}. Taken from \cite{hannotier2019indoor}}
+	\label{fig:test_map}
+\end{figure}
+
+For each location, the measurement was repeated hundred times. The error remains below 45 cm for 80\% of the measurements but reaches up to 85 cm in the worse case. Such deviations can be explained by the geometry of the room, which is not trivial, the wall are not parallel, there is window in it, etc...\cite{hannotier2019indoor}.
+\vspace{2mm}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\linewidth]{Images/test_fig.png}
+	\caption{Error on the estimated location in function of the position of the tag. Taken from \cite{hannotier2019indoor}}
+	\label{fig:test_result}
+\end{figure}
+
+To achieve a better locating, anchors can be added, it has the advantage to add an equation to the system shown in eq. \ref{eq:syst_approx}, which, if the new anchor gives some coherent measure, improves the estimation of the localization. The drawback is that it will slow done the actualization of the position, since it has to communicate with more anchor. Such algorithm dealing with four anchor is presented in \cite{guyard2019navigation}.
+
+\section{Multi-path aided locating system}
+
+\subsection{Channel Impulse Response}
+
+The \gls{cir} has already been briefly introduced in the section \ref{uwb}. The \gls{cir} is not only used in telecommunications systems but also in control theory for example, to characterize the behaviour of a system\footnote{In automatic, the transfer function which correspond to the step response is commonly used.} \cite{garonne2019course}. As the name states, the goal of this \gls{cir} is to characterize the reaction of a system to a stimulus in the form of a pulse.
+\vspace{2mm}
+
+An example is displayed on the Fig. \ref{fig:cir_ex1}. A ray tracing has been performed on the left image. The \gls{los} rays and the way that have been reflected once can be observed. If a Dirac pulse is sent from the transmitter (TX) to the receiver (RX), since the propagation time will depend on the distance travelled, different peaks will appear, each corresponding to a different ray.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
+	\caption{Double image -> Vient de la simulation ?}
+	\label{fig:cir_ex1}
+\end{figure}
+
+As one can see, those different arrival time for each ray correspond to the different peaks on the right figure of the Fig. \ref{fig:cir_ex1}. The height of the peak depend on the attenuation suffered by the emitted peak due to the reflections on the walls. The equations used to compute those attenuations are detailed in the section \color{red} $ref\{SectionNotWrittenYet\}$ \color{black}. 
+
+\subsection{Virtual Anchors}
+
+\cite{meissner2010uwb}
 
 % La on attaque la partie dure. Parler des ancres virtuelles, introduire le concept avec des schémas, montrer qu'on à dès lors besoin de la CIR.
 % Parler des articles qui expliquent la théorie avec du MPC.

@@ -131,6 +131,31 @@
     \field{year}{2018}
   \endentry
 
+  \entry{garonne2019course}{unpublished}{}
+    \name{author}{1}{}{%
+      {{hash=GE}{%
+         family={Garonne},
+         familyi={G\bibinitperiod},
+         given={Emmanuel},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GE1}
+    \strng{fullhash}{GE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{title}{Course of : Control System Design}
+    \list{location}{1}{%
+      {Belgium}%
+    }
+    \list{institution}{1}{%
+      {ULB}%
+    }
+    \field{year}{2017}
+  \endentry
+
   \entry{guyard2019navigation}{unpublished}{}
     \name{author}{1}{}{%
       {{hash=GL}{%
@@ -244,6 +269,41 @@
     \field{title}{Using DecaWave UWB transceivers for high-accuracy
   multipath-assisted indoor positioning}
     \field{year}{2017}
+  \endentry
+
+  \entry{meissner2010uwb}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=MP}{%
+         family={{Meissner}},
+         familyi={M\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={{Steiner}},
+         familyi={S\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={{Witrisal}},
+         familyi={W\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MPSCWK1}
+    \strng{fullhash}{MPSCWK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{2010 7th Workshop on Positioning, Navigation and
+  Communication}
+    \field{pages}{150\bibrangedash 156}
+    \field{title}{UWB positioning with virtual anchors and floor plan
+  information}
+    \field{year}{2010}
   \endentry
 
   \entry{nekoogar2005uwb}{book}{}

@@ -18,5 +18,7 @@
 \contentsline {subsubsection}{Test USB connection, Test orientation}{9}{section*.19}%
 \contentsline {subsubsection}{Calibration}{9}{section*.20}%
 \contentsline {subsection}{\numberline {2.3.5}Precision obtained}{9}{subsection.2.3.5}%
-\contentsline {section}{\numberline {2.4}Virtual Anchor}{9}{section.2.4}%
-\contentsline {chapter}{\numberline {3}Conclusion}{10}{chapter.3}%
+\contentsline {section}{\numberline {2.4}Multi-path aided locating system}{10}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Channel Impulse Response}{10}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Virtual Anchors}{11}{subsection.2.4.2}%
+\contentsline {chapter}{\numberline {3}Conclusion}{12}{chapter.3}%
