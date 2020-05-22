@@ -13,5 +13,9 @@
 \contentsline {subsection}{\numberline {2.3.2}Anchor}{6}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Tag}{7}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Android Application}{7}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}Communication protocol}{7}{subsection.2.3.5}%
-\contentsline {section}{\numberline {2.4}Virtual Anchor}{8}{section.2.4}%
+\contentsline {subsubsection}{Navigation}{7}{section*.16}%
+\contentsline {subsubsection}{Test USB connection, Test orientation}{8}{section*.18}%
+\contentsline {subsubsection}{Calibration}{8}{section*.19}%
+\contentsline {subsection}{\numberline {2.3.5}Communication protocol}{8}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}Virtual Anchor}{9}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Conclusion}{10}{chapter.3}%

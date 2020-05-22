@@ -97,6 +97,7 @@ Since that \gls{tof} computed remains an estimation, it is important to know the
 The term $e_1 - e_2$ being the difference between the internal clocks of both devices. \cite{dalce2011comparison}
 
 \subsection{Trilateration}
+\label{tril}
 
 Based on the relative localization performed using \gls{sdstwr}, a \gls{tof} can be computed. If the relative distance between a tag and three different anchors is known, it is possible to compute the intersection of three circle having as center the position of the anchor and radius the \gls{tof} associated to this anchor. A scheme displaying that solution can be seen on Fig. \ref{fig:triangulation}.
 
@@ -192,9 +193,38 @@ The communication between the DWM1000 an the PSoC is performed using a \gls{spi}
 
 \subsection{Android Application}
 
-To control t
+To control the PSoC, an android application has been developed. A screen-shot of the main window can be seen on Fig. \ref{fig:android_app}. Four different buttons can be seen.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
+	\caption{Main window of the android application}
+	\label{fig:android_app}
+\end{figure}
 
+\subsubsection{Navigation}
+
+The Navigation button opens a map of an environment\footnote{The room UA5.214 in this case, which is one of the electronic lab at the ULB.} and an arrow is displayed at the estimated location of the tag, the orientation being the estimated orientation of the cellphone. The coordinates are also displayed, computed from the bottom left corner of the map. The used map is shown in Fig. \ref{fig:ua5_map}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.4\linewidth]{Images/little_room.png}
+	\caption{Map of the UA5.214}
+	\label{fig:ua5_map}
+\end{figure}
+
+When this function runs, the application enters a loop that continuously request the PSoC to perform a \gls{sdstwr} with each anchors. The data containing the different timestamps are transmitted towards the application for each anchor separately. From those data, the distance between each anchor and the tag is computed on the cellphone as well as the trilateration algorithm described in section \ref{tril}, leading to a $(x, y)$ estimated location.
+
+\subsubsection{Test USB connection, Test orientation}
+
+The "Test USB connection" allows to test that the USB communication bus used to communicate with the PSoC is fully operational. The test procedure consists of sending a 16 bits long messages to the PSoC, this message being : $0x0406$. If the PSoC is well connected, the application is supposed to receive a 32 bits long message being : $0x02034637$. This feature allows to quickly debug the USB communication.
+\vspace{2mm}
+
+The "Test orientation" has been designed to test the detection of the orientation the cellphone. The three angles necessary to characterize the orientation of the device, respectively the Azimuth, the Pitch and the Roll. The goal of this button was mainly to assess that the recuperation of the orientation of the cellphone was working.
+
+\subsubsection{Calibration}
+
+Je ne sais pas ce que fait ce bouton... Probablement un truc avec les antennes, à voir.
 
 \subsection{Communication protocol}
 
