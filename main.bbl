@@ -291,5 +291,31 @@
     \field{title}{Characteristics of ultra-wideband technology}
     \field{year}{2006}
   \endentry
+
+  \entry{zhou2009efficient}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=ZY}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Yu},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{ZY1}
+    \strng{fullhash}{ZY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{Z}
+    \field{sortinithash}{Z}
+    \field{booktitle}{2009 IEEE/RSJ International Conference on Intelligent
+  Robots and Systems}
+    \field{pages}{3474\bibrangedash 3479}
+    \field{title}{An efficient least-squares trilateration algorithm for mobile
+  robot localization}
+    \field{year}{2009}
+  \endentry
 \enddatalist
 \endinput

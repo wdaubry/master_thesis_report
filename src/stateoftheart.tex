@@ -108,7 +108,29 @@ Based on the relative localization performed using \gls{sdstwr}, a \gls{tof} can
 \label{fig:triangulation}
 \end{figure}
 
-As one can deduce, in a two dimensional  plan, three anchors are need to have an intersection of only one point, removing the uncertainty. In a three dimensional plan, four anchors would be needed.
+As one can deduce, in a two dimensional  plan, three anchors are need to have an intersection of only one point, removing the uncertainty. In a three dimensional plan, four anchors would be needed. This actually correspond to 
+the following system of equations :
+
+\begin{equation}
+\label{eq:syst_exact}
+\begin{cases}
+(x_1 - x_0)^2 + (y_1 - y_0)^2 = d_1^2 \\
+(x_2 - x_0)^2 + (y_2 - y_0)^2 = d_2^2 \\
+(x_3 - x_0)^2 + (y_3 - y_0)^2 = d_3^2 \\
+\end{cases}
+\end{equation}
+
+Where $(x_i, y_i)$ corresponds to the position of the anchor $i$ and $d_i$ corresponds to the distance between this anchor and the tag, $(x_0, y_0)$ being the position of the tag.
+
+\subsubsection{Uncertainties}
+
+Due to the inaccuracy of the computed distances, the system \ref{eq:syst_exact} can not be solved exactly. There is not a single point as an output. As it stands, the system probably does not have a solution, each equations solved two-by-two would likely gives different answers. To avoid this problem, the trilateration estimator developed in \cite{zhou2009efficient} has been used.
+
+\begin{equation}
+S(p_0) = \sum_i^N[(p_i - p_0)^T(p_i-p_0)-d_i^2]^2
+\end{equation}
+
+Where $p_k = (x_k, y_k) \forall x\in {0, ... , N}$ in the two dimensional case. N being the number of anchor\footnote{Which can be superior to 3, even in a 2D plan}. The objective of this estimator is to find the value of $p_o$ minimizing the value of $S(p_0)$.
 % Rappeler le concept avec un schéma concis. 
 
 \section{Implementation of a locating system}
@@ -116,7 +138,7 @@ As one can deduce, in a two dimensional  plan, three anchors are need to have an
 Using the technology briefly presented in sections \ref{uwb} and \ref{rtls} a locating system has been developed by Quentin Fesler and Cédric Hannotier in  \cite{fesler2018high}, \cite{hannotier2019indoor}. This system is able to retrieve a localization with an error oscillating between twenty and fifty centimetres inside of a building \cite{guyard2019navigation}.
 \vspace{2mm}
 
-This locating system is composed of fixed antennas\footnote{Called anchors} made using an ESP8266 as micro-controller and an \gls{uwb} transceiver being the DWM1000 produced by Decawave\cite{decawave}. The tag are built using an Android cellphone, a PSoC \color{red} (get the exact model) \color{black} and also a DWM1000 module.
+This locating system is composed of fixed antennas\footnote{Called anchors} made using an ESP8266 as micro-controller and an \gls{uwb} transceiver being the DWM1000 produced by Decawave\cite{decawave}. The tag are built using an Android cellphone, a PSoC\footnote{The exact model is the : CY8C5888LTI-LP097 \cite{guyard2019navigation}} and also a DWM1000 module.
 
 \subsection{DWM1000}
 
@@ -214,6 +236,10 @@ The Navigation button opens a map of an environment\footnote{The room UA5.214 in
 \end{figure}
 
 When this function runs, the application enters a loop that continuously request the PSoC to perform a \gls{sdstwr} with each anchors. The data containing the different timestamps are transmitted towards the application for each anchor separately. From those data, the distance between each anchor and the tag is computed on the cellphone as well as the trilateration algorithm described in section \ref{tril}, leading to a $(x, y)$ estimated location.
+\vspace{2mm}
+
+A detailed state machine coming from \cite{hannotier2019indoor} can be found in \color{red} make a link to an annex an put the state machine in annex \color{black} representing the state machine of an anchor and a tag. While the state machine of the anchor only perform one \gls{sdstwr} at a time, the tag needs to keep an history of the anchors contacted to perform the trilateration afterwards.
+
 
 \subsubsection{Test USB connection, Test orientation}
 
@@ -224,22 +250,15 @@ The "Test orientation" has been designed to test the detection of the orientatio
 
 \subsubsection{Calibration}
 
-Je ne sais pas ce que fait ce bouton... Probablement un truc avec les antennes, à voir.
+The "Calibration" has been designed to enhanced the precision on the timestamps. Indeed, there is a difference between the moment when the packet is received at the antenna of the DWM1000 and the moment of its detection which corresponds to the timestamp. The same phenomena appears when the \gls{uwb} transceiver transmit a packet. Those errors on the timestamps are called the transmit/receive antenna delay and must be configured to match the actual antenna delay.
 
-\subsection{Communication protocol}
+\subsection{Precision obtained}
 
-A schematic of the execution 
+\color{red}
+Précision obtenue avec le dispositif (voir chez Cedric et Leon)
+\color{black}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
-\caption{Communication protocol -> Ajouter photo}
-\label{fig:com_prot}
-\end{figure}
-
-
-% L'objectif de cette section est de faire part au lecteur de l'avancement du projet au moment où je l'ai prit en main.
-% Points à aborder : Matériel utilisé, précision obtenue
+The precision obtained with this locating system depends on several factors.
 
 \section{Virtual Anchor}
 

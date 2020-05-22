@@ -6,16 +6,17 @@
 \contentsline {section}{\numberline {2.2}Real Time Locating Systems}{3}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Symmetric double sided two-way ranging}{3}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Trilateration}{4}{subsection.2.2.2}%
+\contentsline {subsubsection}{Uncertainties}{5}{section*.9}%
 \contentsline {section}{\numberline {2.3}Implementation of a locating system}{5}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}DWM1000}{5}{subsection.2.3.1}%
-\contentsline {subsubsection}{Configuration}{5}{section*.10}%
-\contentsline {subsubsection}{Control}{6}{section*.11}%
-\contentsline {subsection}{\numberline {2.3.2}Anchor}{6}{subsection.2.3.2}%
+\contentsline {subsubsection}{Configuration}{6}{section*.11}%
+\contentsline {subsubsection}{Control}{6}{section*.12}%
+\contentsline {subsection}{\numberline {2.3.2}Anchor}{7}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Tag}{7}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Android Application}{7}{subsection.2.3.4}%
-\contentsline {subsubsection}{Navigation}{7}{section*.16}%
-\contentsline {subsubsection}{Test USB connection, Test orientation}{8}{section*.18}%
-\contentsline {subsubsection}{Calibration}{8}{section*.19}%
-\contentsline {subsection}{\numberline {2.3.5}Communication protocol}{8}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.4}Android Application}{8}{subsection.2.3.4}%
+\contentsline {subsubsection}{Navigation}{8}{section*.17}%
+\contentsline {subsubsection}{Test USB connection, Test orientation}{9}{section*.19}%
+\contentsline {subsubsection}{Calibration}{9}{section*.20}%
+\contentsline {subsection}{\numberline {2.3.5}Precision obtained}{9}{subsection.2.3.5}%
 \contentsline {section}{\numberline {2.4}Virtual Anchor}{9}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Conclusion}{10}{chapter.3}%
