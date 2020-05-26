@@ -8,17 +8,21 @@
 \contentsline {subsection}{\numberline {2.2.2}Trilateration}{4}{subsection.2.2.2}%
 \contentsline {subsubsection}{Uncertainties}{5}{section*.9}%
 \contentsline {section}{\numberline {2.3}Implementation of a locating system}{5}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}DWM1000}{5}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}DWM1000}{6}{subsection.2.3.1}%
 \contentsline {subsubsection}{Configuration}{6}{section*.11}%
-\contentsline {subsubsection}{Control}{6}{section*.12}%
+\contentsline {subsubsection}{Control}{7}{section*.12}%
 \contentsline {subsection}{\numberline {2.3.2}Anchor}{7}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Tag}{7}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Android Application}{8}{subsection.2.3.4}%
 \contentsline {subsubsection}{Navigation}{8}{section*.17}%
 \contentsline {subsubsection}{Test USB connection, Test orientation}{9}{section*.19}%
 \contentsline {subsubsection}{Calibration}{9}{section*.20}%
-\contentsline {subsection}{\numberline {2.3.5}Precision obtained}{9}{subsection.2.3.5}%
-\contentsline {section}{\numberline {2.4}Multi-path aided locating system}{10}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Channel Impulse Response}{10}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.3.5}Precision obtained}{10}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}Multi-path aided locating system}{11}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Channel Impulse Response}{11}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Virtual Anchors}{11}{subsection.2.4.2}%
-\contentsline {chapter}{\numberline {3}Conclusion}{12}{chapter.3}%
+\contentsline {subsection}{\numberline {2.4.3}Locating system \color {red} Name to be changed \color {black}}{12}{subsection.2.4.3}%
+\contentsline {chapter}{\numberline {3}Algorithms}{13}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Simulations}{14}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Experiences}{15}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusion}{16}{chapter.6}%

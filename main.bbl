@@ -95,6 +95,33 @@
     \field{year}{2017}
   \endentry
 
+  \entry{defraye2017determining}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=DJ}{%
+         family={Defraye},
+         familyi={D\bibinitperiod},
+         given={Jense},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DJ1}
+    \strng{fullhash}{DJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Determining the position of sporters using ultra-wideband
+  indoor localization}
+    \list{location}{1}{%
+      {Belgium}%
+    }
+    \list{institution}{1}{%
+      {UGent}%
+    }
+    \field{type}{mathesis}
+    \field{year}{2017}
+  \endentry
+
   \entry{esp8266}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{E}
@@ -129,6 +156,50 @@
     }
     \field{type}{mathesis}
     \field{year}{2018}
+  \endentry
+
+  \entry{froehle2013cooperative}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=FM}{%
+         family={Froehle},
+         familyi={F\bibinitperiod},
+         given={Markus},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LE}{%
+         family={Leitinger},
+         familyi={L\bibinitperiod},
+         given={Erik},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Meissner},
+         familyi={M\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Witrisal},
+         familyi={W\bibinitperiod},
+         given={Klaus},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{FM+1}
+    \strng{fullhash}{FMLEMPWK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{booktitle}{2013 IEEE International Conference on Communications
+  Workshops (ICC)}
+    \field{pages}{16\bibrangedash 21}
+    \field{title}{Cooperative multipath-assisted indoor navigation and tracking
+  (Co-MINT) using UWB signals}
+    \field{year}{2013}
   \endentry
 
   \entry{garonne2019course}{unpublished}{}
@@ -207,6 +278,73 @@
     }
     \field{type}{mathesis}
     \field{year}{2019}
+  \endentry
+
+  \entry{jespersen2018indoor}{inproceedings}{}
+    \name{author}{8}{}{%
+      {{hash=JMH}{%
+         family={Jespersen},
+         familyi={J\bibinitperiod},
+         given={Mads\bibnamedelima H},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=SDE}{%
+         family={Serup},
+         familyi={S\bibinitperiod},
+         given={Daniel\bibnamedelima E},
+         giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=NMH}{%
+         family={Nielsen},
+         familyi={N\bibinitperiod},
+         given={Martin\bibnamedelima H},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=HMH}{%
+         family={Hannesbo},
+         familyi={H\bibinitperiod},
+         given={Mathias\bibnamedelima H},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=WRJ}{%
+         family={Williams},
+         familyi={W\bibinitperiod},
+         given={Robin\bibnamedelima J},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=NKS}{%
+         family={Nielsen},
+         familyi={N\bibinitperiod},
+         given={Karsten\bibnamedelima S},
+         giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=MJH}{%
+         family={Mikkelsen},
+         familyi={M\bibinitperiod},
+         given={Jan\bibnamedelima H},
+         giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Shen},
+         familyi={S\bibinitperiod},
+         given={Ming},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{JMH+1}
+    \strng{fullhash}{JMHSDENMHHMHWRJNKSMJHSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{booktitle}{2018 IEEE MTT-S International Wireless Symposium (IWS)}
+    \field{pages}{1\bibrangedash 3}
+    \field{title}{An indoor multipath-assisted single-anchor UWB localization
+  method}
+    \field{year}{2018}
   \endentry
 
   \entry{kulmer2017using}{inproceedings}{}
@@ -303,6 +441,43 @@
     \field{pages}{150\bibrangedash 156}
     \field{title}{UWB positioning with virtual anchors and floor plan
   information}
+    \field{year}{2010}
+  \endentry
+
+  \entry{meissner2010mc}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=MP}{%
+         family={Meissner},
+         familyi={M\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=GT}{%
+         family={Gigl},
+         familyi={G\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=WK}{%
+         family={Witrisal},
+         familyi={W\bibinitperiod},
+         given={Klaus},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{MPGTWK1}
+    \strng{fullhash}{MPGTWK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{2010 International Conference on Indoor Positioning and
+  Indoor Navigation}
+    \field{pages}{1\bibrangedash 10}
+    \field{title}{UWB sequential Monte Carlo positioning using virtual anchors}
     \field{year}{2010}
   \endentry
 

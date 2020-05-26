@@ -10,7 +10,8 @@
 \chapter{State of the art}
 \label{stateoftheart}
 
-This sections has the purpose to explain the state of the art.
+This chapter outlines the state of the art. The first part focus on the implementation of a locating system, presented after a brief introduction to the \gls{uwb} and \gls{rtls}. Next, the concept of virtual anchors and multi-path aided locating systems is discussed.
+
 
 \section{Ultra-Wideband Technology}
 \label{uwb}
@@ -26,22 +27,20 @@ One interesting feature of \gls{uwb} is the possible coexistence with other radi
 \label{fig:UWB_Techonology}
 \end{figure} 
 
-Knowing this and based on the time-frequency duality reminded in eq. \ref{fig:eq}, one can see that the extension in the time domain will be quite small.
+Knowing this and based on the time-frequency duality reminded in eq. \ref{fig:eq}, one can see that the extension in the time domain will be quite small compared to other signals type.
 
 \begin{equation}
 	x(at) \longleftrightarrow \frac{1}{|a|}*X(\frac{f}{a})
 \label{fig:eq}
 \end{equation}
 
-HERE - ADD THE IMAGE FOR TIME EXTENSION OF UWB
-
 The Fig. \ref{fig:UWB_time} shows the theoretical duration of an impulse of the \gls{uwb}.
-% TODO : Ajouter une précision sur la longueur d'une impulsion.
+
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
-\caption{Theoritical duration of an UWB pulse}
+\includegraphics[width=.4\linewidth]{Images/uwb_pulse.png}
+\caption{Theoritical duration of an UWB pulse. Taken from \cite{defraye2017determining}}
 \label{fig:UWB_time}
 \end{figure}
 
@@ -49,8 +48,8 @@ An advantage of the \gls{uwb} is its robustness in regard of the \gls{mpc}. This
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
-\caption{Example of an MPC}
+\includegraphics[width=.9\linewidth]{Images/mpc_pulses.png}
+\caption{Example of an MPC with a \gls{los} and a \gls{nlos}. Taken from \cite{defraye2017determining}}
 \label{fig:UWB_MPC_Theo}
 \end{figure}
 
@@ -103,12 +102,12 @@ Based on the relative localization performed using \gls{sdstwr}, a \gls{tof} can
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
-\caption{Triangulation -> Ajouter photo}
+\includegraphics[width=.5\linewidth]{Images/trilateration.png}
+\caption{Triangulation}
 \label{fig:triangulation}
 \end{figure}
 
-As one can deduce, in a two dimensional  plan, three anchors are need to have an intersection of only one point, removing the uncertainty. In a three dimensional plan, four anchors would be needed. This actually correspond to 
+As one can deduce, in a two dimensional  plan, three anchors are need to have an intersection of only one point, removing the uncertainty on the solution. If only two anchors where used, one would obtain two possible solution : $Tag$ and $U_{XY}$. In a three dimensional plan, four anchors would be needed. This actually correspond to 
 the following system of equations :
 
 \begin{equation}
@@ -148,9 +147,9 @@ The DWM1000 is the antenna chosen to operate the wireless communication part, it
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
+	\includegraphics[width=.3\linewidth]{Images/DWM1000.png}
 	\label{fig:dwm1000}
-	\caption{DWM1000 module}
+	\caption{DWM1000 module. Taken from \cite{decawave}}
 \end{figure}
 
 \subsubsection{Configuration}
@@ -209,11 +208,11 @@ The tag is the object we want to know the localization. It is composed of a DWM1
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
-	\caption{PSoC card}
+	\caption{PSoC card \color{red} Photo need to be added \color{black}}
 	\label{fig:psoc}
 \end{figure}
 
-The communication between the DWM1000 an the PSoC is performed using a \gls{spi} bus as for the anchors, the PSoC being the master. As for the ESP8266, the PSoC can flashed through an USB bus. The micro-controller receives instructions from the application on the cellphone and controls the communications of the DWM1000 with the different anchors. It then transmits the received data from the DWM1000 to the application through a USB bus. \color{red} Verifier que c'est bien un USB bus \color{black}.
+The communication between the DWM1000 an the PSoC is performed using a \gls{spi} bus as for the anchors, the PSoC being the master. As for the ESP8266, the PSoC can flashed through an USB bus. The micro-controller receives instructions from the application on the cellphone and controls the communications of the DWM1000 with the different anchors. It then transmits the received data from the DWM1000 to the application through an USB bus.
 
 \subsection{Android Application}
 
@@ -221,7 +220,7 @@ To control the PSoC, an android application has been developed. A screen-shot of
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
+	\includegraphics[width=.8\linewidth]{Images/app_main.jpg}
 	\caption{Main window of the android application}
 	\label{fig:android_app}
 \end{figure}
@@ -237,11 +236,10 @@ The Navigation button opens a map of an environment\footnote{The room UA5.214 in
 	\label{fig:ua5_map}
 \end{figure}
 
-When this function runs, the application enters a loop that continuously request the PSoC to perform a \gls{sdstwr} with each anchors. The data containing the different timestamps are transmitted towards the application for each anchor separately. From those data, the distance between each anchor and the tag is computed on the cellphone as well as the trilateration algorithm described in section \ref{tril}, leading to a $(x, y)$ estimated location.
+When this function runs, the application enters a loop that continuously request the PSoC to perform a \gls{sdstwr} with each anchors. The data containing the different timestamps are transmitted towards the application for each anchor separately. From those data, the distance between each anchor and the tag is computed on the cellphone as well as the trilateration algorithm described in section \ref{tril}, leading to a $(x, y)$ estimated location. The biggest computations are done on the cellphone because of the bigger computational power available in comparison to the PSoC.
 \vspace{2mm}
 
-A detailed state machine coming from \cite{hannotier2019indoor} can be found in \color{red} make a link to an annex an put the state machine in annex \color{black} representing the state machine of an anchor and a tag. While the state machine of the anchor only perform one \gls{sdstwr} at a time, the tag needs to keep an history of the anchors contacted to perform the trilateration afterwards.
-
+A detailed state machine coming from \cite{hannotier2019indoor} can be found in \color{red} make a link to an annex and put the state machine in annex \color{black} representing the state machine of an anchor and a tag. While the state machine of the anchor only perform one \gls{sdstwr} at a time, the tag needs to keep an history of the anchors contacted to perform the trilateration afterwards.
 
 \subsubsection{Test USB connection, Test orientation}
 
@@ -291,8 +289,8 @@ An example is displayed on the Fig. \ref{fig:cir_ex1}. A ray tracing has been pe
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
-	\caption{Double image -> Vient de la simulation ?}
+	\includegraphics[width=.95\linewidth]{Images/Anchor-mpc.jpg}
+	\caption{}
 	\label{fig:cir_ex1}
 \end{figure}
 
@@ -300,7 +298,35 @@ As one can see, those different arrival time for each ray correspond to the diff
 
 \subsection{Virtual Anchors}
 
-\cite{meissner2010uwb}
+The concept of \gls{va} has been introduced in  \cite{meissner2010uwb}. While the anchors are some touchable devices, the \gls{va} are not physically implemented. In order to create those, one need to know the location of an anchor in a room as well as the exact geometry of the room. On Fig. \ref{fig:va_room}, the \gls{vas} have been created using the method of images. To find the location of the \gls{va} 1, the left wall act as the plane for an axial symmetry. From this, it is possible to extend this method to two reflections, two axial symmetries on two different walls would be needed in that case.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.6\linewidth]{Images/va_map.jpg}
+	\caption{Antenne VA example}
+	\label{fig:va_room}
+\end{figure}
+ 
+Using the theoretical \gls{cir} from Fig. \ref{fig:cir_ex1}, each peak which is associated to a reflected ray, can be considered as being the \gls{los} ray from a \gls{va} of Fig. \ref{fig:va_room}. The colors have been kept for the sake of clarity. The advantages of the methods of images is that the travelled distance by each ray as well as the angular distribution is kept unchanged.
+
+
+\subsection{Locating system \color{red} Name to be changed \color{black}}
+
+Based on the concept of \gls{vas} and \gls{cir}, several methods are proposed to find the localization of a tag in a room of known geometry using only one anchor.
+\vspace{2mm}
+
+In \cite{meissner2010mc}, the localization of a moving tag is proposed. This method uses the \gls{mpc} detected as well as the history of the position of the tag. The history of the locations of the tag are cross-correlated with the new detected position, the objective being to have some coherent behaviour.
+\vspace{2mm}
+
+In \cite{froehle2013cooperative}, the \gls{comint} proposed uses other tags in the room as anchor to perform the location in a room. Each tag, acting as a transceiver and a receiver, communicates with the other tags to compute its distance relatively to those tag. An algorithm is presented in this paper that combines those different informations to perform the localization.
+\vspace{2mm}
+
+In \cite{jespersen2018indoor}, a localization method providing the tag location without using a history of the previous locations is proposed. Using the \gls{cir}, several pulses are detected, each being equivalent to the \gls{tof} computed in the multiple anchor locating system previously presented. Nonetheless, there is a significant difference between both cases. In this method, each \gls{tof} is not associated with an anchor (Virtual or not). Without knowing the position of the tag, one can not attribute each peak to an anchor\footnote{An exception is done for the first peak, since the \gls{los} that originates from the physical anchor is assumed to be the shortest path.}.
+\vspace{2mm}
+
+Due to this difference, the system \ref{eq:syst_approx} needs to be solved multiple times. Depending on the number of peaks detected, permutations between each \gls{va} needs to be done to test all the possibilities. The objective is still to find the $p_0$ value that minimize the equation.
+
+
 
 % La on attaque la partie dure. Parler des ancres virtuelles, introduire le concept avec des schémas, montrer qu'on à dès lors besoin de la CIR.
 % Parler des articles qui expliquent la théorie avec du MPC.
