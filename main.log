@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  25 MAY 2020 10:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  26 MAY 2020 23:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -667,6 +667,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count313
+Package hyperref Info: Option `breaklinks' set `true' on input line 4421.
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
 Package hyperref Info: Hyper index ON on input line 4555.
@@ -1343,12 +1344,12 @@ Overfull \hbox (1.20134pt too wide) in paragraph at lines 18--20
 U-R)[] to be con-sid-ered as [][]UWB[],
  []
 
-<Images/uwb_bandwidth.png, id=146, 554.07pt x 300.12125pt>
+<Images/uwb_bandwidth.png, id=197, 554.07pt x 300.12125pt>
 File: Images/uwb_bandwidth.png Graphic file (type png)
 <use Images/uwb_bandwidth.png>
 Package pdftex.def Info: Images/uwb_bandwidth.png  used on input line 24.
 (pdftex.def)             Requested size: 273.14923pt x 147.95369pt.
-<Images/uwb_pulse.png, id=153, 303.1325pt x 272.01625pt>
+<Images/uwb_pulse.png, id=204, 303.1325pt x 272.01625pt>
 File: Images/uwb_pulse.png Graphic file (type png)
 <use Images/uwb_pulse.png>
 Package pdftex.def Info: Images/uwb_pulse.png  used on input line 42.
@@ -1361,104 +1362,101 @@ l.45 \end{figure}
                   [2
 
  <./Images/uwb_bandwidth.png>]
-<Images/mpc_pulses.png, id=180, 854.19125pt x 170.6375pt>
+<Images/mpc_pulses.png, id=230, 854.19125pt x 170.6375pt>
 File: Images/mpc_pulses.png Graphic file (type png)
 <use Images/mpc_pulses.png>
 Package pdftex.def Info: Images/mpc_pulses.png  used on input line 51.
 (pdftex.def)             Requested size: 409.71692pt x 81.84517pt.
  [3 <./Images/uwb_pulse.png> <./Images/mpc_pulses.png>]
-<Images/sds-twr.png, id=221, 758.835pt x 626.34pt>
+<Images/sds-twr.png, id=271, 758.835pt x 626.34pt>
 File: Images/sds-twr.png Graphic file (type png)
 <use Images/sds-twr.png>
 Package pdftex.def Info: Images/sds-twr.png  used on input line 78.
 (pdftex.def)             Requested size: 273.14923pt x 225.45355pt.
-<Images/trilateration.png, id=233, 376.40625pt x 323.2075pt>
+<Images/trilateration.png, id=283, 376.40625pt x 323.2075pt>
 File: Images/trilateration.png Graphic file (type png)
 <use Images/trilateration.png>
 Package pdftex.def Info: Images/trilateration.png  used on input line 105.
 (pdftex.def)             Requested size: 227.62206pt x 195.45483pt.
  [4 <./Images/sds-twr.png>] [5 <./Images/trilateration.png>]
-<Images/DWM1000.png, id=277, 436.63126pt x 334.24875pt>
+<Images/DWM1000.png, id=327, 436.63126pt x 334.24875pt>
 File: Images/DWM1000.png Graphic file (type png)
 <use Images/DWM1000.png>
 Package pdftex.def Info: Images/DWM1000.png  used on input line 150.
 (pdftex.def)             Requested size: 136.57462pt x 104.54938pt.
  [6 <./Images/DWM1000.png>]
-<Images/SPI_scheme.png, id=319, 1279.78125pt x 293.095pt>
+<Images/SPI_scheme.png, id=370, 1279.78125pt x 293.095pt>
 File: Images/SPI_scheme.png Graphic file (type png)
 <use Images/SPI_scheme.png>
 Package pdftex.def Info: Images/SPI_scheme.png  used on input line 185.
 (pdftex.def)             Requested size: 273.14923pt x 62.55354pt.
-<Images/esp8266.png, id=324, 399.4925pt x 203.76125pt>
+<Images/esp8266.png, id=375, 399.4925pt x 203.76125pt>
 File: Images/esp8266.png Graphic file (type png)
 <use Images/esp8266.png>
 Package pdftex.def Info: Images/esp8266.png  used on input line 196.
 (pdftex.def)             Requested size: 273.14923pt x 139.32687pt.
-<Images/Temporary_pic.png, id=332, 407.5225pt x 464.73625pt>
+<Images/Temporary_pic.png, id=383, 407.5225pt x 464.73625pt>
 File: Images/Temporary_pic.png Graphic file (type png)
 <use Images/Temporary_pic.png>
 Package pdftex.def Info: Images/Temporary_pic.png  used on input line 210.
 (pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
  [7 <./Images/SPI_scheme.png> <./Images/esp8266.png>]
-<Images/app_main.jpg, id=354, 2228.325pt x 1084.05pt>
+<Images/app_main.jpg, id=404, 2228.325pt x 1084.05pt>
 File: Images/app_main.jpg Graphic file (type jpg)
 <use Images/app_main.jpg>
 Package pdftex.def Info: Images/app_main.jpg  used on input line 223.
 (pdftex.def)             Requested size: 364.19667pt x 177.17332pt.
-<Images/little_room.png, id=357, 169.1537pt x 187.09027pt>
+<Images/little_room.png, id=407, 169.1537pt x 187.09027pt>
 File: Images/little_room.png Graphic file (type png)
 <use Images/little_room.png>
 Package pdftex.def Info: Images/little_room.png  used on input line 234.
 (pdftex.def)             Requested size: 182.09486pt x 201.41785pt.
  [8 <./Images/Temporary_pic.png> <./Images/app_main.jpg>] [9 <./Images/little_r
 oom.png>]
-<Images/test_map.png, id=381, 352.31625pt x 390.45876pt>
+<Images/test_map.png, id=431, 352.31625pt x 390.45876pt>
 File: Images/test_map.png Graphic file (type png)
 <use Images/test_map.png>
 Package pdftex.def Info: Images/test_map.png  used on input line 264.
 (pdftex.def)             Requested size: 159.33821pt x 176.58658pt.
-<Images/test_fig.png, id=387, 690.58pt x 371.3875pt>
+<Images/test_fig.png, id=437, 690.58pt x 371.3875pt>
 File: Images/test_fig.png Graphic file (type png)
 <use Images/test_fig.png>
 Package pdftex.def Info: Images/test_fig.png  used on input line 274.
 (pdftex.def)             Requested size: 364.19667pt x 195.86539pt.
  [10 <./Images/test_map.png> <./Images/test_fig.png>]
-<Images/Anchor-mpc.jpg, id=408, 2390.9325pt x 843.15pt>
+<Images/Anchor-mpc.jpg, id=458, 2390.9325pt x 843.15pt>
 File: Images/Anchor-mpc.jpg Graphic file (type jpg)
 <use Images/Anchor-mpc.jpg>
 Package pdftex.def Info: Images/Anchor-mpc.jpg  used on input line 292.
 (pdftex.def)             Requested size: 432.48051pt x 152.50664pt.
-<Images/va_map.jpg, id=416, 1124.2pt x 843.15pt>
+<Images/va_map.jpg, id=466, 1124.2pt x 843.15pt>
 File: Images/va_map.jpg Graphic file (type jpg)
 <use Images/va_map.jpg>
 Package pdftex.def Info: Images/va_map.jpg  used on input line 305.
 (pdftex.def)             Requested size: 273.14923pt x 204.85602pt.
- [11 <./Images/Anchor-mpc.jpg>]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\color' on input line 313.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\color' on input line 313.
-
-) (./src/Algorithms.tex [12 <./Images/va_map.jpg>]
+ [11 <./Images/Anchor-mpc.jpg>]) (./src/Algorithms.tex [12 <./Images/va_map.jpg
+>]
 Chapter 3.
-) (./src/simulation.tex [13
+<Images/algo_1.png, id=518, 454.69875pt x 280.04625pt>
+File: Images/algo_1.png Graphic file (type png)
+<use Images/algo_1.png>
+Package pdftex.def Info: Images/algo_1.png  used on input line 19.
+(pdftex.def)             Requested size: 295.90588pt x 182.25009pt.
+[13
 
-]
+ <./Images/algo_1.png>]) (./src/simulation.tex [14]
 Chapter 4.
-) (./src/experiences.tex [14
+) (./src/experiences.tex [15
 
 ]
 Chapter 5.
-) (./src/conclusion.tex [15
+) (./src/conclusion.tex [16
 
 ]
 Chapter 6.
 )
 No file main.gls.
-[16
+[17
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 8
@@ -1483,9 +1481,9 @@ Overfull \hbox (2.64894pt too wide) in paragraph at lines 83--83
 r high-accuracy multipath-
  []
 
-[17
+[18
 
-] [18]
+] [19]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
  (./main.aux)
@@ -1498,21 +1496,21 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: A74A71A1D08BCE91E471A5C87C52A239;1264
-(rerunfilecheck)             After:  D390EDF62FE2E5685DF189D817FBB6B6;1310.
+(rerunfilecheck)             Before: 7ECDFFFA1F8954856A7B495805F486D3;1863
+(rerunfilecheck)             After:  CEF5B79953E98ACA4E79EB76F90F51D3;2011.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 36310 strings out of 480608
- 707645 string characters out of 5903631
- 1353129 words of memory out of 5000000
- 51404 multiletter control sequences out of 15000+600000
+ 36340 strings out of 480608
+ 708065 string characters out of 5903631
+ 1353181 words of memory out of 5000000
+ 51419 multiletter control sequences out of 15000+600000
  551981 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,8n,79p,1020b,1800s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,8n,79p,1020b,1802s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:comint} has been referenced but does not exis
 t, replaced by a fixed one
 
@@ -1601,10 +1599,10 @@ t/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2020/texmf-dist/
 fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2020/texmf-dist/font
 s/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (23 pages, 5206771 bytes).
+Output written on main.pdf (24 pages, 5309629 bytes).
 PDF statistics:
- 595 PDF objects out of 1000 (max. 8388607)
- 506 compressed objects within 6 object streams
- 123 named destinations out of 1000 (max. 500000)
- 240 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 666 PDF objects out of 1000 (max. 8388607)
+ 574 compressed objects within 6 object streams
+ 137 named destinations out of 1000 (max. 500000)
+ 325 words of extra memory for PDF output out of 10000 (max. 10000000)
 

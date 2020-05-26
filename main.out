@@ -13,8 +13,19 @@
 \BOOKMARK [1][-]{section.2.4}{Multi-path aided locating system}{chapter.2}% 13
 \BOOKMARK [2][-]{subsection.2.4.1}{Channel Impulse Response}{section.2.4}% 14
 \BOOKMARK [2][-]{subsection.2.4.2}{Virtual Anchors}{section.2.4}% 15
-\BOOKMARK [2][-]{subsection.2.4.3}{Locating system red Name to be changed black}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.3}{Locating system}{section.2.4}% 16
 \BOOKMARK [0][-]{chapter.3}{Algorithms}{}% 17
-\BOOKMARK [0][-]{chapter.4}{Simulations}{}% 18
-\BOOKMARK [0][-]{chapter.5}{Experiences}{}% 19
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 20
+\BOOKMARK [1][-]{section.3.1}{ALGOS UTILES \(SPEED, DATA EXTRACTION}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{Speed-Up Algorithms}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.2.1}{Speed-Up 1}{section.3.2}% 20
+\BOOKMARK [2][-]{subsection.3.2.2}{Speed-Up 2}{section.3.2}% 21
+\BOOKMARK [1][-]{section.3.3}{Peaks Selection}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.4}{LOCATION METHOD, HARD VS SOFT}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.5}{Pos Finder}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.6}{CIR MSE}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.7}{Time MSE}{chapter.3}% 26
+\BOOKMARK [0][-]{chapter.4}{Simulations}{}% 27
+\BOOKMARK [1][-]{section.4.1}{Creation de la simulation}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.2}{R\351sultats de la simulation}{chapter.4}% 29
+\BOOKMARK [0][-]{chapter.5}{Experiences}{}% 30
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 31

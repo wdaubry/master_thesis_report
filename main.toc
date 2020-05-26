@@ -21,8 +21,19 @@
 \contentsline {section}{\numberline {2.4}Multi-path aided locating system}{11}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Channel Impulse Response}{11}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Virtual Anchors}{11}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Locating system \color {red} Name to be changed \color {black}}{12}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.3}Locating system}{12}{subsection.2.4.3}%
 \contentsline {chapter}{\numberline {3}Algorithms}{13}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Simulations}{14}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Experiences}{15}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusion}{16}{chapter.6}%
+\contentsline {section}{\numberline {3.1}ALGOS UTILES (SPEED, DATA EXTRACTION}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Speed-Up Algorithms}{13}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Speed-Up 1}{13}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Speed-Up 2}{14}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Peaks Selection}{14}{section.3.3}%
+\contentsline {section}{\numberline {3.4}LOCATION METHOD, HARD VS SOFT}{14}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Pos Finder}{14}{section.3.5}%
+\contentsline {section}{\numberline {3.6}CIR MSE}{14}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Time MSE}{14}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Simulations}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Creation de la simulation}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Résultats de la simulation}{15}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Experiences}{16}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusion}{17}{chapter.6}%
