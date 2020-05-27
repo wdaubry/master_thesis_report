@@ -1,5 +1,25 @@
 \chapter{Algorithms}
 
+\section{General algorithms}
+
+\subsection{Peak extraction}
+
+In order to use the \gls{cir} recovered either in the simulation or from the experimental set-up, those need to be processed. The major objective is to retrieve the different peaks that originates from the physical anchor and the \gls{vas}. Unfortunately, the \gls{cir} obtained is not as simple as shown in Fig. \ref{fig:UWB_MPC_Theo}. In order to obtain the same results, one would need some antennas with an infinite bandwidth\footnote{In order to obtain Dirac peaks, one need an infinite bandwidth since the $\delta(t) \xrightarrow{\mathscr{F}} 1 $}, a "clean" room and to receive to the receiver side only the rays coming from the \gls{los} or reflected once.
+\vspace{2mm}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
+\label{fig:cir_example}
+\caption{CIR example.}
+\end{figure}
+
+The \gls{cir} shown for Fig. \ref{fig:cir_example} has been generated in a rectangular cluttered room of 15 over 10m, filled with furnitures. The selected bandwidth is the same as for the experimental set-up : 499.2MHz. The positions of the tag have been kept the same as in Fig. \ref{fig:cir_ex1}. As one can observe on Fig. \ref{cir}, getting the different peaks is not as trivial.
+
+\section{Hard localization algorithm}
+
+
+
 \color{red}
 \section{ALGOS UTILES (SPEED, DATA EXTRACTION}
 \color{black}
@@ -26,10 +46,6 @@ From the position inside those boundaries, a mask matrix representing all the po
 \subsection{Speed-Up 2}
 
 Choix des ancres en utilsant l'algorithme numéro 1
-
-\section{Peaks Selection}
-
-Expliquer qu'on prend les 3 premiers pics qui ont une certaines erreur relative.
 
 \color{red}
 \section{LOCATION METHOD, HARD VS SOFT}
