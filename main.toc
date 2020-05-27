@@ -24,18 +24,17 @@
 \contentsline {subsection}{\numberline {2.4.3}Locating system}{12}{subsection.2.4.3}%
 \contentsline {chapter}{\numberline {3}Algorithms}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}General algorithms}{13}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Peak extraction}{13}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.1}Peaks extraction}{13}{subsection.3.1.1}%
 \contentsline {section}{\numberline {3.2}Hard localization algorithm}{14}{section.3.2}%
-\contentsline {section}{\numberline {3.3}ALGOS UTILES (SPEED, DATA EXTRACTION}{14}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Speed-Up Algorithms}{14}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Speed-Up 1}{14}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Speed-Up 2}{14}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}LOCATION METHOD, HARD VS SOFT}{14}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Pos Finder}{15}{section.3.6}%
-\contentsline {section}{\numberline {3.7}CIR MSE}{15}{section.3.7}%
-\contentsline {section}{\numberline {3.8}Time MSE}{15}{section.3.8}%
-\contentsline {chapter}{\numberline {4}Simulations}{16}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Creation de la simulation}{16}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Résultats de la simulation}{16}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Experiences}{17}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusion}{18}{chapter.6}%
+\contentsline {section}{\numberline {3.3}Soft localization algorithm}{15}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}CIR MSE}{15}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Time MSE}{15}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Speed-Up Algorithms}{15}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Speed-Up 1}{15}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Speed-Up 2}{16}{subsection.3.4.2}%
+\contentsline {chapter}{\numberline {4}Simulations}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Creation de la simulation}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Résultats de la simulation}{17}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Experiences}{18}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusion}{19}{chapter.6}%
+\contentsline {chapter}{Bibliography}{21}{appendix*.28}%
