@@ -19,7 +19,39 @@ The goal of the peak extraction function is, as the name states, to extract the 
 
 \subsection{Soft case}
 
-Expliquer la différence entre les deux algorithmes.
+For the soft locating system, the algorithm of the peak extraction is detailed in algo. \ref{algo:soft}. The algorithm takes as input a vector made of tuples, respectively the time and the amplitude of each point of the \gls{cir}. The $\texttt{n}$ parameter states the number of peaks that the algorithm needs to extract.
+\vspace{2mm}
+
+\SetKwInput{KwInput}{Inputs}
+\SetKwInput{KwInit}{Initialize}
+\SetKwInput{KwOutput}{Output}
+
+\begin{algorithm}[H]
+ \KwInput{}\
+ \hspace*{\algorithmicindent} $\mathtt{CIR} = \{\mathtt{cir}\} = \{ (\mathtt{t_i}, \mathtt{A_i}) ~\text{s.t.} ~\mathtt{i} \in \mathbb{N}_0\} \in \mathbb{R} \times \mathbb{R}, ~\mathtt{n} \in \mathbb{N}_0$ \;
+\KwInit{}\
+\hspace*{\algorithmicindent} $\texttt{Peaks[1]} \longleftarrow \texttt{max}(\texttt{CIR})$\;
+\hspace*{\algorithmicindent} $\texttt{CIR} \longleftarrow \texttt{CIR[}\texttt{max}_{\texttt{idx}}:\texttt{end]}$\;
+\hspace*{\algorithmicindent} $\texttt{i} \longleftarrow 2$\;
+\hspace*{\algorithmicindent} $\texttt{ratio} \longleftarrow 2$\;
+\hspace*{\algorithmicindent} $\texttt{ratio}_\texttt{max} \longleftarrow 100$\;
+ \While{$\texttt{i} \leq  \texttt{n}$ and $\texttt{ratio} \leq \texttt{ratio}_{\texttt{max}}$}{	
+	\For{$\texttt{el}$ in $\texttt{CIR}$}{
+    \If{$\texttt{prom}(\texttt{el}) > \texttt{max}(\texttt{CIR})/\texttt{ratio}$}{
+    $\texttt{Peaks[i]} \longleftarrow \texttt{el}$\;
+    $\texttt{i} \longleftarrow \texttt{i} + 1$\;
+    }
+   }
+   $\texttt{ratio} \longleftarrow \texttt{ratio} + 1$
+ }
+ \KwOutput{}\
+ \hspace*{\algorithmicindent} $\texttt{Peaks}$\;
+ \caption{Peaks Extraction - Soft case \label{algo:soft}}
+\end{algorithm}
+
+During the initialization phase, the maximum value of the \gls{cir} is 
+
+
 
 \subsection{Hard case}
 
