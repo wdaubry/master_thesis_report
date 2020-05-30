@@ -122,6 +122,38 @@
     \field{year}{2017}
   \endentry
 
+  \entry{donoho1989uncertainty}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DDL}{%
+         family={Donoho},
+         familyi={D\bibinitperiod},
+         given={David\bibnamedelima L},
+         giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=SPB}{%
+         family={Stark},
+         familyi={S\bibinitperiod},
+         given={Philip\bibnamedelima B},
+         giveni={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{DDLSPB1}
+    \strng{fullhash}{DDLSPB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{3}
+    \field{pages}{906\bibrangedash 931}
+    \field{title}{Uncertainty principles and signal recovery}
+    \field{volume}{49}
+    \field{journaltitle}{SIAM Journal on Applied Mathematics}
+    \field{year}{1989}
+  \endentry
+
   \entry{esp8266}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{E}
