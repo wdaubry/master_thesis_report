@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  31 MAY 2020 13:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  31 MAY 2020 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1422,7 +1422,7 @@ Overfull \hbox (1.20134pt too wide) in paragraph at lines 18--20
 U-R)[] to be con-sid-ered as [][]UWB[],
  []
 
-<Images/uwb_bandwidth.png, id=278, 554.07pt x 300.12125pt>
+<Images/uwb_bandwidth.png, id=273, 554.07pt x 300.12125pt>
 File: Images/uwb_bandwidth.png Graphic file (type png)
 <use Images/uwb_bandwidth.png>
 Package pdftex.def Info: Images/uwb_bandwidth.png  used on input line 24.
@@ -1435,100 +1435,102 @@ l.35 \end{equation}
                     [2
 
  <./Images/uwb_bandwidth.png>]
-<Images/uwb_pulse.png, id=301, 303.1325pt x 272.01625pt>
+<Images/uwb_pulse.png, id=296, 303.1325pt x 272.01625pt>
 File: Images/uwb_pulse.png Graphic file (type png)
 <use Images/uwb_pulse.png>
 Package pdftex.def Info: Images/uwb_pulse.png  used on input line 41.
 (pdftex.def)             Requested size: 182.09486pt x 163.40608pt.
-<Images/mpc_pulses.png, id=309, 854.19125pt x 170.6375pt>
+<Images/mpc_pulses.png, id=304, 854.19125pt x 170.6375pt>
 File: Images/mpc_pulses.png Graphic file (type png)
 <use Images/mpc_pulses.png>
 Package pdftex.def Info: Images/mpc_pulses.png  used on input line 50.
 (pdftex.def)             Requested size: 409.71692pt x 81.84517pt.
  [3 <./Images/uwb_pulse.png> <./Images/mpc_pulses.png>]
-<Images/sds-twr.png, id=352, 758.835pt x 626.34pt>
+<Images/sds-twr.png, id=347, 758.835pt x 626.34pt>
 File: Images/sds-twr.png Graphic file (type png)
 <use Images/sds-twr.png>
 Package pdftex.def Info: Images/sds-twr.png  used on input line 75.
 (pdftex.def)             Requested size: 273.14923pt x 225.45355pt.
  [4 <./Images/sds-twr.png>]
-<Images/trilateration.png, id=382, 376.40625pt x 323.2075pt>
+<Images/trilateration.png, id=377, 376.40625pt x 323.2075pt>
 File: Images/trilateration.png Graphic file (type png)
 <use Images/trilateration.png>
 Package pdftex.def Info: Images/trilateration.png  used on input line 102.
 (pdftex.def)             Requested size: 227.62206pt x 195.45483pt.
  [5 <./Images/trilateration.png>]
-<Images/DWM1000.png, id=411, 436.63126pt x 334.24875pt>
+<Images/DWM1000.png, id=406, 436.63126pt x 334.24875pt>
 File: Images/DWM1000.png Graphic file (type png)
 <use Images/DWM1000.png>
 Package pdftex.def Info: Images/DWM1000.png  used on input line 150.
 (pdftex.def)             Requested size: 136.57462pt x 104.54938pt.
  [6 <./Images/DWM1000.png>]
-<Images/SPI_scheme.png, id=450, 1279.78125pt x 293.095pt>
+<Images/SPI_scheme.png, id=445, 1279.78125pt x 293.095pt>
 File: Images/SPI_scheme.png Graphic file (type png)
 <use Images/SPI_scheme.png>
 Package pdftex.def Info: Images/SPI_scheme.png  used on input line 184.
 (pdftex.def)             Requested size: 273.14923pt x 62.55354pt.
-<Images/esp8266.png, id=455, 399.4925pt x 203.76125pt>
+<Images/esp8266.png, id=450, 399.4925pt x 203.76125pt>
 File: Images/esp8266.png Graphic file (type png)
 <use Images/esp8266.png>
 Package pdftex.def Info: Images/esp8266.png  used on input line 195.
 (pdftex.def)             Requested size: 273.14923pt x 139.32687pt.
  [7 <./Images/SPI_scheme.png> <./Images/esp8266.png>]
-<Images/Temporary_pic.png, id=481, 407.5225pt x 464.73625pt>
-File: Images/Temporary_pic.png Graphic file (type png)
-<use Images/Temporary_pic.png>
-Package pdftex.def Info: Images/Temporary_pic.png  used on input line 209.
-(pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
-<Images/app_main.jpg, id=484, 2228.325pt x 1084.05pt>
-File: Images/app_main.jpg Graphic file (type jpg)
-<use Images/app_main.jpg>
-Package pdftex.def Info: Images/app_main.jpg  used on input line 223.
-(pdftex.def)             Requested size: 364.19667pt x 177.17332pt.
- [8 <./Images/Temporary_pic.png> <./Images/app_main.jpg>]
-<Images/little_room.png, id=496, 169.1537pt x 187.09027pt>
+<Images/psoc.png, id=476, 578.16pt x 440.64626pt>
+File: Images/psoc.png Graphic file (type png)
+<use Images/psoc.png>
+Package pdftex.def Info: Images/psoc.png  used on input line 209.
+(pdftex.def)             Requested size: 250.38564pt x 190.83238pt.
+<Images/little_room.png, id=481, 169.1537pt x 187.09027pt>
 File: Images/little_room.png Graphic file (type png)
 <use Images/little_room.png>
-Package pdftex.def Info: Images/little_room.png  used on input line 234.
+Package pdftex.def Info: Images/little_room.png  used on input line 226.
 (pdftex.def)             Requested size: 182.09486pt x 201.41785pt.
+ [8 <./Images/psoc.png>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-46.
+38.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-<Images/angles_gsm.png, id=501, 550.055pt x 372.39125pt>
+<Images/angles_gsm.png, id=497, 550.055pt x 372.39125pt>
 File: Images/angles_gsm.png Graphic file (type png)
 <use Images/angles_gsm.png>
-Package pdftex.def Info: Images/angles_gsm.png  used on input line 253.
+Package pdftex.def Info: Images/angles_gsm.png  used on input line 245.
 (pdftex.def)             Requested size: 273.14923pt x 184.92802pt.
- [9 <./Images/little_room.png>]
-<Images/test_map.png, id=514, 352.31625pt x 390.45876pt>
+
+
+LaTeX Warning: Citation 'mathworks' on page 9 undefined on input line 246.
+
+
+LaTeX Warning: Citation 'mathworks' on page 9 undefined on input line 246.
+
+[9 <./Images/little_room.png>]
+<Images/test_map.png, id=507, 352.31625pt x 390.45876pt>
 File: Images/test_map.png Graphic file (type png)
 <use Images/test_map.png>
-Package pdftex.def Info: Images/test_map.png  used on input line 272.
+Package pdftex.def Info: Images/test_map.png  used on input line 264.
 (pdftex.def)             Requested size: 159.33821pt x 176.58658pt.
  [10 <./Images/angles_gsm.png> <./Images/test_map.png>]
-<Images/test_fig.png, id=530, 690.58pt x 371.3875pt>
+<Images/test_fig.png, id=523, 690.58pt x 371.3875pt>
 File: Images/test_fig.png Graphic file (type png)
 <use Images/test_fig.png>
-Package pdftex.def Info: Images/test_fig.png  used on input line 282.
+Package pdftex.def Info: Images/test_fig.png  used on input line 274.
 (pdftex.def)             Requested size: 364.19667pt x 195.86539pt.
-<Images/Anchor-mpc.jpg, id=543, 2390.9325pt x 843.15pt>
+<Images/Anchor-mpc.jpg, id=536, 2390.9325pt x 843.15pt>
 File: Images/Anchor-mpc.jpg Graphic file (type jpg)
 <use Images/Anchor-mpc.jpg>
-Package pdftex.def Info: Images/Anchor-mpc.jpg  used on input line 304.
+Package pdftex.def Info: Images/Anchor-mpc.jpg  used on input line 296.
 (pdftex.def)             Requested size: 432.48051pt x 152.50664pt.
  [11 <./Images/test_fig.png>]
-<Images/va_map.jpg, id=560, 1124.2pt x 843.15pt>
+<Images/va_map.jpg, id=553, 1124.2pt x 843.15pt>
 File: Images/va_map.jpg Graphic file (type jpg)
 <use Images/va_map.jpg>
-Package pdftex.def Info: Images/va_map.jpg  used on input line 317.
+Package pdftex.def Info: Images/va_map.jpg  used on input line 309.
 (pdftex.def)             Requested size: 273.14923pt x 204.85602pt.
- [12 <./Images/Anchor-mpc.jpg> <./Images/va_map.jpg>])
-(./src/Algorithms.tex [13]
+ [12 <./Images/Anchor-mpc.jpg> <./Images/va_map.jpg>]) (./src/Algorithms.tex [1
+3]
 Chapter 3.
-<Images/cir_theo_real.png, id=606, 2708.1175pt x 843.15pt>
+<Images/cir_theo_real.png, id=600, 2708.1175pt x 843.15pt>
 File: Images/cir_theo_real.png Graphic file (type png)
 <use Images/cir_theo_real.png>
 Package pdftex.def Info: Images/cir_theo_real.png  used on input line 11.
@@ -1536,36 +1538,36 @@ Package pdftex.def Info: Images/cir_theo_real.png  used on input line 11.
 [14
 
  <./Images/cir_theo_real.png (PNG copy)>]
-<Images/prominence.png, id=623, 454.69875pt x 503.8825pt>
+<Images/prominence.png, id=618, 454.69875pt x 503.8825pt>
 File: Images/prominence.png Graphic file (type png)
 <use Images/prominence.png>
 Package pdftex.def Info: Images/prominence.png  used on input line 59.
 (pdftex.def)             Requested size: 136.57462pt x 151.35043pt.
  [15] [16 <./Images/prominence.png>]
-<Images/antenna_combined.png, id=662, 1038.88126pt x 407.5225pt>
+<Images/antenna_combined.png, id=656, 1038.88126pt x 407.5225pt>
 File: Images/antenna_combined.png Graphic file (type png)
 <use Images/antenna_combined.png>
 Package pdftex.def Info: Images/antenna_combined.png  used on input line 110.
 (pdftex.def)             Requested size: 455.24411pt x 178.57669pt.
  [17 <./Images/antenna_combined.png>]
-<Images/Fig_inf_to_fin.png, id=686, 1124.2pt x 843.15pt>
+<Images/Fig_inf_to_fin.png, id=680, 1124.2pt x 843.15pt>
 File: Images/Fig_inf_to_fin.png Graphic file (type png)
 <use Images/Fig_inf_to_fin.png>
 Package pdftex.def Info: Images/Fig_inf_to_fin.png  used on input line 124.
 (pdftex.def)             Requested size: 250.38564pt x 187.78362pt.
  [18 <./Images/Fig_inf_to_fin.png (PNG copy)>]
-<Images/algo_1.png, id=710, 454.69875pt x 280.04625pt>
+<Images/algo_1.png, id=704, 454.69875pt x 280.04625pt>
 File: Images/algo_1.png Graphic file (type png)
 <use Images/algo_1.png>
 Package pdftex.def Info: Images/algo_1.png  used on input line 161.
 (pdftex.def)             Requested size: 295.90588pt x 182.25009pt.
  [19 <./Images/algo_1.png>]
-<Images/inf_vs_fin.png, id=724, 2328.7pt x 764.8575pt>
+<Images/inf_vs_fin.png, id=718, 2328.7pt x 764.8575pt>
 File: Images/inf_vs_fin.png Graphic file (type png)
 <use Images/inf_vs_fin.png>
 Package pdftex.def Info: Images/inf_vs_fin.png  used on input line 174.
 (pdftex.def)             Requested size: 455.24411pt x 149.51424pt.
-<Images/mse_map_algo.png, id=735, 2890.8pt x 1505.625pt>
+<Images/mse_map_algo.png, id=729, 2890.8pt x 1505.625pt>
 File: Images/mse_map_algo.png Graphic file (type png)
 <use Images/mse_map_algo.png>
 Package pdftex.def Info: Images/mse_map_algo.png  used on input line 196.
@@ -1585,9 +1587,14 @@ Chapter 6.
 
 ]
 Appendix A.
+<Images/app_main.jpg, id=756, 1084.05pt x 2228.325pt>
+File: Images/app_main.jpg Graphic file (type jpg)
+<use Images/app_main.jpg>
+Package pdftex.def Info: Images/app_main.jpg  used on input line 6.
+(pdftex.def)             Requested size: 182.09486pt x 374.28804pt.
 ) (./src/state_machine.tex [25
 
-]
+ <./Images/app_main.jpg>]
 Appendix B.
 )
 No file main.gls.
@@ -1620,16 +1627,25 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3D23A7D8A38B9264E5D143FD69A72066;3056.
+(rerunfilecheck)             Checksum: 3CF1AA059761379EC036118AFBA53FEC;3005.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 37904 strings out of 480608
- 733130 string characters out of 5903631
- 1388609 words of memory out of 5000000
+ 37903 strings out of 480608
+ 733066 string characters out of 5903631
+ 1388698 words of memory out of 5000000
  52896 multiletter control sequences out of 15000+600000
  556680 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1733,10 +1749,10 @@ type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/public/cm-super/sfti1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/public/cm-super/sftt0800.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 public/cm-super/sftt1200.pfb>
-Output written on main.pdf (34 pages, 6079797 bytes).
+Output written on main.pdf (34 pages, 6881231 bytes).
 PDF statistics:
- 921 PDF objects out of 1000 (max. 8388607)
- 797 compressed objects within 8 object streams
- 176 named destinations out of 1000 (max. 500000)
- 480 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 917 PDF objects out of 1000 (max. 8388607)
+ 793 compressed objects within 8 object streams
+ 175 named destinations out of 1000 (max. 500000)
+ 472 words of extra memory for PDF output out of 10000 (max. 10000000)
 

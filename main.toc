@@ -14,25 +14,24 @@
 \contentsline {subsection}{\numberline {2.3.2}Anchor}{7}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Tag}{8}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Android Application}{8}{subsection.2.3.4}%
-\contentsline {subsubsection}{Navigation}{9}{section*.17}%
-\contentsline {subsubsection}{Test USB connection, Test orientation}{9}{section*.19}%
-\contentsline {subsubsection}{Calibration}{10}{section*.21}%
+\contentsline {subsubsection}{Navigation}{8}{section*.16}%
+\contentsline {subsubsection}{Test USB connection, Test orientation}{9}{section*.18}%
+\contentsline {subsubsection}{Calibration}{10}{section*.20}%
 \contentsline {subsection}{\numberline {2.3.5}Precision obtained}{10}{subsection.2.3.5}%
 \contentsline {section}{\numberline {2.4}Multi-path aided locating system}{11}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Channel Impulse Response}{11}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Virtual Anchors}{12}{subsection.2.4.2}%
 \contentsline {subsection}{\numberline {2.4.3}Locating system}{13}{subsection.2.4.3}%
 \contentsline {chapter}{\numberline {3}Algorithms}{14}{chapter.3}%
-\contentsline {section}{\numberline {3.1}mpls}{14}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Peaks extraction}{14}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Soft case}{15}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Hard case}{16}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Hard localization algorithm}{16}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Virtual antennas combination}{17}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}System solver}{18}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Soft localization algorithm}{19}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Space solution reduction}{19}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Time MSE}{20}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.1}Peaks extraction}{14}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Soft case}{15}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Hard case}{16}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Hard localization algorithm}{16}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Virtual antennas combination}{17}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}System solver}{18}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Soft localization algorithm}{19}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Space solution reduction}{19}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Time MSE}{20}{subsection.3.3.2}%
 \contentsline {chapter}{\numberline {4}Simulations}{22}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Creation de la simulation}{22}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Paramètres de la simulations, antennes, murs, etc ?}{22}{subsection.4.1.1}%
