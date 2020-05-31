@@ -95,13 +95,12 @@ The term $e_1 - e_2$ being the difference between the internal clocks of both de
 \subsection{Trilateration}
 \label{tril}
 
-The \gls{sdstwr} allowing us to compute the \gls{tof}, the relative distance can be computed using the light celerity. If the relative distance between a tag and three different anchors is known, it is possible to compute the intersection of three circle having as center the position of the anchor and radius corresponding to the \gls{tof} associated to this anchor. A scheme displaying that solution can be seen on Fig. \ref{fig:triangulation}.
+The \gls{sdstwr} allowing us to compute the \gls{tof}, the relative distance can be computed using the light celerity. If the relative distance between a tag and three different anchors is known, it is possible to compute the intersection of three circle having as center the position of the anchor and radius corresponding to the \gls{tof} associated to this anchor. A scheme displaying that solution can be seen on Fig. \ref{fig:trilateration}.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=.5\linewidth]{Images/trilateration.png}
-\caption{Trilateration}
-\label{fig:trilateration}
+\caption{Trilateration \label{fig:trilateration}}
 \end{figure}
 
 As one can deduce, in a two dimensional  plan, three anchors are needed to have an intersection of only one point, removing the uncertainty on the solution. If only two anchors where used, one would obtain two possible solution : $Tag$ and $U_{XY}$. In a three dimensional space, four anchors would be needed. This actually corresponds to 
@@ -288,6 +287,7 @@ For each location, the measurement was repeated a hundred times. The error remai
 To achieve a better localization, anchors can be added. It has the advantage to add an equation to the system shown in eq. \ref{eq:syst_approx}, which, if the new anchor gives some coherent measure, improves the estimation of the localization. The drawback is that it will slow done the actualization of the position, since the tag has to communicate with more anchors. Such an algorithm dealing with four anchors is presented in \cite{guyard2019navigation}.
 
 \section{Multi-path aided locating system}
+\label{mpls}
 
 \color{red} Rajouter un fil rouge du fonctionnement \color{black}
 

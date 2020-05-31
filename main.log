@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  30 MAY 2020 14:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  31 MAY 2020 13:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1422,7 +1422,7 @@ Overfull \hbox (1.20134pt too wide) in paragraph at lines 18--20
 U-R)[] to be con-sid-ered as [][]UWB[],
  []
 
-<Images/uwb_bandwidth.png, id=288, 554.07pt x 300.12125pt>
+<Images/uwb_bandwidth.png, id=278, 554.07pt x 300.12125pt>
 File: Images/uwb_bandwidth.png Graphic file (type png)
 <use Images/uwb_bandwidth.png>
 Package pdftex.def Info: Images/uwb_bandwidth.png  used on input line 24.
@@ -1435,97 +1435,92 @@ l.35 \end{equation}
                     [2
 
  <./Images/uwb_bandwidth.png>]
-<Images/uwb_pulse.png, id=311, 303.1325pt x 272.01625pt>
+<Images/uwb_pulse.png, id=301, 303.1325pt x 272.01625pt>
 File: Images/uwb_pulse.png Graphic file (type png)
 <use Images/uwb_pulse.png>
 Package pdftex.def Info: Images/uwb_pulse.png  used on input line 41.
 (pdftex.def)             Requested size: 182.09486pt x 163.40608pt.
-<Images/mpc_pulses.png, id=319, 854.19125pt x 170.6375pt>
+<Images/mpc_pulses.png, id=309, 854.19125pt x 170.6375pt>
 File: Images/mpc_pulses.png Graphic file (type png)
 <use Images/mpc_pulses.png>
 Package pdftex.def Info: Images/mpc_pulses.png  used on input line 50.
 (pdftex.def)             Requested size: 409.71692pt x 81.84517pt.
  [3 <./Images/uwb_pulse.png> <./Images/mpc_pulses.png>]
-<Images/sds-twr.png, id=362, 758.835pt x 626.34pt>
+<Images/sds-twr.png, id=352, 758.835pt x 626.34pt>
 File: Images/sds-twr.png Graphic file (type png)
 <use Images/sds-twr.png>
 Package pdftex.def Info: Images/sds-twr.png  used on input line 75.
 (pdftex.def)             Requested size: 273.14923pt x 225.45355pt.
-
-
-LaTeX Warning: Reference `fig:triangulation' on page 4 undefined on input line 
-98.
-
-[4 <./Images/sds-twr.png>]
-<Images/trilateration.png, id=391, 376.40625pt x 323.2075pt>
+ [4 <./Images/sds-twr.png>]
+<Images/trilateration.png, id=382, 376.40625pt x 323.2075pt>
 File: Images/trilateration.png Graphic file (type png)
 <use Images/trilateration.png>
 Package pdftex.def Info: Images/trilateration.png  used on input line 102.
 (pdftex.def)             Requested size: 227.62206pt x 195.45483pt.
  [5 <./Images/trilateration.png>]
-<Images/DWM1000.png, id=420, 436.63126pt x 334.24875pt>
+<Images/DWM1000.png, id=411, 436.63126pt x 334.24875pt>
 File: Images/DWM1000.png Graphic file (type png)
 <use Images/DWM1000.png>
-Package pdftex.def Info: Images/DWM1000.png  used on input line 151.
+Package pdftex.def Info: Images/DWM1000.png  used on input line 150.
 (pdftex.def)             Requested size: 136.57462pt x 104.54938pt.
  [6 <./Images/DWM1000.png>]
-<Images/SPI_scheme.png, id=459, 1279.78125pt x 293.095pt>
+<Images/SPI_scheme.png, id=450, 1279.78125pt x 293.095pt>
 File: Images/SPI_scheme.png Graphic file (type png)
 <use Images/SPI_scheme.png>
-Package pdftex.def Info: Images/SPI_scheme.png  used on input line 185.
+Package pdftex.def Info: Images/SPI_scheme.png  used on input line 184.
 (pdftex.def)             Requested size: 273.14923pt x 62.55354pt.
-<Images/esp8266.png, id=464, 399.4925pt x 203.76125pt>
+<Images/esp8266.png, id=455, 399.4925pt x 203.76125pt>
 File: Images/esp8266.png Graphic file (type png)
 <use Images/esp8266.png>
-Package pdftex.def Info: Images/esp8266.png  used on input line 196.
+Package pdftex.def Info: Images/esp8266.png  used on input line 195.
 (pdftex.def)             Requested size: 273.14923pt x 139.32687pt.
  [7 <./Images/SPI_scheme.png> <./Images/esp8266.png>]
-<Images/Temporary_pic.png, id=491, 407.5225pt x 464.73625pt>
+<Images/Temporary_pic.png, id=481, 407.5225pt x 464.73625pt>
 File: Images/Temporary_pic.png Graphic file (type png)
 <use Images/Temporary_pic.png>
-Package pdftex.def Info: Images/Temporary_pic.png  used on input line 210.
+Package pdftex.def Info: Images/Temporary_pic.png  used on input line 209.
 (pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
-<Images/app_main.jpg, id=494, 2228.325pt x 1084.05pt>
+<Images/app_main.jpg, id=484, 2228.325pt x 1084.05pt>
 File: Images/app_main.jpg Graphic file (type jpg)
 <use Images/app_main.jpg>
-Package pdftex.def Info: Images/app_main.jpg  used on input line 224.
+Package pdftex.def Info: Images/app_main.jpg  used on input line 223.
 (pdftex.def)             Requested size: 364.19667pt x 177.17332pt.
  [8 <./Images/Temporary_pic.png> <./Images/app_main.jpg>]
-<Images/little_room.png, id=505, 169.1537pt x 187.09027pt>
+<Images/little_room.png, id=496, 169.1537pt x 187.09027pt>
 File: Images/little_room.png Graphic file (type png)
 <use Images/little_room.png>
-Package pdftex.def Info: Images/little_room.png  used on input line 235.
+Package pdftex.def Info: Images/little_room.png  used on input line 234.
 (pdftex.def)             Requested size: 182.09486pt x 201.41785pt.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-47.
+46.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-<Images/angles_gsm.png, id=510, 550.055pt x 372.39125pt>
+<Images/angles_gsm.png, id=501, 550.055pt x 372.39125pt>
 File: Images/angles_gsm.png Graphic file (type png)
 <use Images/angles_gsm.png>
-Package pdftex.def Info: Images/angles_gsm.png  used on input line 254.
+Package pdftex.def Info: Images/angles_gsm.png  used on input line 253.
 (pdftex.def)             Requested size: 273.14923pt x 184.92802pt.
  [9 <./Images/little_room.png>]
-<Images/test_map.png, id=523, 352.31625pt x 390.45876pt>
+<Images/test_map.png, id=514, 352.31625pt x 390.45876pt>
 File: Images/test_map.png Graphic file (type png)
 <use Images/test_map.png>
-Package pdftex.def Info: Images/test_map.png  used on input line 273.
+Package pdftex.def Info: Images/test_map.png  used on input line 272.
 (pdftex.def)             Requested size: 159.33821pt x 176.58658pt.
  [10 <./Images/angles_gsm.png> <./Images/test_map.png>]
-<Images/test_fig.png, id=539, 690.58pt x 371.3875pt>
+<Images/test_fig.png, id=530, 690.58pt x 371.3875pt>
 File: Images/test_fig.png Graphic file (type png)
 <use Images/test_fig.png>
-Package pdftex.def Info: Images/test_fig.png  used on input line 283.
+Package pdftex.def Info: Images/test_fig.png  used on input line 282.
 (pdftex.def)             Requested size: 364.19667pt x 195.86539pt.
-<Images/Anchor-mpc.jpg, id=552, 2390.9325pt x 843.15pt>
+<Images/Anchor-mpc.jpg, id=543, 2390.9325pt x 843.15pt>
 File: Images/Anchor-mpc.jpg Graphic file (type jpg)
 <use Images/Anchor-mpc.jpg>
 Package pdftex.def Info: Images/Anchor-mpc.jpg  used on input line 304.
 (pdftex.def)             Requested size: 432.48051pt x 152.50664pt.
  [11 <./Images/test_fig.png>]
-<Images/va_map.jpg, id=569, 1124.2pt x 843.15pt>
+<Images/va_map.jpg, id=560, 1124.2pt x 843.15pt>
 File: Images/va_map.jpg Graphic file (type jpg)
 <use Images/va_map.jpg>
 Package pdftex.def Info: Images/va_map.jpg  used on input line 317.
@@ -1533,13 +1528,7 @@ Package pdftex.def Info: Images/va_map.jpg  used on input line 317.
  [12 <./Images/Anchor-mpc.jpg> <./Images/va_map.jpg>])
 (./src/Algorithms.tex [13]
 Chapter 3.
-
-Overfull \hbox (17.9388pt too wide) in paragraph at lines 3--4
-[]\T1/cmr/m/n/12 Dire qu'on va présen-ter deux al-go-rithmes dif-férents, mais 
-qu'avant on ex-plique l'extraction.
- []
-
-<Images/cir_theo_real.png, id=613, 2708.1175pt x 843.15pt>
+<Images/cir_theo_real.png, id=606, 2708.1175pt x 843.15pt>
 File: Images/cir_theo_real.png Graphic file (type png)
 <use Images/cir_theo_real.png>
 Package pdftex.def Info: Images/cir_theo_real.png  used on input line 11.
@@ -1547,55 +1536,62 @@ Package pdftex.def Info: Images/cir_theo_real.png  used on input line 11.
 [14
 
  <./Images/cir_theo_real.png (PNG copy)>]
-File: Images/Temporary_pic.png Graphic file (type png)
-<use Images/Temporary_pic.png>
-Package pdftex.def Info: Images/Temporary_pic.png  used on input line 63.
-(pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
-
-
-LaTeX Warning: Reference `cir' on page 15 undefined on input line 67.
-
-[15]
-
-LaTeX Warning: Reference `fig:triangulation' on page 16 undefined on input line
- 101.
-
-File: Images/Temporary_pic.png Graphic file (type png)
-<use Images/Temporary_pic.png>
-Package pdftex.def Info: Images/Temporary_pic.png  used on input line 112.
-(pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
-[16]
-File: Images/Temporary_pic.png Graphic file (type png)
-<use Images/Temporary_pic.png>
-Package pdftex.def Info: Images/Temporary_pic.png  used on input line 126.
-(pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
- [17]
-<Images/algo_1.png, id=705, 454.69875pt x 280.04625pt>
+<Images/prominence.png, id=623, 454.69875pt x 503.8825pt>
+File: Images/prominence.png Graphic file (type png)
+<use Images/prominence.png>
+Package pdftex.def Info: Images/prominence.png  used on input line 59.
+(pdftex.def)             Requested size: 136.57462pt x 151.35043pt.
+ [15] [16 <./Images/prominence.png>]
+<Images/antenna_combined.png, id=662, 1038.88126pt x 407.5225pt>
+File: Images/antenna_combined.png Graphic file (type png)
+<use Images/antenna_combined.png>
+Package pdftex.def Info: Images/antenna_combined.png  used on input line 110.
+(pdftex.def)             Requested size: 455.24411pt x 178.57669pt.
+ [17 <./Images/antenna_combined.png>]
+<Images/Fig_inf_to_fin.png, id=686, 1124.2pt x 843.15pt>
+File: Images/Fig_inf_to_fin.png Graphic file (type png)
+<use Images/Fig_inf_to_fin.png>
+Package pdftex.def Info: Images/Fig_inf_to_fin.png  used on input line 124.
+(pdftex.def)             Requested size: 250.38564pt x 187.78362pt.
+ [18 <./Images/Fig_inf_to_fin.png (PNG copy)>]
+<Images/algo_1.png, id=710, 454.69875pt x 280.04625pt>
 File: Images/algo_1.png Graphic file (type png)
 <use Images/algo_1.png>
-Package pdftex.def Info: Images/algo_1.png  used on input line 167.
+Package pdftex.def Info: Images/algo_1.png  used on input line 161.
 (pdftex.def)             Requested size: 295.90588pt x 182.25009pt.
- [18]) (./src/simulation.tex [19 <./Images/algo_1.png>]
+ [19 <./Images/algo_1.png>]
+<Images/inf_vs_fin.png, id=724, 2328.7pt x 764.8575pt>
+File: Images/inf_vs_fin.png Graphic file (type png)
+<use Images/inf_vs_fin.png>
+Package pdftex.def Info: Images/inf_vs_fin.png  used on input line 174.
+(pdftex.def)             Requested size: 455.24411pt x 149.51424pt.
+<Images/mse_map_algo.png, id=735, 2890.8pt x 1505.625pt>
+File: Images/mse_map_algo.png Graphic file (type png)
+<use Images/mse_map_algo.png>
+Package pdftex.def Info: Images/mse_map_algo.png  used on input line 196.
+(pdftex.def)             Requested size: 455.24411pt x 237.09125pt.
+) [20 <./Images/inf_vs_fin.png (PNG copy)>]
+(./src/simulation.tex [21 <./Images/mse_map_algo.png (PNG copy)>]
 Chapter 4.
-) (./src/experiences.tex [20
+) (./src/experiences.tex [22
 
 ]
 Chapter 5.
-) (./src/conclusion.tex [21
+) (./src/conclusion.tex [23
 
 ]
 Chapter 6.
-) (./src/app_view.tex [22
+) (./src/app_view.tex [24
 
 ]
 Appendix A.
-) (./src/state_machine.tex [23
+) (./src/state_machine.tex [25
 
 ]
 Appendix B.
 )
 No file main.gls.
-[24
+[26
 
 ]
 Overfull \hbox (6.93697pt too wide) in paragraph at lines 90--90
@@ -1615,35 +1611,34 @@ Overfull \hbox (2.64894pt too wide) in paragraph at lines 90--90
 r high-accuracy multipath-
  []
 
-[25
+[27
 
-] [26]
+] [28]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: AE875229D714B711846EB342EF57E428;3182.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 3D23A7D8A38B9264E5D143FD69A72066;3056.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 37841 strings out of 480608
- 731924 string characters out of 5903631
- 1387488 words of memory out of 5000000
- 52842 multiletter control sequences out of 15000+600000
+ 37904 strings out of 480608
+ 733130 string characters out of 5903631
+ 1388609 words of memory out of 5000000
+ 52896 multiletter control sequences out of 15000+600000
  556680 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,21n,79p,1020b,2460s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{glo:comint} has been referenced but does not exis
-t, replaced by a fixed one
+ 63i,18n,79p,1020b,2437s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{glo:mse} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:comint} has been referenced but does not exist,
+ replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:va} has been referenced but does not exist, rep
 laced by a fixed one
@@ -1724,25 +1719,24 @@ ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
 0/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2020
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2020/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
-20/texmf-dist/fonts/type1/public/rsfs/rsfs7.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2020/texmf-di
-st/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2020/texmf-dist
-/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2020/texmf-dist/f
-onts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2020/texmf-dist/fon
-ts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2020/texmf-dist/fonts
-/type1/public/cm-super/sfit0800.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
-ype1/public/cm-super/sfit1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
-/public/cm-super/sfrm0800.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/p
-ublic/cm-super/sfrm1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
-lic/cm-super/sfrm1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publi
-c/cm-super/sfti1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/
-cm-super/sftt0800.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm
--super/sftt1200.pfb>
-Output written on main.pdf (32 pages, 5618736 bytes).
+20/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2020/t
+exmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2020/texmf
+-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2020/texmf-d
+ist/fonts/type1/public/cm-super/sfit0800.pfb></usr/local/texlive/2020/texmf-dis
+t/fonts/type1/public/cm-super/sfit1200.pfb></usr/local/texlive/2020/texmf-dist/
+fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2020/texmf-dist/fo
+nts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2020/texmf-dist/font
+s/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2020/texmf-dist/fonts/
+type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
+pe1/public/cm-super/sfti1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
+1/public/cm-super/sftt0800.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
+public/cm-super/sftt1200.pfb>
+Output written on main.pdf (34 pages, 6079797 bytes).
 PDF statistics:
- 893 PDF objects out of 1000 (max. 8388607)
- 778 compressed objects within 8 object streams
- 172 named destinations out of 1000 (max. 500000)
- 471 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 921 PDF objects out of 1000 (max. 8388607)
+ 797 compressed objects within 8 object streams
+ 176 named destinations out of 1000 (max. 500000)
+ 480 words of extra memory for PDF output out of 10000 (max. 10000000)
 

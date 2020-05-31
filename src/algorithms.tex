@@ -1,6 +1,6 @@
 \chapter{Algorithms}
 
-Dire qu'on va présenter deux algorithmes différents, mais qu'avant on explique l'extraction. Après on proposera deux petits algo pour accélerer la recherche de solution.
+This chapter present the two locating method implemented and investigated in the simulation. In order to perform the localization, as seen in \section{mpls}, the \gls{cir} obtained needs to be treated in order to extract some usefull data. The first section presents such methods. Then, using the extracted peaks, two different localization algorithm are presented, a hard one based on the trilateration and a soft one based on the comparison of theoretical and realistic \gls{cir}.
 
 \section{Peaks extraction}
 
@@ -9,7 +9,7 @@ A \gls{cir} as presented in \ref{fig:cir_ex1} unfortunately does not exist in th
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{Images/cir_theo_real.png}
-\caption{(Left) Room used to generate the realistic CIR using up to three reflected rays. (Right) Superposition of the CIR in Fig. \ref{fig:UWB_MPC_Theo} and the realistic CIR.\label{fig:peaks_real}}
+\caption{(Left) Room used to generate the realistic CIR using up to three reflected rays. (Right) Superposition of the CIR in Fig. \ref{fig:UWB_MPC_Theo} and the realistic CIR. \label{fig:peaks_real}}
 \end{figure}
 
 The simulation used to generate the realistic \gls{cir} is described in chapter \ref{simulations}. As one can observe, the peaks that originates from the theoretical case matches peaks in the realistic one. But one can also observe that some new peaks arises in the realistic ones, such as the ones around $0.4*10^{-7}s$. 
@@ -29,134 +29,128 @@ For the soft locating system, the algorithm of the peak extraction is detailed i
 \begin{algorithm}[H]
  \KwInput{}\
  \hspace*{\algorithmicindent} $\mathtt{CIR} = \{\mathtt{cir}\} = \{ (\mathtt{t_i}, \mathtt{A_i}) ~\text{s.t.} ~\mathtt{i} \in \mathbb{N}_0\} \in \mathbb{R} \times \mathbb{R}, ~\mathtt{n} \in \mathbb{N}_0$ \;
-\KwInit{}\
-\hspace*{\algorithmicindent} $\texttt{Peaks[1]} \longleftarrow \texttt{max}(\texttt{CIR})$\;
-\hspace*{\algorithmicindent} $\texttt{CIR} \longleftarrow \texttt{CIR[}\texttt{max}_{\texttt{idx}}:\texttt{end]}$\;
-\hspace*{\algorithmicindent} $\texttt{i} \longleftarrow 2$\;
-\hspace*{\algorithmicindent} $\texttt{ratio} \longleftarrow 2$\;
-\hspace*{\algorithmicindent} $\texttt{ratio}_\texttt{max} \longleftarrow 100$\;
- \While{$\texttt{i} \leq  \texttt{n}$ and $\texttt{ratio} \leq \texttt{ratio}_{\texttt{max}}$}{	
-	\For{$\texttt{el}$ in $\texttt{CIR}$}{
-    \If{$\texttt{prom}(\texttt{el}) > \texttt{max}(\texttt{CIR})/\texttt{ratio}$}{
-    $\texttt{Peaks[i]} \longleftarrow \texttt{el}$\;
+\KwInit{}
+\hspace*{\algorithmicindent} $\texttt{Peaks} \longleftarrow \{ (\mathtt{t_i}, \mathtt{A_i}) ~\text{s.t.} ~\mathtt{i} \in \{ 1, ..., n \} \}$\;
+\hspace*{\algorithmicindent} $\texttt{ratio} \longleftarrow \texttt{100}$\;
+\hspace*{\algorithmicindent} $\texttt{i} \longleftarrow 1$\;
+\hspace*{\algorithmicindent} $\texttt{CIR}_\texttt{max} \longleftarrow \texttt{local\_max}(\texttt{CIR})$\;
+\hspace*{\algorithmicindent} $\texttt{CIR}_\texttt{max} \longleftarrow \texttt{Order(CIR}_\texttt{max}\texttt{, 'Descend', 'Prominence based')}$\;
+
+
+\For{$\texttt{\{cir\}}$ in $\texttt{CIR}_\texttt{max}$}{
+	\If{$\texttt{prom(}\texttt{\{cir\})}$ > $\texttt{max(CIR)}/\texttt{ratio}$}{
+	$\texttt{Peaks[i]} \longleftarrow \texttt{\{cir\}}$\;
     $\texttt{i} \longleftarrow \texttt{i} + 1$\;
-    }
-   }
-   $\texttt{ratio} \longleftarrow \texttt{ratio} + 1$
+    		\If{$\texttt{i}$ > $\texttt{n}$}{
+    		\texttt{break}\;
+    		}
+	}
  }
  \KwOutput{}\
  \hspace*{\algorithmicindent} $\texttt{Peaks}$\;
  \caption{Peaks Extraction - Soft case \label{algo:soft}}
 \end{algorithm}
+\vspace{2mm}
 
-During the initialization phase, the maximum value of the \gls{cir} is 
+During the initialization phase, first, the output \texttt{Peaks} is defined, this variable will be used to store the different peaks extracted. The variable \texttt{i} is the counter of the number of peaks found and stored into the \texttt{Peaks} vector and \texttt{ratio} is used to fix a limit to the relative size of the peaks being take\footnote{This value of 100 is arbitrary, it avoids the program to take really smalls peaks produced by the noise.}. The local maximum of the \texttt{CIR} are then saved in $\texttt{CIR}_\texttt{max}$ and ordered in the decreasing order based on the prominence of each peak. The definition of the prominence is reminded in Fig. \ref{fig:prominence}. Since the prominence depends on the local minima between two peaks, an higher amplitude does not always imply an higher prominence.
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=.3\linewidth]{Images/prominence.png}
+\caption{Difference between the prominence of a peak and its amplitude \label{fig:prominence}}
+\end{figure}
 
+The main loop then get the $\texttt{n}$ first values of $\texttt{CIR}_\texttt{max}$ and store it into $\texttt{Peaks}$. The $\texttt{If}$ condition is, as said before, used to removed the small fluctuation in the \gls{cir} due to the background, only keeping the most important peaks. If there is less than $\texttt{n}$ peaks that satisfy the conditions, the algorithm returns as peaks as possible while still respecting the pre-established conditions.
 
 \subsection{Hard case}
 
-In order to use the \gls{cir} recovered either in the simulation or from the experimental set-up, those need to be processed. The major objective is to retrieve the different peaks that originates from the physical anchor and the \glspl{va}. Unfortunately, the \gls{cir} obtained is not as simple as shown in Fig. \ref{fig:UWB_MPC_Theo}. In order to obtain the same results, one would need some antennas with an infinite bandwidth\footnote{In order to obtain Dirac peaks, one need an infinite bandwidth since the $\delta(t) \xrightarrow{\mathscr{F}} 1 $}, a "clean" room and to receive to the receiver side only the rays coming from the \gls{los} or reflected once.
-\vspace{2mm}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
-\caption{CIR example. \label{fig:cir_example}}
-\end{figure}
-
-The \gls{cir} shown for Fig. \ref{fig:cir_example} has been generated in a rectangular cluttered room of 15 over 10m, filled with furnitures. The selected bandwidth is the same as for the experimental set-up : 499.2MHz. The positions of the tag have been kept the same as in Fig. \ref{fig:cir_ex1}. As one can observe on Fig. \ref{cir}, getting the different peaks is not as trivial.
-\vspace{2mm}
-
-From the local maxima  of this \gls{cir}, only the most significant peaks should be extracted, since they likely are associated with the \gls{los} or first reflection. The parameter chosen to reflects the significance of a local maxima is its prominence.
-\vspace{2mm}
-
-The algorithm performs a search through the local maxima of the \gls{cir}. First the global maxima is considered as being the first peak corresponding to the \gls{los}. Hence only the local maxima arriving after are considered. Then, the rest of the local maxima are selected from the biggest to the shortest up to the point where $n$ peaks are chosen. All of those peaks are finally sorted based on the time associated with those peaks. 
-
-The algorithm is formalized right beneath :
+For the hard locating system, the same methodology is applied. The algorithm \ref{algo:hard} slightly changes at several different places. First, the input is only $\texttt{CIR}$, the algorithm always returns three peaks in $\texttt{Peaks}$. Second, the ordering of $\texttt{CIR}_\texttt{max}$ is made based on the amplitude of the peaks. Finally, the amplitude, not the prominence, of the $\{\texttt{cir}\}$  is compared to $\texttt{max(CIR)}/\texttt{ratio}$.
 \vspace{2mm}
 
 \begin{algorithm}[H]
- \KwData{$CIR$ such that $CIR(i)$ is a tuple $[time, val]$, $n \in \mathbb{N}$ the number of peaks requested}
- \KwResult{$Peaks$, ordered list of $n$ tuples.}
-Initialization\;
-$Peaks(1) \longleftarrow max(CIR)$\;
-$CIR \longleftarrow CIR(max:end)$\;
-$i \longleftarrow 2$\;
-$r \longleftarrow 5$\;
- \While{$i <  n$ and $r < r_{max}$}{	
-	\For{$el$ in $CIR$}{
-    \If{$el > max(CIR)/r$}{
-    $Peaks(i) \longleftarrow el$\;
-    $i \longleftarrow i + 1$\;
-    }
-   }
-   $r \longleftarrow r + 1$
+ \KwInput{}\
+ \hspace*{\algorithmicindent} $\mathtt{CIR} = \{\mathtt{cir}\} = \{ (\mathtt{t_i}, \mathtt{A_i}) ~\text{s.t.} ~\mathtt{i} \in \mathbb{N}_0\} \in \mathbb{R} \times \mathbb{R}$ \;
+\KwInit{}
+\hspace*{\algorithmicindent} $\texttt{Peaks} \longleftarrow \{ (\mathtt{t_i}, \mathtt{A_i}) ~\text{s.t.} ~\mathtt{i} \in \{ 1, 2, 3 \} \}$\;
+\hspace*{\algorithmicindent} $\texttt{ratio} \longleftarrow \texttt{100}$\;
+\hspace*{\algorithmicindent} $\texttt{i} \longleftarrow 1$\;
+\hspace*{\algorithmicindent} $\texttt{CIR}_\texttt{max} \longleftarrow \texttt{local\_max}(\texttt{CIR})$\;
+\hspace*{\algorithmicindent} $\texttt{CIR}_\texttt{max} \longleftarrow \texttt{Order(CIR}_\texttt{max}\texttt{, 'Descend', 'Amplitude based')}$\;
+
+
+\For{$\texttt{\{cir\}}$ in $\texttt{CIR}_\texttt{max}$}{
+	\If{$\texttt{amp(}\texttt{\{cir\})}$ > $\texttt{max(CIR)}/\texttt{ratio}$}{
+	$\texttt{Peaks[i]} \longleftarrow \texttt{\{cir\}}$\;
+    $\texttt{i} \longleftarrow \texttt{i} + 1$\;
+    		\If{$\texttt{i}$ > $\texttt{3}$}{
+    		\texttt{break}\;
+    		}
+	}
  }
- $Order(Peaks)$
- \caption{Peaks Extraction \label{algo:peaks}}
+ \KwOutput{}\
+ \hspace*{\algorithmicindent} $\texttt{Peaks}$\;
+ \caption{Peaks Extraction - Hard case \label{algo:hard}}
 \end{algorithm}
+\vspace{2mm}
+
 
 \section{Hard localization algorithm}
 \label{hard_loc}
-This locating system is based on the idea of trilateration and tries to mimic it. Using three peaks, it tries to match those with the anchor and two virtual anchors to find an intersection point as in the Fig. \ref{fig:triangulation}. Those three peaks are extracted with the algorithm \ref{algo:peaks} from the received \gls{cir} at the tag. As briefly explained is section \ref{loc_syst_mpc}, there is two main difference with the theoretical case.
+This locating system is based on the idea of trilateration and tries to mimic it. Using three peaks, it tries to match those with the anchor and two \glspl{va} to find an intersection point as in the Fig. \ref{fig:trilateration}. Those three peaks are extracted with the algorithm \ref{algo:hard} from the received \gls{cir} at the tag. First, the number of systems that needs to be solved are presented, then a systematic method to solve them is proposed.
 
 \subsection{Virtual antennas combination}
 
-The hypothesis that the greatest peak corresponds to the one from the \gls{los} ray is made. Concerning the second a third peak, since each one can not be surely associated with a \gls{va}, the only available solution is to try every combination of \glspl{va}. The order being important\footnote{Associating the tuple $(d_1, d_2)$ to $(va_1, va_2)$ is not equivalent to associate it to $(va_2, va_1)$.}, it is $P^2_4 = \frac{4!}{2!} = 12$ different systems to solve. This computation has been made for a room with a simple geometry, a rectangular, four walls room in this case, of course with a more complex geometry, the number of possible combination would increase.
+The hypothesis that the greatest peak, which is usually the first one, corresponds to the one from the \gls{los} ray is made, this implies that there always exist a \gls{los} in those rooms, meaning that this does not suffer of attenuation. Concerning the second and third peak, since each one can not be surely associated with a \gls{va}, the only available solution is to try every combination of \glspl{va}. The order being important\footnote{Associating the tuple $(d_1, d_2)$ to $(va_1, va_2)$ is not equivalent to associate it to $(va_2, va_1)$.}, it is $P^2_4 = \frac{4!}{2!} = 12$ different systems to solve. This computation has been made for a room with a simple geometry, a rectangular, four walls room in this case, of course with a more complex geometry, the number of possible combination would increase.
 \vspace{2mm}
 
-On Fig. \ref{fig:va_sym}, a possible problem is shown. The \gls{cir} shown on the left side is obtained by computing only the \gls{los} and the first reflections onto the different walls. In theory, five different peaks should be seen, but only four appears. In this particular case, the second peak is formed by the peaks from $VA_1$ and $VA_2$, which will be undistinguishable.
+On Fig. \ref{fig:va_sym}, a possible problem is shown. The \gls{cir} shown on the left side is obtained by computing only the \gls{los} and the first reflections onto the different walls. In theory, five different peaks should be seen, but only four appears. In this particular case, the second peak is formed by the peaks from the blue \gls{va} and the green \gls{va}, which will be undistinguishable.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
-\caption{Map left, CIR right = montrer la sym \label{fig:va_sym}}
+\includegraphics[width=\linewidth]{Images/antenna_combined.png}
+\caption{(Left) Room with the anchor in red and the tag in black. (Right) CIR corresponding to the room in the left image, the color of the peaks match the color of the associated VAs. The magenta peaks corresponds to the ones extracted using the algo. \ref{algo:hard} from the realistic CIR in green. \label{fig:va_sym}}
 \end{figure}
 
-What could happen in that case is that the peaks taken from the \gls{cir} could not correspond to some actual theoretical peaks\footnote{The one that corresponds to one reflection. }. Such an example can be seen on Fig. \ref{fig:va_sym} where the third orange peak does not correspond to any theoretical peak. To overcomes this problem, the proposed solution is to consider the cases peaks are mingled. Hence to the twelve possibles combinations, one would have to consider that the second orange peak originate from two different \gls{va}.
+A problem that may arise in such situation is that the peaks taken from the \gls{cir} could not correspond to some actual theoretical peaks\footnote{The one that corresponds to one reflection. }. Such an example can be seen on the right image in  Fig. \ref{fig:va_sym} where the third magenta peak does not correspond to any theoretical peak. To overcomes this problem, the proposed solution is to consider the cases peaks are mingled. Hence to the twelve possibles combinations discussed , one would have to consider that the second magenta peak originate from two different \glspl{va}, as the cyan peak on the right image of Fig \ref{fig:va_sym}.
 \vspace{2mm}
 
-This method has the drawback of requiring much computation since twelve more peaks - \glspl{va} needs to be checked, but it will solve some symmetry-related problem. This kind of problem mostly occurring on the brown line on the map, being the axial symmetry between the two \gls{va}. Since this problem only occurs in those specific cases, one should first check the original antenna combination before checking those added one.
+This method has the drawback of requiring much computation since twelve more peaks - \glspl{va} needs to be checked, but it will solve some symmetry-related problem. This kind of problem mostly occurring when the tag is equidistant from two \glspl{va}, like on the brown line on the map, being the axial symmetry between the two bottom and left \glspl{va}. Since this problem only occurs in some specifics cases, one should first check the original antenna combination before checking those added one.
 \vspace{2mm}
 
-Another source of troubles for this algorithm is due to the finite bandwidth of the antennas. As it can be seen on Fig. \ref{fig:inftofin}, peaks that can be distinguished on the left \gls{cir} are mingled in the right \gls{cir}. This phenomena can be observed with the green peaks for example.
+Another source of troubles for this algorithm is due to the finite bandwidth of the antennas. As it can be seen on Fig. \ref{fig:inftofin}, peaks that can be distinguished on the theoretical \gls{cir} are mingled in the realistic one. This phenomena can be observed with the blue and the cyan peaks for example, which are so close that there are considered as one in the finite band \gls{cir}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
-\caption{Comparison between an infinite BW CIR and a finite one \label{fig:inftofin}}
+\includegraphics[width=.55\linewidth]{Images/Fig_inf_to_fin.png}
+\caption{Infinite bandwidth CIR generated and the finite bandwidth associated in brown. The extracted peaks are shown in magenta. \label{fig:inftofin}}
 \end{figure}
 
-To deal with this problem, the solution proposed is the same as the one dealing with the mingled peaks. The precision achieved on the localization in such case would be reduced  in those cases. Such examples will be shown in chapter \ref{simulations}.
+To deal with this problem, the solution proposed is the same as the one dealing with the mingled peaks. The precision achieved on the localization in such case would be reduced  in those cases. Such examples will be shown in chapter \ref{simulations}. Of course, the third detected peak could also originate from a \gls{va} after a simple reflection, this discussion only make sense when it does not.
 \vspace{2mm}
 
 \subsection{System solver}
 
-Those systems are solved one at a time, starting with the twelve 'basic' ones, pursuing with the particular cases presented above. Since there is almost zero chances that the system leads into a perfect one point solution, the system \ref{eq:syst_exact} can not be simply resolved. The three equations are solved two by two, giving six real or complex solutions. From this point, the algorithm first exclude the solutions lying outside of the room, the solutions having a too big imaginary part are also discarded\footnote{The notion of "too big" is completely subjective. It appears that when two circle are close to have an intersection, the imaginary part is smaller. \color{red} NEED A PROOF \color{black}}. 
+Those systems are solved one at a time, starting with the twelve 'basic' ones, pursuing with the particular cases presented above if no suitable solution has been found. Since there is almost zero chances that the system leads into a perfect one point solution, the system \ref{eq:syst_exact} can not be simply resolved. The three equations are solved two by two, giving six real or complex solutions, if the six are real, this would correspond to $U_{12}, U_{13}, U_{23}$ and the Tag 3 times in Fig. \ref{fig:trilateration}. From this point, the algorithm first exclude the solutions lying outside of the room, the solutions having a too big imaginary part are also discarded\footnote{The notion of "too big" is completely subjective. It appears that when two circle are close to have an intersection, the imaginary part is smaller. \color{red} NEED A PROOF \color{black}}. 
 \vspace{2mm}
 
-Using the remaining solutions, the algorithm needs to check if those can be combined to retrieve a suitable solution. A solution is considered as suitable if the algorithm can find three solutions being relatively close to each other. This notion of "relatively close" is subjective and is one of the parameter that one can vary to tune the algorithm. If no solution is found using all the combinations, then no location is provided, hence the qualification of "hard".
+Using the remaining solutions, the algorithm needs to check if those can be combined to retrieve a suitable solution. A solution is considered as suitable if the algorithm can find three solutions being relatively close to each other. This notion of "relatively close" is subjective and is one of the parameter that one can use to tune the algorithm. If no solution is found using all the combinations, then no location is provided, hence the qualification of "hard".
 \vspace{2mm}
-
-- Mettre le schéma de l'antenne qui est dans un coin, et des 4 zones qui se dessinent
-- Expliquer qu'on va tester toutes les possibilités 2 à 2, mais qu'on peut éliminer certaines avec l'algo speed 2.
 
 \section{Soft localization algorithm}
 \label{soft_loc}
 
-\subsection{CIR MSE}
+The locating system presented in this section achieve localization by comparing some theoretical \gls{cir}, computed knowing the geometry of the room with the \gls{cir} recovered at the tag. In order to make this comparison, the room is sampled, based on the desired precision that one will achieve. In this thesis, the sample will be made using square of one meter side.
+\vspace{2mm}
 
-Pour la forme de la CIR, bien expliquer pourquoi ça ne marche pas vraiment. Même en atténuant les autres pics de la même manière que le pic principal. Parce que la réponse qu'on reçoit peut avoir un LoS légèrement plus obstrué que le reste, ou vice versa. Ca marche bien dans la simulation, mais ça sera probablement moins efficace IRL.
+For each peak extracted from the \gls{cir}, two informations are available, the time of arrival of this peak and its amplitude. One could use the amplitude of the peaks, this would probably work is a lot of cases in the simulation, but this approach has a major drawback, if a peak suffer from to much attenuation in the real case compared to the simulation due to losses coming from the transmission or the reflections on the different materials which is not perfectly simulated, if the antenna emission is not perfectly isotropic in the room plane, etc. Then, even if peaks would likely to be at the same place, nothing can ensure that the amplitude would be proportionally the same.
+\vspace{2mm}
 
-\subsection{Time MSE}
+For those reasons, the comparison will be based on the time-of-arrival of each peak. This method also has some drawbacks, the transition to the finite band does not ensure that the peaks will remains at their exact location. When two peaks mingle, the new peak remaining in finite band is more likely to have an arrival in the middle of those two peaks. Some precautions have been taken to minimize the errors induced by this phenomena.
+\vspace{2mm}
 
-Méthode préférée à CIR
+\subsection{Space solution reduction}
 
-\section{Speed-Up Algorithms}
-\label{speed-up}
-\subsection{Speed-Up 1}
-
-The aim of this algorithm is to speed up the locating process by reducing the number of needed computations. To achieve this, the \gls{cir}, that needs to be computed at each location, is only computed in a reduced set of possible position for the tag.
+Since the algorithm needs to compare the theoretical \gls{cir} at every possible position of the tag, in order to speed-up the program, one could actually reduce the number of location to test.
 \vspace{2mm}
 
 Using the \gls{sdstwr}, the \gls{tof} of the signal between the tag and the anchor can be computed\footnote{In the simulation, it will be assumed to be extracted from the \gls{cir}}. Based on this \gls{tof}, a circle can be traced with the center on this anchor and the radius being the estimated distance deduced from the \gls{tof}. In theory, the tag is supposed to be located on this circle, but due to the discretization and errors on the \gls{tof}, a margin is taken to get the set of possible locations. This margin resides in the two orange circles, that can be observed on Fig. \ref{fig:speedup_1}.
@@ -165,14 +159,40 @@ Using the \gls{sdstwr}, the \gls{tof} of the signal between the tag and the anch
 \begin{figure}[H]
 \centering
 \includegraphics[width=.65\linewidth]{Images/algo_1.png}
-\caption{Example of algo 1}
+\caption{\color{red} Refaire cette image \color{black}}
 \label{fig:speedup_1}
 \end{figure}
 
 From the position inside those boundaries, a mask matrix representing all the position of the room is filled with ones for the position inside of the orange zone. The other positions are left to zero. Later, this mask is used to reduce the computations since only the values associated with a one will be tested.
 
-\subsection{Speed-Up 2}
+\subsection{Time MSE}
 
-Choix des ancres en utilsant l'algorithme numéro 1
+For each remaining possible location, a finite band \gls{cir} is simulated using only the direct ray and the once reflected rays. Such example can be found in Fig. \ref{fig:soft_simu}, in order to obtain something similar to the realistic case, the \gls{cir} has been passed in the finite band. The peaks are then extracted using algo. \ref{algo:soft} from this finite band \gls{cir}.
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{Images/inf_vs_fin.png}
+\caption{(Left) Theoretical CIR obtained using the simulation. The same room has been used as for the right image, without furnitures and using only the direct ray and single reflected rays.  (Right) Realistic CIR obtained in a room full of furnitures using the simulation.\label{fig:soft_simu}}
+\end{figure}
 
+The extraction is also done once on the \gls{cir}. The using the different peaks extracted, the following problem is solved. 
+
+\begin{equation}
+\label{eq:mse_time}
+\begin{aligned}
+S(\vec{p_0}) &= \sum_i^N (\|\text{Peaks}(\vec{p_{r}})_i - \text{Peaks}(\vec{p_{0}})_i\| ^2 ) \\
+\vec{p_0} &= \underset{\vec{p}}{\text{argmin}}~ S(\vec{p})
+\end{aligned}
+\end{equation}
+
+The peaks extracted are sorted in the chronological order in the peak extraction. Therefore, the sum goes through the peaks of both \gls{cir}. The argument $\text{N}$ is limited by the smallest list of peaks given by the algo. \ref{algo:soft}. While the $\vec{p_0}$ represents all the possible position tested, $\vec{p_r}$ represents the real case. $\text{Peaks}(\vec{p_0})_i$ represents the i-th peak extracted from the theoretical \gls{cir} computed by placing the tag at the position $\vec{p_0}$.
+\vspace{2mm}
+
+This algorithm will have as output a map of the room with the \gls{mse} of the time arrival of the peaks computed at each possible location. The locations that were not estimated due to the space solution reduction occurring before the computation of the \gls{mse} are colored in black. An example of such output can be seen in Fig. \ref{fig:mse_example}, this heat-map has been generated using the \gls{mse} computed at each location evaluated. The estimator \ref{eq:mse_time} will provide only one output, being the one with the lowest \gls{mse}. A solution will always be provided by this locating system. 
+\vspace{2mm}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{Images/mse_map_algo.png}
+\caption{Example of an execution of the soft localization algorithm. Anchor at (12,2) and Tag at (13,9).\label{fig:mse_example}}
+\end{figure}
