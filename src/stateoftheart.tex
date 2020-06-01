@@ -234,8 +234,9 @@ When this function runs, the application enters a loop that continuously request
 A detailed state machine representing the interactions between the tag and an anchor can be found in appendix \color{red} make a link to an annex and put the state machine in annex \color{black}  \cite{hannotier2019indoor}. While the anchor only performs one \gls{sdstwr} at a time, the tag needs to keep an history of the anchors contacted to perform the trilateration afterwards.
 
 \subsubsection{Test USB connection, Test orientation}
+\label{usb_con}
 
-The Test USB connection allows to test that the USB communication bus used to communicate with the PSoC is fully operational. The test procedure consists of sending a 16 bits long messages to the PSoC, this message being : \texttt{0x0406}. If the PSoC is well connected, the application is supposed to receive a 32 bits long message : \texttt{0x02034637}. This feature allows to quickly debug the USB communication.
+The Test USB connection allows to test that the USB communication bus used to communicate with the PSoC is fully operational. The test procedure consists of sending a 16 bits long messages to the PSoC, this message being : sta. If the PSoC is well connected, the application is supposed to receive a 32 bits long message : \texttt{0x02034637}. This feature allows to quickly debug the USB communication.
 \vspace{2mm}
 
 The "Test orientation" has been designed to test the detection of the orientation of the cellphone. The three angles necessary to characterize the orientation of the device are respectively the Azimuth, the Pitch and the Roll.
@@ -282,6 +283,11 @@ To achieve a better localization, anchors can be added. It has the advantage to 
 \label{mpls}
 
 \color{red} Rajouter un fil rouge du fonctionnement \color{black}
+
+\subsection{Ray Tracing}
+\label{ray_tracing}
+
+Blablabla ray tracing
 
 \subsection{Channel Impulse Response}
 \label{mp_cir}

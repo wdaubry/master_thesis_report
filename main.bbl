@@ -69,6 +69,31 @@
     \field{year}{2011}
   \endentry
 
+  \entry{dedoncker2019course}{unpublished}{}
+    \name{author}{1}{}{%
+      {{hash=DDP}{%
+         family={De\bibnamedelima Doncker},
+         familyi={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+         given={Philippe},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DDP1}
+    \strng{fullhash}{DDP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{title}{Course of : Communication Channels}
+    \list{location}{1}{%
+      {Belgium}%
+    }
+    \list{institution}{1}{%
+      {ULB}%
+    }
+    \field{year}{2019}
+  \endentry
+
   \entry{eulaw}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{D}
@@ -439,6 +464,38 @@
     \field{title}{Using DecaWave UWB transceivers for high-accuracy
   multipath-assisted indoor positioning}
     \field{year}{2017}
+  \endentry
+
+  \entry{lynch1997dolph}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LP}{%
+         family={Lynch},
+         familyi={L\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LP1}
+    \strng{fullhash}{LP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{4}
+    \field{pages}{655\bibrangedash 660}
+    \field{title}{The Dolph--Chebyshev window: A simple optimal filter}
+    \field{volume}{125}
+    \field{journaltitle}{Monthly weather review}
+    \field{year}{1997}
+  \endentry
+
+  \entry{mathworks}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+  \field{howpublished}{\url{https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/40876/versions/8/previews/sensorgroup/Examples/html/CapturingAzimuthRollPitchExample.html}}
+    \field{note}{Accessed= 05-2020}
+    \field{title}{{Mathworks} Capturing Azimuth, Pitch, and Roll Example}
   \endentry
 
   \entry{meissner2010uwb}{inproceedings}{}
