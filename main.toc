@@ -18,7 +18,7 @@
 \contentsline {subsubsection}{Navigation}{10}{section*.18}%
 \contentsline {subsubsection}{Test USB connection, Test orientation}{10}{section*.20}%
 \contentsline {subsubsection}{Calibration}{11}{section*.22}%
-\contentsline {subsection}{\numberline {2.3.5}Precision obtained}{11}{subsection.2.3.5}%
+\contentsline {subsection}{\numberline {2.3.5}Precision reached}{11}{subsection.2.3.5}%
 \contentsline {section}{\numberline {2.4}Multi-path aided locating system}{12}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Ray Tracing}{13}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Channel Impulse Response}{14}{subsection.2.4.2}%
