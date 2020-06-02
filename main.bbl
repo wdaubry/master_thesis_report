@@ -26,6 +26,59 @@
     \field{year}{2020}
   \endentry
 
+  \entry{bejuri2013ubiquitous}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=BWMYW}{%
+         family={Bejuri},
+         familyi={B\bibinitperiod},
+         given={Wan Mohd Yaakob\bibnamedelima Wan},
+         giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  Y\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=SWMNWM}{%
+         family={Saidin},
+         familyi={S\bibinitperiod},
+         given={Wan Mohd Nasri Wan\bibnamedelima Muhamad},
+         giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  N\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=MMMB}{%
+         family={Mohamad},
+         familyi={M\bibinitperiod},
+         given={Mohd Murtadha\bibnamedelima Bin},
+         giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  B\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Sapri},
+         familyi={S\bibinitperiod},
+         given={Maimunah},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LKS}{%
+         family={Lim},
+         familyi={L\bibinitperiod},
+         given={Kah\bibnamedelima Seng},
+         giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{BWMYW+1}
+    \strng{fullhash}{BWMYWSWMNWMMMMBSMLKS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{Asian conference on intelligent information and database
+  systems}
+    \field{pages}{394\bibrangedash 403}
+    \field{title}{Ubiquitous positioning: integrated GPS/Wireless LAN
+  positioning for wheelchair navigation system}
+    \field{year}{2013}
+  \endentry
+
   \entry{busspi}{misc}{}
     \field{labeltitlesource}{title}
     \field{sortinit}{B}

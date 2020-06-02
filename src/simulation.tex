@@ -16,15 +16,15 @@ The simulation has been created by adapting a code previously developed for the 
 To achieve this objective, first the desired environment has to be simulated in the program. To make it happen, the $\texttt{room\_configuration.m}$ file has been created. Configuration of the geometry of the room, the type of walls used, the number of different furniture and their location in the room can also be chosen. This file is also used to chose the location of the anchor and the tag in the room. The left figure of the Fig. \ref{fig:peaks_real} has been produced using this configuration file.
 \vspace{2mm}
 
-In order to generate a finite-band \gls{cir}, the equivalent infinite-band \gls{cir} is first generated. This is can be done for a direct ray, simple reflected ray, double reflected ray and triple reflected ray the transmission across the different materials is also taken into account. The ray reflected on the ground is also computed but not represented for the sake of clarity. An example of all the other ray can be found in Fig. \ref{fig:ray_simu}. Stating infinite is not completely correct, the real bandwidth being the one of the career frequency in this case, however, in presents the characteristics in regard to actual bandwidth used. The different peaks well isolated and punctual.
+In order to generate a finite-band \gls{cir}, the equivalent infinite-band \gls{cir} is first generated. This is can be done for a direct ray, simple reflected ray, double reflected ray and triple reflected ray the transmission across the different materials is also taken into account. The ray reflected on the ground is also computed but not represented for the sake of clarity. An example of all the other ray can be found in Fig. \ref{fig:ray_simu}. On this figure, furnitures are displayed against the walls, the direct ray is displayed in red, a simple reflected ray on one of the furniture in blue, a double reflected ray in cyan and a triple reflection ray is displayed in green.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
+\includegraphics[width=.75\linewidth]{Images/rays_example.png}
 \caption{Ray Tracing Simulation - Example. \label{fig:ray_simu}}
 \end{figure}
 
-The so-called infinite-band \gls{cir} is converted to the frequency domain using the Fourier transform. The built-in \gls{fft} function from $\text{MATLAB}$ has been used \cite{mathworks}. The frequency spectrum has been reduced from the carrier frequency to $\text{500 MHz}$, an approximation of the bandwidth used as detailed in section \ref{dwm1000}. Applying the \gls{ifft} to return into the time domain results in the red curve on Fig. \ref{fig:conv_fin}.
+Stating infinite is not completely correct, the real bandwidth being the one of the career frequency in this case, however, in presents the characteristics in regard to actual bandwidth used. The different peaks well isolated and punctual. The so-called infinite-band \gls{cir} is converted to the frequency domain using the Fourier transform. The built-in \gls{fft} function from $\text{MATLAB}$ has been used \cite{mathworks}. The frequency spectrum has been reduced from the carrier frequency to $\text{500 MHz}$, an approximation of the bandwidth used as detailed in section \ref{dwm1000}. Applying the \gls{ifft} to return into the time domain results in the red curve on Fig. \ref{fig:conv_fin}.
 
 \begin{figure}[H]
 \centering

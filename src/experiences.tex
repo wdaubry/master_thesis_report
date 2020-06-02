@@ -34,8 +34,8 @@ The Fig. \ref{fig:cir_long_short} shows two experimental \gls{cir} obtained, one
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
-\caption{Blabla. \label{fig:cir_long_short}}
+\includegraphics[width=\linewidth]{Images/extracted_cir.png}
+\caption{Whole CIR extracted from the DWM1000 (Left) vs. Partial CIR extracted from the DWM1000 (Right). \label{fig:cir_long_short}}
 \end{figure}
 
 \subsection{PSoC}
@@ -56,17 +56,26 @@ The objective of the first activity is to validate that the application can acce
 The second activity is made to validate the recuperation and storage of a \gls{cir} from the DWM1000 to the memory. This activity actually mimics the Test USB activity, a byte code is sent to the PSoC that triggers the recuperation function of the \gls{cir}. This \gls{cir} then needs to be transmitted to the application through the USB connection already implemented. As for the PSoC, the \gls{cir} is separated in several section to be fully transmitted through the USB connection.
 \vspace{2mm}
 
-The third feature actually combines the two new activities and the navigation one. Once again, in order to modify as less as possible the whole localization process, the \gls{cir} recuperation has been grafted. Meaning that in addition to the \gls{tof} already provided by the PSoC for each anchor, the PSoC will also provide the \gls{cir} of each anchor. This whole set of data will the be saved in a \text{txt} file which is name in function of the time of execution of the program i.e. \text{2020-05-30-17-05-32.txt}.
+The third feature actually combines the two new activities and the navigation one. Once again, in order to modify as less as possible the whole localization process, the \gls{cir} recuperation has been grafted. Meaning that in addition to the \gls{tof} already provided by the PSoC for each anchor, the PSoC will also provide the \gls{cir} of each anchor. This whole set of data will the be saved in a \text{txt} file which is named in function of the time of execution of the program in the following format : \text{yyyy-MM-dd-hh-mm-ss.txt} i.e. \text{2020-05-30-17-05-32.txt}.
 \vspace{2mm}
 
-In order to further analyze the data recuperated, the estimated position of the tag computed by the navigation activity is save as well. An example of such save file is shown in Fig. \ref{fig:saved_data}.
+In order to further analyze the data recuperated, the estimated position of the tag computed by the navigation activity is save as well. The data structure is shown in Fig. \ref{fig:saved_data}.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
-\caption{Example of saved data. \label{fig:save_data}}
+\includegraphics[width=\linewidth]{Images/saved_cir.png}
+\caption{Data structure example of a measurement in navigation. \label{fig:saved_data}}
 \end{figure}
+
+For each anchor, the CIR recuperated, which is 800 octets long\footnote{800 octets long corresponds to 200 values of the \gls{cir} as 1 tap is made using 4 octets, 2 real and 2 imaginary.}, has been shortened using the \texttt{'...'} to be more visible. As one can see, each \gls{cir} is explicitly associated with an anchor and the position is stored in \text{cm} in plain text as well.
 
 \section{Test Campaign}
 
-Expliquer les tests réalisés, protocol etc, comment faire etc...
+The objective behind the test campaign is to validate the simulations previously detailed, testing in a realistic case the locating algorithm using only one anchor. To achieve this objective, an experience was planned. Due to the exceptional situation linked to the COVID-19 and the lock-down, as stated in the introduction, this part is not as complete as expected. The experience procedure is still detailed in this section for information.
+\vspace{2mm}
+
+In order to perform the needed measurement, a relatively empty\footnote{With as less furniture as possible. To reduce the cluttering and the number of \gls{mpc}.} room would have been chosen. The three anchors would have been displayed in the room, in three different corner. The exact position of the anchor being hard-coded in the android application to allow the algorithm to perform the trilateration.
+\vspace{2mm}
+
+Concerning the data recuperation, the objective would have been slowly walk inside of the room during several minutes to extract as much \gls{cir} as possible at different localization. Walking slowly would ensure that the three \gls{cir} would be extracted at the same location for each anchor, assuring an accurate estimation of the position and a good match between this localization and the \gls{cir} extracted.
+

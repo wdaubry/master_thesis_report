@@ -1,22 +1,23 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {subsubsection}{Message to the reader}{2}{section*.5}%
 \contentsline {chapter}{\numberline {2}State of the art}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Ultra-Wideband Technology}{3}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Real Time Locating Systems}{4}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Symmetric double sided two-way ranging}{5}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Trilateration}{6}{subsection.2.2.2}%
-\contentsline {subsubsection}{Uncertainties}{6}{section*.10}%
+\contentsline {subsubsection}{Uncertainties}{6}{section*.11}%
 \contentsline {section}{\numberline {2.3}Implementation of a locating system}{7}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}DWM1000}{7}{subsection.2.3.1}%
-\contentsline {subsubsection}{Configuration}{7}{section*.12}%
-\contentsline {subsubsection}{Control}{8}{section*.13}%
+\contentsline {subsubsection}{Configuration}{7}{section*.13}%
+\contentsline {subsubsection}{Control}{8}{section*.14}%
 \contentsline {subsection}{\numberline {2.3.2}Anchor}{8}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Tag}{9}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Android Application}{10}{subsection.2.3.4}%
-\contentsline {subsubsection}{Navigation}{10}{section*.17}%
-\contentsline {subsubsection}{Test USB connection, Test orientation}{10}{section*.19}%
-\contentsline {subsubsection}{Calibration}{11}{section*.21}%
+\contentsline {subsubsection}{Navigation}{10}{section*.18}%
+\contentsline {subsubsection}{Test USB connection, Test orientation}{10}{section*.20}%
+\contentsline {subsubsection}{Calibration}{11}{section*.22}%
 \contentsline {subsection}{\numberline {2.3.5}Precision obtained}{11}{subsection.2.3.5}%
 \contentsline {section}{\numberline {2.4}Multi-path aided locating system}{12}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Ray Tracing}{13}{subsection.2.4.1}%
@@ -37,15 +38,16 @@
 \contentsline {section}{\numberline {4.1}Simulation}{24}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Realistic CIR generation}{24}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Code possible outputs ?}{25}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Hard Simulation}{25}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Soft Simulation}{25}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Experiences}{26}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Experimental set-up configuration}{26}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}DWM1000}{26}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}PSoC}{27}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Android Application}{28}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Test Campaign}{28}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusion}{29}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Application view}{30}{appendix.a.A}%
-\contentsline {chapter}{\numberline {B}State Machines}{31}{appendix.a.B}%
-\contentsline {chapter}{Bibliography}{33}{appendix*.40}%
+\contentsline {section}{\numberline {4.2}Hard Simulation}{26}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Soft Simulation}{26}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Experiences}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Experimental set-up configuration}{27}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}DWM1000}{27}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}PSoC}{28}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Android Application}{29}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Test Campaign}{30}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusion}{31}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Application view}{32}{appendix.a.A}%
+\contentsline {chapter}{\numberline {B}State Machines}{33}{appendix.a.B}%
+\contentsline {chapter}{Acronyms}{35}{section*.43}%
+\contentsline {chapter}{Bibliography}{38}{appendix*.45}%
