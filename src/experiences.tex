@@ -30,7 +30,7 @@ Since the algorithms developed in chapter \ref{algos} mostly work based on the d
 In order to extract partially the \gls{cir}, the position of the peak needs to be known. This information is stored in the \texttt{0x15} : \text{\gls{rxtime}} register, in the sub-register \texttt{0x05} : \text{\gls{fpindex}} . A 16 bits long value representing the index value corresponding to leading edge of the \gls{cir} stored, only the 10 \glspl{msb} represent the integer part of this index. By taking a window around this peak, the number of bits to transmit from the DWM1000 to the PSoC can be reduced.
 \vspace{2mm}
 
-The Fig. \ref{fig:cir_long_short} shows two experimental \gls{CIR} obtained, one by extracting the whole data set while the other only extracted part of it using the value stored in the \gls{fpindex} sub-register.
+The Fig. \ref{fig:cir_long_short} shows two experimental \gls{cir} obtained, one by extracting the whole data set while the other only extracted part of it using the value stored in the \gls{fpindex} sub-register.
 
 \begin{figure}[H]
 \centering
@@ -43,7 +43,7 @@ The Fig. \ref{fig:cir_long_short} shows two experimental \gls{CIR} obtained, one
 The PSoC controls the DWM1000 on the tag side. Therefore, it needs to handle the \gls{cir} recuperation from register \texttt{0x25}. In order to avoid a too big modification of the interactions between the tag and the anchors, it was decided to graft this recuperation part to the existing code taking care of the \gls{sdstwr}. At the end of those exchanges, the PSoC checks that the needed bits activating the \gls{cir} recuperation are set, gets the \text{\gls{fpindex}} and partially extract the \gls{cir} around this value. In order to extract the whole \gls{cir}, 25 values before and 175 values behind where taken. This corresponds to an extracted \gls{cir} which is $\text{2*10}^\text{-7}$ \text{s} long. This choice is arbitrary and may be tuned in function of the room where the localization is performed.
 \vspace{2mm}
 
-The extraction is made through the \gls{spi} port between the DWM1000 and the PSoC, the number of bytes that needs to be extracted is 4 times the number of tap required. This number of bytes that can be transmitted through this bus at once is limited to 256 in this case. The \gls{cir} needs to be divided in several part for one to retrieve it all. While extracting those data, one have to be really careful because every time the accumulator memory is accessed, the first octet output should be discarded. Due to internal memory access, it is a dummy one \cite{usermanual}.
+The extraction is made through the \gls{spi} port between the DWM1000 and the PSoC, the number of bytes that needs to be extracted is 4 times the number of tap required. This number of bytes that can be transmitted through this bus at once is limited to 256 in this case. The \gls{cir} needs to be divided in several part for one to retrieve it all. While extracting those data, one have to be really careful because every time the accumulator memory is accessed, the first octet output should be discarded. Indeed, it is a dummy one due to memory access. \cite{usermanual}.
 
 \subsection{Android Application}
 
@@ -53,11 +53,19 @@ Since the Android Application is the master of the PSoC, it also has to be modif
 The objective of the first activity is to validate that the application can access the memory of the smartphone or an external memory in order to store any data on it. In this specific case, the activity takes takes a string a write it in an chosen file in the memory. The final objective being to save the extracted \gls{cir} in the memory to analyse it later. In order to access the memory, the application needs to asked some special permission to the \gls{os}. This specific android permission is called: \text{WRITE\_EXTERNAL\_STORAGE}, it will create a pop-up the first time the application will try to access the memory, asking the user if the application can access it.
 \vspace{2mm}
 
-The second activity is made to validate the recuperation and storage of a \gls{cir} from the DWM1000 to the memory. This activity actually mimics the Test USB activity, a code is sent to the PSoC that triggers the recuperation function of the \gls{cir}. This \gls{cir} then needs to be transmitted to the application through the \gls{usb} connection already implemented. As for the PSoC, the \gls{cir} is separated in several section to be fully transmitted.
+The second activity is made to validate the recuperation and storage of a \gls{cir} from the DWM1000 to the memory. This activity actually mimics the Test USB activity, a byte code is sent to the PSoC that triggers the recuperation function of the \gls{cir}. This \gls{cir} then needs to be transmitted to the application through the USB connection already implemented. As for the PSoC, the \gls{cir} is separated in several section to be fully transmitted through the USB connection.
+\vspace{2mm}
 
-Ajouter d'un bouton pour la CIR.
-Ajout d'un bouton pour vérifier le stockage réussi des données, demander les autorisations nécéssaire.
-Ajout du stockage automatique couplé avec la fonction de navigation.
+The third feature actually combines the two new activities and the navigation one. Once again, in order to modify as less as possible the whole localization process, the \gls{cir} recuperation has been grafted. Meaning that in addition to the \gls{tof} already provided by the PSoC for each anchor, the PSoC will also provide the \gls{cir} of each anchor. This whole set of data will the be saved in a \text{txt} file which is name in function of the time of execution of the program i.e. \text{2020-05-30-17-05-32.txt}.
+\vspace{2mm}
+
+In order to further analyze the data recuperated, the estimated position of the tag computed by the navigation activity is save as well. An example of such save file is shown in Fig. \ref{fig:saved_data}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
+\caption{Example of saved data. \label{fig:save_data}}
+\end{figure}
 
 \section{Test Campaign}
 

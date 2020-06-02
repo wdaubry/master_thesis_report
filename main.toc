@@ -1,51 +1,51 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}State of the art}{2}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Ultra-Wideband Technology}{2}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Real Time Locating Systems}{3}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Symmetric double sided two-way ranging}{4}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Trilateration}{5}{subsection.2.2.2}%
-\contentsline {subsubsection}{Uncertainties}{5}{section*.9}%
-\contentsline {section}{\numberline {2.3}Implementation of a locating system}{6}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}DWM1000}{6}{subsection.2.3.1}%
-\contentsline {subsubsection}{Configuration}{6}{section*.11}%
-\contentsline {subsubsection}{Control}{7}{section*.12}%
-\contentsline {subsection}{\numberline {2.3.2}Anchor}{7}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Tag}{8}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Android Application}{8}{subsection.2.3.4}%
-\contentsline {subsubsection}{Navigation}{8}{section*.16}%
-\contentsline {subsubsection}{Test USB connection, Test orientation}{9}{section*.18}%
-\contentsline {subsubsection}{Calibration}{10}{section*.20}%
-\contentsline {subsection}{\numberline {2.3.5}Precision obtained}{10}{subsection.2.3.5}%
-\contentsline {section}{\numberline {2.4}Multi-path aided locating system}{11}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Ray Tracing}{11}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Channel Impulse Response}{11}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Virtual Anchors}{12}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Locating system}{13}{subsection.2.4.4}%
-\contentsline {chapter}{\numberline {3}Algorithms}{14}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Peaks extraction}{14}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Soft case}{15}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Hard case}{16}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Hard localization algorithm}{16}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Virtual antennas combination}{17}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}System solver}{18}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Soft localization algorithm}{19}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Space solution reduction}{19}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Time MSE}{20}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Simulations}{22}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Simulation}{22}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Realistic CIR generation}{22}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Code possible outputs ?}{23}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Hard Simulation}{23}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Soft Simulation}{23}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Experiences}{24}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Experimental set-up configuration}{24}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}DWM1000}{24}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}PSoC}{25}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Android Application}{26}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Test Campaign}{26}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusion}{27}{chapter.6}%
-\contentsline {chapter}{\numberline {A}Application view}{28}{appendix.a.A}%
-\contentsline {chapter}{\numberline {B}State Machines}{29}{appendix.a.B}%
-\contentsline {chapter}{Bibliography}{31}{appendix*.37}%
+\contentsline {chapter}{\numberline {2}State of the art}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Ultra-Wideband Technology}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Real Time Locating Systems}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Symmetric double sided two-way ranging}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Trilateration}{6}{subsection.2.2.2}%
+\contentsline {subsubsection}{Uncertainties}{6}{section*.10}%
+\contentsline {section}{\numberline {2.3}Implementation of a locating system}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}DWM1000}{7}{subsection.2.3.1}%
+\contentsline {subsubsection}{Configuration}{7}{section*.12}%
+\contentsline {subsubsection}{Control}{8}{section*.13}%
+\contentsline {subsection}{\numberline {2.3.2}Anchor}{8}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Tag}{9}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Android Application}{10}{subsection.2.3.4}%
+\contentsline {subsubsection}{Navigation}{10}{section*.17}%
+\contentsline {subsubsection}{Test USB connection, Test orientation}{10}{section*.19}%
+\contentsline {subsubsection}{Calibration}{11}{section*.21}%
+\contentsline {subsection}{\numberline {2.3.5}Precision obtained}{11}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}Multi-path aided locating system}{12}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Ray Tracing}{13}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Channel Impulse Response}{14}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Virtual Anchors}{14}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Locating system}{15}{subsection.2.4.4}%
+\contentsline {chapter}{\numberline {3}Algorithms}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Peaks extraction}{16}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Soft case}{17}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Hard case}{18}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Hard localization algorithm}{19}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Virtual antennas combination}{19}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}System solver}{20}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Soft localization algorithm}{21}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Space solution reduction}{21}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Time MSE}{22}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {4}Simulations}{24}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Simulation}{24}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Realistic CIR generation}{24}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Code possible outputs ?}{25}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Hard Simulation}{25}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Soft Simulation}{25}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Experiences}{26}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Experimental set-up configuration}{26}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}DWM1000}{26}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}PSoC}{27}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Android Application}{28}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Test Campaign}{28}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusion}{29}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Application view}{30}{appendix.a.A}%
+\contentsline {chapter}{\numberline {B}State Machines}{31}{appendix.a.B}%
+\contentsline {chapter}{Bibliography}{33}{appendix*.40}%

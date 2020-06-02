@@ -43,21 +43,25 @@ The Fig. \ref{fig:UWB_time} shows the theoretical duration of an impulse of the 
 \label{fig:UWB_time}
 \end{figure}
 
-An advantage of the \gls{uwb} is its robustness in regard of the \glspl{mpc} \color{red} EXPLIQUER CE QUE SONT LES MPCS \color{black}.  This can be understood by looking at Fig. \ref{fig:UWB_MPC_Theo}, where several peaks can be distinguished, each corresponding to a different path travelled by the wave. Indeed, the probability to have a collision depends on the size of the pulse sent. From this, the interest of the \gls{uwb} in confined area appears as a lot of \gls{mpc} are present due to the reflections coming from all walls of a room.
+An advantage of the \gls{uwb} is its robustness in regard of the \gls{mpc}. Multipath stands for the propagation phenomena occurring in wireless communication transmission, the signal being able to reach the receiver through several path. The direct one, called \gls{los}, and the indirect one through reflection, diffraction, scattering called \gls{nlos}.  This can be understood by looking at Fig. \ref{fig:UWB_MPC_Theo}, where several peaks can be distinguished, each corresponding to a different path travelled by the wave. Indeed, the probability to have a collision depends on the size of the pulse sent. From this, the interest of the \gls{uwb} in confined area appears as a lot of \gls{mpc} are present due to the reflections coming from all walls of a room.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\linewidth]{Images/mpc_pulses.png}
-\caption{Example of an MPC with a \gls{los} and a \gls{nlos}. Taken from \cite{defraye2017determining}\color{red} DEFINIR LOS ET NLOS \color{black}}
+\caption{Example of an MPC with a \gls{los} and a \gls{nlos}. Taken from \cite{defraye2017determining}.}
 \label{fig:UWB_MPC_Theo}
 \end{figure}
 
 \section{Real Time Locating Systems}
 \label{rtls}
-\gls{rtls} are systems used to track and identify the location of objects in real time. This is a rather vague definition since nothing is specified concerning the means employed to achieve the localization. The \gls{rtls} that will be presented in this section will all have in common the use of wireless communications, between devices called "anchor" and "tag", the tag being associated with the object to locate while the anchor is at a fixed and known location.
+\gls{rtls} are systems used to track and identify the location of objects in real time. This is a rather vague definition since nothing is specified concerning the means employed to achieve the localization. The \gls{rtls} that will be presented in this section will all have in common the use of wireless communications, between devices called "anchor" and "tag", the tag being associated with the object to locate while the anchor is at a fixed and known location. Those \glspl{rtls} can be separated in two categories : "Relative localization" and "Absolute localization".
 \vspace{2mm}
 
-Those \gls{rtls} can be separated in two categories : "Relative localization" and "Absolute localization". The relative localization algorithm presented in section \ref{sds2wr} is the \gls{tof} method that is used in this project to compute the distance between an anchor and a tag. This choice has been made and explained in \cite{fesler2018high}, \cite{hannotier2019indoor} alongside a presentation of several approaches to determine the relative position of a tag relatively to an anchor. \color{red} Detailler plus cette partie \color{black}
+The relative localization algorithm presented is the \gls{sdstwr}, which output a \gls{tof} representing the needed time for a transmission to transit between the transmitter and the receiver. This method allows to gain some information about the position of the tag relatively to the anchor. This algorithm has been detailed and compared to several other methods in \cite{fesler2018high}, \cite{hannotier2019indoor}.
+\vspace{2mm}
+
+The absolute localization algorithm performs the localization in a x-y plane\footnote{Which can be extended in a x-y-z space if needed.} based on the three different \gls{tof} obtained.
+
 
 \subsection{Symmetric double sided two-way ranging}
 \label{sds2wr}
@@ -91,6 +95,7 @@ Since that \gls{tof} computed remains an estimation, it is important to know the
 \end{equation}
 
 The term $e_1 - e_2$ being the difference between the internal clocks of both devices. \cite{dalce2011comparison}
+
 
 \subsection{Trilateration}
 \label{tril}
@@ -231,7 +236,7 @@ The Navigation button opens a map of an environment\footnote{The room UA5.214 in
 When this function runs, the application enters a loop that continuously requests the PSoC to perform a \gls{sdstwr} with each anchor. The data containing the different timestamps are transmitted towards the application for each anchor separately. From those data, the distance between each anchor and the tag is computed on the cellphone as well as the trilateration algorithm described in section \ref{tril}, leading to an estimate of the location. The biggest computations are done on the cellphone because of the bigger computational power available in comparison to the PSoC.
 \vspace{2mm}
 
-A detailed state machine representing the interactions between the tag and an anchor can be found in appendix \color{red} make a link to an annex and put the state machine in annex \color{black}  \cite{hannotier2019indoor}. While the anchor only performs one \gls{sdstwr} at a time, the tag needs to keep an history of the anchors contacted to perform the trilateration afterwards.
+A detailed state machine representing the interactions between the tag and an anchor can be found in appendix \ref{app:state_machine}. While the anchor only performs one \gls{sdstwr} at a time, the tag needs to keep an history of the anchors contacted to perform the trilateration afterwards.
 
 \subsubsection{Test USB connection, Test orientation}
 \label{usb_con}
@@ -249,9 +254,7 @@ The "Test orientation" has been designed to test the detection of the orientatio
 
 \subsubsection{Calibration}
 
-The "Calibration" has been designed to enhance the precision on the timestamps. Indeed, there is a difference between the moment when the packet is received at the antenna of the DWM1000 and the moment of its detection, which corresponds to the timestamp. The same phenomena appears when the \gls{uwb} transceiver transmits a packet. Those errors on the timestamps are called the transmit/receive antenna delay and must be configured to match the actual antenna delay.
-
-\color{red} Expliquer l'origine des delays \color{black}
+The "Calibration" has been designed to enhance the precision on the timestamps. Indeed, there is a difference between the moment when the packet is received at the antenna of the DWM1000 and the moment of its detection, which corresponds to the timestamp. The same phenomena appears when the \gls{uwb} transceiver transmits a packet. Those errors on the timestamps are called the transmit/receive antenna delay and must be configured to match the actual antenna delay. This delay originate from the difference in time between the actual reception of the message by the antenna and its actual recognition.
 
 \subsection{Precision obtained}
 
@@ -282,12 +285,30 @@ To achieve a better localization, anchors can be added. It has the advantage to 
 \section{Multi-path aided locating system}
 \label{mpls}
 
-\color{red} Rajouter un fil rouge du fonctionnement \color{black}
+This section introduces the crucial notion needed to perform the localization of a tag using a reduced number of anchors. First, the ray tracing is introduce, a method used to simulate the paths taken by a wireless signal when transiting from the transmitter to the receiver. Based on this ray tracing, the \gls{cir} will be detailed as well as the concept of virtual anchors. Finally, several locating system based on the \gls{mpc} and \gls{cir} are briefly presented. 
 
 \subsection{Ray Tracing}
 \label{ray_tracing}
 
-Blablabla ray tracing
+In order to achieve the ray tracing, one must be familiar with the method of mirror images. This method is used to enumerate and deals with the reflection that a wireless communication may occurs in a \gls{mpc}. An example of this method is shown on Fig. \ref{fig:image_method}. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.7\linewidth]{Images/mirror_image.png}
+\caption{Method of mirror images - Example. \label{fig:image_method}}
+\end{figure}
+
+In this image, the purple ray is the direct (\gls{los}), the blue rays are the one that incurs one reflection on a wall and the green one is the on incurring two reflections. This can be generalized to as much reflection as one needs. While the generation of the \gls{los} is straightforward, in order to generate the ray that reflects on the $\text{wall}_\text{1}$, the mirror image of the \text{RX} through this wall has to be generated. The $\text{wall}_\text{1}$ acting as the axial symmetry axis as it can be seen with the doted line.
+\vspace{2mm}
+
+To compute the distance travelled following this path, one can compute the distance between $\text{TX}$ and $\text{RX'}_\text{1}$, which will be the same. The exact location where the ray will be reflected is the intersection between the current wall and the imaginary ray (red dashed line) between $\text{TX}$ and $\text{RX'}_\text{1}$. From this, the two blue segment can be traced, corresponding to the path followed by the electromagnetic wave. Knowing those information, the incidence angle on the wall can be known, which is an important parameter needed in the simulation presented in chapter \ref{simulations} to compute the suffered attenuation due to the reflection. The same methodology is applied on $\text{wall}_\text{2}$ to obtain the reflection due to the second wall.
+\vspace{2mm}
+
+The double reflected ray presented in green follows the same methodology. From 
+$\text{RX'}_\text{1}$ and $\text{RX'}_\text{2}$, $\text{RX''}$ can be found. The total path travelled by the ray is still the distance between $\text{TX}$ and $\text{RX''}$. The intersection between $\text{wall}_\text{1}$ and the imaginary ray (orange dashed line) is considered as the origin of the ray going towards $\text{RX'}_\text{2}$. This technique can be generalized to $n$-different walls.
+\vspace{2mm}
+
+The ray tracing can be achieved by testing all the different possible combination of walls. This number of possible combination increases with the number of reflections required will the significance of multiple-times reflected peaks decreases in term of absolute amplitude value, mostly since the travelled distance statistically increases with the number of reflection encountered.
 
 \subsection{Channel Impulse Response}
 \label{mp_cir}
@@ -299,7 +320,7 @@ An example is displayed on the Fig. \ref{fig:cir_ex1}. A ray tracing has been pe
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=.95\linewidth]{Images/Anchor-mpc.jpg}
+	\includegraphics[width=1\linewidth]{Images/Anchor-mpc.jpg}
 	\caption{(Left) Direct and simple reflected rays between an anchor $(4, 3)$ and a tag $(6, 9)$. (Right) Theoretical CIR associated to each ray displayed in the map. 	\label{fig:cir_ex1}}
 
 \end{figure}
@@ -332,14 +353,7 @@ In \cite{meissner2010mc}, the localization of a moving tag is proposed. This met
 In \cite{froehle2013cooperative}, the \gls{comint} uses other tags in the room as anchor to perform the location. Each tag, acting as a transceiver and a receiver, communicates with the other tags to compute its distance relatively to those tag. An algorithm is presented in this paper that combines those different informations to achieve the localization.
 \vspace{2mm}
 
-\color{red} A refaire d'ici \color{black}
-
-In \cite{jespersen2018indoor}, a method providing the tag location without using a history of the previous locations is proposed. Using the \gls{cir}, several pulses are detected, being equivalent to the \gls{tof} computed in the multiple anchor locating system previously presented. Nonetheless, there is a significant difference between both cases. In this method, each \gls{tof} is not associated with an anchor (virtual or not). Without knowing the position of the tag, one can not attribute each peak to an anchor\footnote{An exception is done for the first peak, since the \gls{los} that originates from the physical anchor is assumed to be the shortest path.}.
+In \cite{jespersen2018indoor}, a method providing the tag location without using a history of the previous locations is proposed. From the \gls{cir}, several peaks are extracted, each of this peak being associated to the \gls{tof} used in the multiple anchor locating system previously presented. The difference being that the \gls{tof} extracted from the \gls{cir} can not be surely associated with a specific \gls{va}\footnote{An exception is done for the first peak, since the \gls{los} that originates from the physical anchor is assumed to be the shortest path.}. 
 \vspace{2mm}
 
-Due to this difference, the system \ref{eq:syst_approx} needs to be solved multiple times. Depending on the number of peaks detected, permutations between each \gls{va} needs to be done to test all the possibilities. The objective is still to find the $p_0$ value that minimize the equation.
-
-
-
-% La on attaque la partie dure. Parler des ancres virtuelles, introduire le concept avec des schémas, montrer qu'on à dès lors besoin de la CIR.
-% Parler des articles qui expliquent la théorie avec du MPC.
+Therefore, the system presented at eq. \ref{eq:syst_approx} needs to be solved multiple times in order to find the most suited combination of peak-antenna to locate the tag.
