@@ -1,44 +1,44 @@
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
-\BOOKMARK [0][-]{chapter.2}{State of the art}{}% 2
-\BOOKMARK [1][-]{section.2.1}{Ultra-Wideband Technology}{chapter.2}% 3
-\BOOKMARK [1][-]{section.2.2}{Real Time Locating Systems}{chapter.2}% 4
-\BOOKMARK [2][-]{subsection.2.2.1}{Symmetric double sided two-way ranging}{section.2.2}% 5
-\BOOKMARK [2][-]{subsection.2.2.2}{Trilateration}{section.2.2}% 6
-\BOOKMARK [1][-]{section.2.3}{Implementation of a locating system}{chapter.2}% 7
-\BOOKMARK [2][-]{subsection.2.3.1}{DWM1000}{section.2.3}% 8
-\BOOKMARK [2][-]{subsection.2.3.2}{Anchor}{section.2.3}% 9
-\BOOKMARK [2][-]{subsection.2.3.3}{Tag}{section.2.3}% 10
-\BOOKMARK [2][-]{subsection.2.3.4}{Android Application}{section.2.3}% 11
-\BOOKMARK [2][-]{subsection.2.3.5}{Precision reached}{section.2.3}% 12
-\BOOKMARK [1][-]{section.2.4}{Multi-path aided locating system}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.4.1}{Ray Tracing}{section.2.4}% 14
-\BOOKMARK [2][-]{subsection.2.4.2}{Channel Impulse Response}{section.2.4}% 15
-\BOOKMARK [2][-]{subsection.2.4.3}{Virtual Anchors}{section.2.4}% 16
-\BOOKMARK [2][-]{subsection.2.4.4}{Locating system}{section.2.4}% 17
-\BOOKMARK [0][-]{chapter.3}{Algorithms}{}% 18
-\BOOKMARK [1][-]{section.3.1}{Peaks extraction}{chapter.3}% 19
-\BOOKMARK [2][-]{subsection.3.1.1}{Soft case}{section.3.1}% 20
-\BOOKMARK [2][-]{subsection.3.1.2}{Hard case}{section.3.1}% 21
-\BOOKMARK [1][-]{section.3.2}{Hard localization algorithm}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.2.1}{Virtual antennas combination}{section.3.2}% 23
-\BOOKMARK [2][-]{subsection.3.2.2}{System solver}{section.3.2}% 24
-\BOOKMARK [1][-]{section.3.3}{Soft localization algorithm}{chapter.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.1}{Space solution reduction}{section.3.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.2}{Time MSE}{section.3.3}% 27
-\BOOKMARK [0][-]{chapter.4}{Simulations}{}% 28
-\BOOKMARK [1][-]{section.4.1}{Simulation}{chapter.4}% 29
-\BOOKMARK [2][-]{subsection.4.1.1}{Realistic CIR generation}{section.4.1}% 30
-\BOOKMARK [2][-]{subsection.4.1.2}{Code possible outputs ?}{section.4.1}% 31
-\BOOKMARK [1][-]{section.4.2}{Hard Simulation}{chapter.4}% 32
-\BOOKMARK [1][-]{section.4.3}{Soft Simulation}{chapter.4}% 33
-\BOOKMARK [0][-]{chapter.5}{Experiences}{}% 34
-\BOOKMARK [1][-]{section.5.1}{Experimental set-up configuration}{chapter.5}% 35
-\BOOKMARK [2][-]{subsection.5.1.1}{DWM1000}{section.5.1}% 36
-\BOOKMARK [2][-]{subsection.5.1.2}{PSoC}{section.5.1}% 37
-\BOOKMARK [2][-]{subsection.5.1.3}{Android Application}{section.5.1}% 38
-\BOOKMARK [1][-]{section.5.2}{Test Campaign}{chapter.5}% 39
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 40
-\BOOKMARK [0][-]{appendix.a.A}{Application view}{}% 41
-\BOOKMARK [0][-]{appendix.a.B}{State Machines}{}% 42
-\BOOKMARK [0][-]{section*.43}{Acronyms}{}% 43
-\BOOKMARK [0][-]{appendix*.45}{Bibliography}{}% 44
+\BOOKMARK [0][-]{section*.3}{Acronyms}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 2
+\BOOKMARK [0][-]{chapter.2}{State of the art}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Ultra-Wideband Technology}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{Real Time Locating Systems}{chapter.2}% 5
+\BOOKMARK [2][-]{subsection.2.2.1}{Symmetric double sided two-way ranging}{section.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.2}{Trilateration}{section.2.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Implementation of a locating system}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.3.1}{DWM1000}{section.2.3}% 9
+\BOOKMARK [2][-]{subsection.2.3.2}{Anchor}{section.2.3}% 10
+\BOOKMARK [2][-]{subsection.2.3.3}{Tag}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.4}{Android Application}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.5}{Precision reached}{section.2.3}% 13
+\BOOKMARK [1][-]{section.2.4}{Multi-path aided locating system}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.4.1}{Ray Tracing}{section.2.4}% 15
+\BOOKMARK [2][-]{subsection.2.4.2}{Channel Impulse Response}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.3}{Virtual Anchors}{section.2.4}% 17
+\BOOKMARK [2][-]{subsection.2.4.4}{Locating system}{section.2.4}% 18
+\BOOKMARK [0][-]{chapter.3}{Algorithms}{}% 19
+\BOOKMARK [1][-]{section.3.1}{Peaks extraction}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.1.1}{Soft case}{section.3.1}% 21
+\BOOKMARK [2][-]{subsection.3.1.2}{Hard case}{section.3.1}% 22
+\BOOKMARK [1][-]{section.3.2}{Hard localization algorithm}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.2.1}{Virtual antennas combination}{section.3.2}% 24
+\BOOKMARK [2][-]{subsection.3.2.2}{System solver}{section.3.2}% 25
+\BOOKMARK [1][-]{section.3.3}{Soft localization algorithm}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.1}{Space solution reduction}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.2}{Time MSE}{section.3.3}% 28
+\BOOKMARK [0][-]{chapter.4}{Simulations}{}% 29
+\BOOKMARK [1][-]{section.4.1}{Simulation}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.1.1}{Realistic CIR generation}{section.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.1.2}{Code possible outputs ?}{section.4.1}% 32
+\BOOKMARK [1][-]{section.4.2}{Hard Simulation}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.3}{Soft Simulation}{chapter.4}% 34
+\BOOKMARK [0][-]{chapter.5}{Experiences}{}% 35
+\BOOKMARK [1][-]{section.5.1}{Experimental set-up configuration}{chapter.5}% 36
+\BOOKMARK [2][-]{subsection.5.1.1}{DWM1000}{section.5.1}% 37
+\BOOKMARK [2][-]{subsection.5.1.2}{PSoC}{section.5.1}% 38
+\BOOKMARK [2][-]{subsection.5.1.3}{Android Application}{section.5.1}% 39
+\BOOKMARK [1][-]{section.5.2}{Test Campaign}{chapter.5}% 40
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 41
+\BOOKMARK [0][-]{chapter*.42}{Bibliography}{}% 42
+\BOOKMARK [0][-]{appendix.a.A}{Application view}{}% 43
+\BOOKMARK [0][-]{appendix.a.B}{State Machines}{}% 44

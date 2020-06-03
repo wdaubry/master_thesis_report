@@ -30,6 +30,12 @@
 
 \input{src/ack.tex}
 
+% --- Glossaries
+
+\printglossary[title=Acronyms, 
+toctitle=Acronyms,
+type=acronym]
+
 % --- TOC
 
 \tableofcontents
@@ -58,6 +64,11 @@
 
 \input{src/conclusion.tex}
 
+% --- bibliography 
+
+\printbibliography
+\addcontentsline{toc}{chapter}{Bibliography}
+
 % --- Appendices 
 
 \begin{appendices}
@@ -72,15 +83,6 @@
 	
 	
 \end{appendices}
-
-\printglossary[title=Acronyms, 
-toctitle=Acronyms,
-type=acronym]
-
-% --- bibliography 
-
-\printbibliography
-\addcontentsline{toc}{chapter}{Bibliography}
 
 \end{document}
 
