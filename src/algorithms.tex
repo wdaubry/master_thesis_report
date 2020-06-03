@@ -16,7 +16,7 @@ A \gls{cir} as shown in \ref{fig:cir_ex1} unfortunately does not exist in the re
 The simulation used to generate the realistic \gls{cir} is described in chapter \ref{simulations}. As we can observe, the peaks that originates from the theoretical case matches peaks in the realistic. But can also observe that some new peaks arise in the realistic case, such as those around $0.4*10^{-7}s$. 
 \vspace{2mm}
 
-The goal of the peak extraction function is, as the name states, to extract the peaks matching the needs of the locating algorithm. As it will be seen in section \ref{hard_loc}, \ref{soft_loc}, the two methods do not reach their purpose in the same way, the optimal peaks will be slightly different. Hence the two different peaks extraction methods presented below, a soft and a hard.
+The goal of the peak extraction function is, as the name states, to extract the peaks matching the needs of the locating algorithm. As it will be seen in section \ref{hard_loc}, \ref{soft_loc}, the two methods do not reach their purpose in the same way, the optimal peaks will be slightly different. Hence the two different peaks extraction methods presented below, a soft and a hard case.
 
 \subsection{Soft case}
 
@@ -149,7 +149,7 @@ For each peak extracted from the \gls{cir}, two informations are available, the 
 For example, if a peak suffers from to omuch attenuation in the real case compared with the simulation, because of losses coming from the transmission, due to reflections on the different materials which are not perfectly simulated, due to a not perfectly isotropic emission of the antenna in the room plane, etc. All those reasons may vary the amplitude of each peak of the \gls{cir}, meaning that nothing can ensure that the proportionality between the \gls{los} peak and the other peaks would be conserved as in the simulation.
 \vspace{2mm}
 
-For those reasons, the comparison will be based on the time-of-arrival of each peak. This method also has some drawbacks, the transition to the finite band does not ensure that the peaks will remain at their exact locations. When two peaks mingle, the new peak remaining in finite band iare more likely to have an arrival in the middle of those two peaks. Some precautions have been taken to minimize the errors induced by this phenomena.
+For those reasons, the comparison will be based on the time-of-arrival of each peak. This method also has some drawbacks, the transition to the finite band does not ensure that the peaks will remain at their exact locations. When two peaks mingle, the new peak remaining in finite band iare more likely to have an arrival in the middle of those two peaks. Some precautions have been taken to minimize the errors induced by this phenomenon.
 \vspace{2mm}
 
 \subsection{Space solution reduction}
@@ -170,7 +170,7 @@ Using the \gls{sdstwr}, the \gls{tof} of the signal between the tag and the anch
 From the position inside those boundaries, a mask matrix representing all the positions of the room is filled with ones for the position inside of the orange zone. The other positions are left to zero. Later, this mask is used to reduce the computations since only the values associated with a one will be tested.
 \vspace{2mm}
 
-This will be gives leads to a matrix, whose size depends on the chosen discretization of the room, filled with one and zero. The meaning of a one in this matrix means that the location associated to this entry of the matrix has been judged as a probable location for the tag. Therefore, the next step of this algorithm is performed only at those location. This results in a map as displayed in Fig. \ref{fig:mse_example} where only an arc has been evaluated, not the wall map.
+This will lead to a matrix, of witch the size depends on the chosen discretization of the room, filled with one and zero. The meaning of a one in this matrix means that the location associated to this entry of the matrix has been judged as a probable location for the tag. Therefore, the next step of this algorithm is performed only at those locations. This results are in a map as displayed in Fig. \ref{fig:mse_example} where only an arc has been evaluated, not the wall map.
 
 \subsection{Time MSE}
 
