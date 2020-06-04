@@ -29,7 +29,7 @@
 \BOOKMARK [0][-]{chapter.4}{Simulations}{}% 29
 \BOOKMARK [1][-]{section.4.1}{Simulation}{chapter.4}% 30
 \BOOKMARK [2][-]{subsection.4.1.1}{Realistic CIR generation}{section.4.1}% 31
-\BOOKMARK [2][-]{subsection.4.1.2}{Code possible outputs ?}{section.4.1}% 32
+\BOOKMARK [2][-]{subsection.4.1.2}{Analysis tools}{section.4.1}% 32
 \BOOKMARK [1][-]{section.4.2}{Soft Simulation}{chapter.4}% 33
 \BOOKMARK [2][-]{subsection.4.2.1}{Symmetry issues}{section.4.2}% 34
 \BOOKMARK [2][-]{subsection.4.2.2}{Soft localization in an empty room}{section.4.2}% 35
@@ -45,3 +45,4 @@
 \BOOKMARK [0][-]{chapter*.55}{Bibliography}{}% 45
 \BOOKMARK [0][-]{appendix.a.A}{Application view}{}% 46
 \BOOKMARK [0][-]{appendix.a.B}{State Machines}{}% 47
+\BOOKMARK [0][-]{appendix.a.C}{SLA - Lightly cluttered room}{}% 48
