@@ -30,15 +30,18 @@
 \BOOKMARK [1][-]{section.4.1}{Simulation}{chapter.4}% 30
 \BOOKMARK [2][-]{subsection.4.1.1}{Realistic CIR generation}{section.4.1}% 31
 \BOOKMARK [2][-]{subsection.4.1.2}{Code possible outputs ?}{section.4.1}% 32
-\BOOKMARK [1][-]{section.4.2}{Hard Simulation}{chapter.4}% 33
-\BOOKMARK [1][-]{section.4.3}{Soft Simulation}{chapter.4}% 34
-\BOOKMARK [0][-]{chapter.5}{Experiences}{}% 35
-\BOOKMARK [1][-]{section.5.1}{Experimental set-up configuration}{chapter.5}% 36
-\BOOKMARK [2][-]{subsection.5.1.1}{DWM1000}{section.5.1}% 37
-\BOOKMARK [2][-]{subsection.5.1.2}{PSoC}{section.5.1}% 38
-\BOOKMARK [2][-]{subsection.5.1.3}{Android Application}{section.5.1}% 39
-\BOOKMARK [1][-]{section.5.2}{Test Campaign}{chapter.5}% 40
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 41
-\BOOKMARK [0][-]{chapter*.42}{Bibliography}{}% 42
-\BOOKMARK [0][-]{appendix.a.A}{Application view}{}% 43
-\BOOKMARK [0][-]{appendix.a.B}{State Machines}{}% 44
+\BOOKMARK [1][-]{section.4.2}{Soft Simulation}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.2.1}{Symmetry issues}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.2}{Soft localization in an empty room}{section.4.2}% 35
+\BOOKMARK [2][-]{subsection.4.2.3}{Soft localization in a cluttered room}{section.4.2}% 36
+\BOOKMARK [1][-]{section.4.3}{Hard Simulation}{chapter.4}% 37
+\BOOKMARK [0][-]{chapter.5}{Experiments}{}% 38
+\BOOKMARK [1][-]{section.5.1}{Experimental set-up configuration}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.1.1}{DWM1000}{section.5.1}% 40
+\BOOKMARK [2][-]{subsection.5.1.2}{PSoC}{section.5.1}% 41
+\BOOKMARK [2][-]{subsection.5.1.3}{Android Application}{section.5.1}% 42
+\BOOKMARK [1][-]{section.5.2}{Test Campaign}{chapter.5}% 43
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 44
+\BOOKMARK [0][-]{chapter*.50}{Bibliography}{}% 45
+\BOOKMARK [0][-]{appendix.a.A}{Application view}{}% 46
+\BOOKMARK [0][-]{appendix.a.B}{State Machines}{}% 47
