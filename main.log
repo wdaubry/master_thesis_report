@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  4 JUN 2020 22:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  5 JUN 2020 01:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1595,85 +1595,85 @@ Package pdftex.def Info: Images/Temporary_pic.png  used on input line 31.
 <Images/15_15_sym.png, id=975, 1466.47874pt x 1290.8225pt>
 File: Images/15_15_sym.png Graphic file (type png)
 <use Images/15_15_sym.png>
-Package pdftex.def Info: Images/15_15_sym.png  used on input line 55.
+Package pdftex.def Info: Images/15_15_sym.png  used on input line 56.
 (pdftex.def)             Requested size: 332.32625pt x 292.51035pt.
 
 [26 <./Images/15_15_sym.png>]
 <Images/square_sym_mse_4_8.png, id=994, 1516.66624pt x 1298.8525pt>
 File: Images/square_sym_mse_4_8.png Graphic file (type png)
 <use Images/square_sym_mse_4_8.png>
-Package pdftex.def Info: Images/square_sym_mse_4_8.png  used on input line 66.
+Package pdftex.def Info: Images/square_sym_mse_4_8.png  used on input line 67.
 (pdftex.def)             Requested size: 409.71692pt x 350.87323pt.
 
 
 LaTeX Warning: Reference `app:symmetry_antenna_placement' on page 27 undefined 
-on input line 70.
+on input line 71.
 
 [27 <./Images/square_sym_mse_4_8.png>]
 <Images/cir_comparison_rect.png, id=1006, 2022.55624pt x 1118.1775pt>
 File: Images/cir_comparison_rect.png Graphic file (type png)
 <use Images/cir_comparison_rect.png>
-Package pdftex.def Info: Images/cir_comparison_rect.png  used on input line 80.
+Package pdftex.def Info: Images/cir_comparison_rect.png  used on input line 81.
 
 (pdftex.def)             Requested size: 409.71692pt x 226.51501pt.
 <Images/no_more_name_idea.png, id=1009, 1673.25125pt x 1036.87375pt>
 File: Images/no_more_name_idea.png Graphic file (type png)
 <use Images/no_more_name_idea.png>
-Package pdftex.def Info: Images/no_more_name_idea.png  used on input line 90.
+Package pdftex.def Info: Images/no_more_name_idea.png  used on input line 91.
 (pdftex.def)             Requested size: 455.24411pt x 282.09554pt.
  [28 <./Images/cir_comparison_rect.png>]
 <Images/no_name_1.png, id=1024, 1916.15875pt x 1045.9075pt>
 File: Images/no_name_1.png Graphic file (type png)
 <use Images/no_name_1.png>
-Package pdftex.def Info: Images/no_name_1.png  used on input line 98.
+Package pdftex.def Info: Images/no_name_1.png  used on input line 99.
 (pdftex.def)             Requested size: 455.24411pt x 248.48541pt.
 
 [29 <./Images/no_more_name_idea.png> <./Images/no_name_1.png>]
 <Images/no_name_2.png, id=1038, 2186.1675pt x 873.2625pt>
 File: Images/no_name_2.png Graphic file (type png)
 <use Images/no_name_2.png>
-Package pdftex.def Info: Images/no_name_2.png  used on input line 106.
+Package pdftex.def Info: Images/no_name_2.png  used on input line 107.
 (pdftex.def)             Requested size: 455.24411pt x 181.84485pt.
 <Images/image_XXX.png, id=1061, 1985.4175pt x 1074.0125pt>
 File: Images/image_XXX.png Graphic file (type png)
 <use Images/image_XXX.png>
-Package pdftex.def Info: Images/image_XXX.png  used on input line 128.
+Package pdftex.def Info: Images/image_XXX.png  used on input line 129.
 (pdftex.def)             Requested size: 409.71692pt x 221.63252pt.
  [30 <./Images/no_name_2.png>]
 <Images/room_furniture.png, id=1077, 1163.34625pt x 917.4275pt>
 File: Images/room_furniture.png Graphic file (type png)
 <use Images/room_furniture.png>
-Package pdftex.def Info: Images/room_furniture.png  used on input line 140.
+Package pdftex.def Info: Images/room_furniture.png  used on input line 141.
 (pdftex.def)             Requested size: 273.14923pt x 215.41351pt.
  [31 <./Images/image_XXX.png (PNG copy)> <./Images/room_furniture.png>]
 <Images/cluttered_room.png, id=1085, 1895.08pt x 1135.24126pt>
 File: Images/cluttered_room.png Graphic file (type png)
 <use Images/cluttered_room.png>
-Package pdftex.def Info: Images/cluttered_room.png  used on input line 149.
+Package pdftex.def Info: Images/cluttered_room.png  used on input line 150.
 (pdftex.def)             Requested size: 409.71692pt x 245.44058pt.
 <Images/sla_cluttered_lot.png, id=1090, 2393.94376pt x 1335.99126pt>
 File: Images/sla_cluttered_lot.png Graphic file (type png)
 <use Images/sla_cluttered_lot.png>
-Package pdftex.def Info: Images/sla_cluttered_lot.png  used on input line 156.
+Package pdftex.def Info: Images/sla_cluttered_lot.png  used on input line 157.
 (pdftex.def)             Requested size: 409.71692pt x 228.64442pt.
 <Images/cir_success_comparison.png, id=1098, 2024.56375pt x 1172.38pt>
 File: Images/cir_success_comparison.png Graphic file (type png)
 <use Images/cir_success_comparison.png>
 Package pdftex.def Info: Images/cir_success_comparison.png  used on input line 
-164.
+165.
 (pdftex.def)             Requested size: 386.96027pt x 224.07831pt.
  [32 <./Images/cluttered_room.png> <./Images/sla_cluttered_lot.png>]
 <Images/cir_failed_comparison.png, id=1115, 1736.4875pt x 1097.09875pt>
 File: Images/cir_failed_comparison.png Graphic file (type png)
 <use Images/cir_failed_comparison.png>
 Package pdftex.def Info: Images/cir_failed_comparison.png  used on input line 1
-72.
+73.
 (pdftex.def)             Requested size: 386.96027pt x 244.47618pt.
 
 [33 <./Images/cir_success_comparison.png> <./Images/cir_failed_comparison.png>]
 ) (./src/experiences.tex [34]
 Chapter 5.
-<Images/control_ref.png, id=1142, 682.55pt x 157.58875pt>
+<Images/control_ref.png, id=1146, 682.55pt x 157.58875pt>
 File: Images/control_ref.png Graphic file (type png)
 <use Images/control_ref.png>
 Package pdftex.def Info: Images/control_ref.png  used on input line 20.
@@ -1687,13 +1687,13 @@ ed in the \T1/cmtt/m/n/12 0x25 \T1/cmr/m/n/12 : [].
 [35
 
  <./Images/control_ref.png>]
-<Images/extracted_cir.png, id=1172, 1183.42125pt x 429.605pt>
+<Images/extracted_cir.png, id=1176, 1183.42125pt x 429.605pt>
 File: Images/extracted_cir.png Graphic file (type png)
 <use Images/extracted_cir.png>
 Package pdftex.def Info: Images/extracted_cir.png  used on input line 37.
 (pdftex.def)             Requested size: 455.24411pt x 165.26405pt.
  [36 <./Images/extracted_cir.png>]
-<Images/saved_cir.png, id=1202, 700.6175pt x 94.3525pt>
+<Images/saved_cir.png, id=1206, 700.6175pt x 94.3525pt>
 File: Images/saved_cir.png Graphic file (type png)
 <use Images/saved_cir.png>
 Package pdftex.def Info: Images/saved_cir.png  used on input line 66.
@@ -1748,7 +1748,7 @@ RollPitchExample .
 
 (./src/app_view.tex [41]
 Appendix A.
-<Images/app_main.jpg, id=1253, 1084.05pt x 2228.325pt>
+<Images/app_main.jpg, id=1266, 1084.05pt x 2228.325pt>
 File: Images/app_main.jpg Graphic file (type jpg)
 <use Images/app_main.jpg>
 Package pdftex.def Info: Images/app_main.jpg  used on input line 6.
@@ -1757,13 +1757,13 @@ Package pdftex.def Info: Images/app_main.jpg  used on input line 6.
 
  <./Images/app_main.jpg>]
 Appendix B.
-<Images/state_machine_anchor.png, id=1260, 372.39125pt x 459.7175pt>
+<Images/state_machine_anchor.png, id=1272, 372.39125pt x 459.7175pt>
 File: Images/state_machine_anchor.png Graphic file (type png)
 <use Images/state_machine_anchor.png>
 Package pdftex.def Info: Images/state_machine_anchor.png  used on input line 6.
 
 (pdftex.def)             Requested size: 409.71692pt x 505.81006pt.
-<Images/state_machine_tag.png, id=1263, 441.65pt x 545.03625pt>
+<Images/state_machine_tag.png, id=1275, 441.65pt x 545.03625pt>
 File: Images/state_machine_tag.png Graphic file (type png)
 <use Images/state_machine_tag.png>
 Package pdftex.def Info: Images/state_machine_tag.png  used on input line 12.
@@ -1773,12 +1773,12 @@ Package pdftex.def Info: Images/state_machine_tag.png  used on input line 12.
  <./Images/state_machine_anchor.png>] (./src/appendix_3.tex [44 <./Images/state
 _machine_tag.png>]
 Appendix C.
-<Images/Anchor_at_(3_9).png, id=1280, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(3_9).png, id=1292, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(3_9).png Graphic file (type png)
 <use Images/Anchor_at_(3_9).png>
 Package pdftex.def Info: Images/Anchor_at_(3_9).png  used on input line 10.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
-<Images/Anchor_at_(12_1).png, id=1281, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(12_1).png, id=1293, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(12_1).png Graphic file (type png)
 <use Images/Anchor_at_(12_1).png>
 Package pdftex.def Info: Images/Anchor_at_(12_1).png  used on input line 16.
@@ -1786,43 +1786,43 @@ Package pdftex.def Info: Images/Anchor_at_(12_1).png  used on input line 16.
 [45
 
  <./Images/Anchor_at_(3_9).png (PNG copy)>]
-<Images/Anchor_at_(13_9).png, id=1288, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(13_9).png, id=1300, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(13_9).png Graphic file (type png)
 <use Images/Anchor_at_(13_9).png>
 Package pdftex.def Info: Images/Anchor_at_(13_9).png  used on input line 22.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
-<Images/Anchor_at_(14_9).png, id=1289, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(14_9).png, id=1301, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(14_9).png Graphic file (type png)
 <use Images/Anchor_at_(14_9).png>
 Package pdftex.def Info: Images/Anchor_at_(14_9).png  used on input line 28.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
  [46 <./Images/Anchor_at_(12_1).png (PNG copy)> <./Images/Anchor_at_(13_9).png 
 (PNG copy)>]
-<Images/Anchor_at_(9_3).png, id=1296, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(9_3).png, id=1308, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(9_3).png Graphic file (type png)
 <use Images/Anchor_at_(9_3).png>
 Package pdftex.def Info: Images/Anchor_at_(9_3).png  used on input line 36.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
-<Images/Anchor_at_(9_9).png, id=1297, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(9_9).png, id=1309, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(9_9).png Graphic file (type png)
 <use Images/Anchor_at_(9_9).png>
 Package pdftex.def Info: Images/Anchor_at_(9_9).png  used on input line 42.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
  [47 <./Images/Anchor_at_(14_9).png (PNG copy)> <./Images/Anchor_at_(9_3).png (
 PNG copy)>]
-<Images/Anchor_at_(12_6).png, id=1306, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(12_6).png, id=1318, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(12_6).png Graphic file (type png)
 <use Images/Anchor_at_(12_6).png>
 Package pdftex.def Info: Images/Anchor_at_(12_6).png  used on input line 48.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
-<Images/Anchor_at_(7_4).png, id=1307, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(7_4).png, id=1319, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(7_4).png Graphic file (type png)
 <use Images/Anchor_at_(7_4).png>
 Package pdftex.def Info: Images/Anchor_at_(7_4).png  used on input line 56.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
  [48 <./Images/Anchor_at_(9_9).png (PNG copy)> <./Images/Anchor_at_(12_6).png (
 PNG copy)>]
-<Images/Anchor_at_(10_6).png, id=1314, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(10_6).png, id=1326, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(10_6).png Graphic file (type png)
 <use Images/Anchor_at_(10_6).png>
 Package pdftex.def Info: Images/Anchor_at_(10_6).png  used on input line 62.
@@ -1840,19 +1840,16 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
  ) 
 Here is how much of TeX's memory you used:
- 38585 strings out of 480608
- 746002 string characters out of 5903631
- 1396953 words of memory out of 5000000
- 53453 multiletter control sequences out of 15000+600000
+ 38586 strings out of 480608
+ 746012 string characters out of 5903631
+ 1396995 words of memory out of 5000000
+ 53454 multiletter control sequences out of 15000+600000
  556680 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,18n,79p,1039b,2460s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1889,10 +1886,10 @@ type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/public/cm-super/sfti1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/public/cm-super/sftt0800.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 public/cm-super/sftt1200.pfb>
-Output written on main.pdf (57 pages, 10495951 bytes).
+Output written on main.pdf (57 pages, 10498010 bytes).
 PDF statistics:
- 1474 PDF objects out of 1728 (max. 8388607)
- 1256 compressed objects within 13 object streams
+ 1486 PDF objects out of 1728 (max. 8388607)
+ 1268 compressed objects within 13 object streams
  265 named destinations out of 1000 (max. 500000)
  662 words of extra memory for PDF output out of 10000 (max. 10000000)
 
