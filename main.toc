@@ -56,3 +56,4 @@
 \contentsline {chapter}{\numberline {A}Application view}{42}{appendix.a.A}%
 \contentsline {chapter}{\numberline {B}State Machines}{43}{appendix.a.B}%
 \contentsline {chapter}{\numberline {C}SLA - Lightly cluttered room}{45}{appendix.a.C}%
+\contentsline {chapter}{\numberline {D}HLA - Lightly cluttered room}{50}{appendix.a.D}%
