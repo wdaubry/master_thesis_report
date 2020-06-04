@@ -44,14 +44,14 @@
 \contentsline {subsection}{\numberline {4.2.2}Soft localization in an empty room}{28}{subsection.4.2.2}%
 \contentsline {subsubsection}{Soft part of the algorithm}{30}{section*.45}%
 \contentsline {subsection}{\numberline {4.2.3}Soft localization in a cluttered room}{30}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Hard Simulation}{30}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Experiments}{31}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Experimental set-up configuration}{31}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}DWM1000}{31}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}PSoC}{32}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Android Application}{33}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Test Campaign}{34}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusion}{35}{chapter.6}%
-\contentsline {chapter}{Bibliography}{37}{chapter*.50}%
-\contentsline {chapter}{\numberline {A}Application view}{38}{appendix.a.A}%
-\contentsline {chapter}{\numberline {B}State Machines}{39}{appendix.a.B}%
+\contentsline {section}{\numberline {4.3}Hard Simulation}{33}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Experiments}{34}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Experimental set-up configuration}{34}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}DWM1000}{34}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}PSoC}{35}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Android Application}{36}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Test Campaign}{37}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusion}{38}{chapter.6}%
+\contentsline {chapter}{Bibliography}{40}{chapter*.55}%
+\contentsline {chapter}{\numberline {A}Application view}{41}{appendix.a.A}%
+\contentsline {chapter}{\numberline {B}State Machines}{42}{appendix.a.B}%

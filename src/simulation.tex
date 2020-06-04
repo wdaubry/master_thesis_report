@@ -132,15 +132,42 @@ In definitive, in a perfect non cluttered room, the \gls{sla} does not reach a p
 
 \subsection{Soft localization in a cluttered room}
 
-The simulations of this section have been done for a room of the same dimension as section \ref{soft_empty_room} filled with furniture. Four different consoles of various sizes are placed against each wall of the room. This will results in are realistic \gls{cir} being more complex because of the various reflections taking place on the walls and the furniture. The used room can be seen in Fig. \ref{fig:room_cluttered}. The furniture considered in this section are those in brown.
+The simulations of this section have been done for a room of the same dimension as section \ref{soft_empty_room} filled with furniture. Four different consoles of various sizes are placed against each wall of the room. This will results in are realistic \gls{cir} being more complex because of the various reflections taking place on the walls and the furniture. The used room can be seen in Fig. \ref{fig:room_cluttered}.
 
-\begin{figure}
+\begin{figure}[H]
 \centering
-\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
-\caption{Cluttered room \label{fig:room_cluttered}}
+\includegraphics[width=.6\linewidth]{Images/room_furniture.png}
+\caption{Furniture displayed in the room. \label{fig:room_cluttered}}
 \end{figure}
 
 
+The set anchor has been place at the same location as in the previous section and the considered furniture are the blue. As we can observe in Fig. \ref{fig:dist_clut_room}, the quality of the localization decreases, this quality decreases even more when furniture are set in the middle of the room, as it can be seen on Fig. \ref{fig:dist_lot_clut_room}, creating more and more surface where reflection can take place.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.9\linewidth]{Images/cluttered_room.png}
+\caption{\label{fig:dist_clut_room}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.9\linewidth]{Images/sla_cluttered_lot.png}
+\caption{\label{fig:dist_lot_clut_room}}
+\end{figure}
+
+This evolution can be understood by checking the realistic \gls{cir} obtained for different versions of the room for different location of the tag. On Fig. \ref{fig:cir_comp_dif_room_working}, those \gls{cir} can be seen for the coordinates (10, 4), a more or less well estimated tag location.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{Images/cir_success_comparison.png}
+\caption{CIRs obtained for an anchor set at (1, 3) and a tag at (10, 4). The top three are the realistic CIR obtained in, from top to bottom respectively, an empty room, a room with blue furniture from Fig. \ref{fig:room_cluttered} and a room with all the furniture set. Fourth CIR is the theoretical CIR obtained using an empty room.  \label{fig:cir_comp_dif_room_working}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{Images/cir_failed_comparison.png}
+\caption{CIRs obtained for an anchor set at (1, 3) and a tag at (11, 8). The top three are the realistic CIR obtained in, from top to bottom respectively, an empty room, a room with blue furniture from Fig. \ref{fig:room_cluttered}  and a room with all the furniture set. Fourth CIR is the theoretical CIR obtained using an empty room. \label{fig:cir_comp_dif_room_failing}}
+\end{figure}
 
 
 \section{Hard Simulation}
