@@ -61,3 +61,4 @@
 \contentsline {chapter}{\numberline {B}State Machines}{49}{appendix.a.B}%
 \contentsline {chapter}{\numberline {C}SLA - Lightly cluttered room}{51}{appendix.a.C}%
 \contentsline {chapter}{\numberline {D}HLA - Lightly cluttered room}{56}{appendix.a.D}%
+\contentsline {chapter}{\numberline {E}Antenna symmetry blabla}{60}{appendix.a.E}%

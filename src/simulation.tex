@@ -24,7 +24,7 @@ In order to generate a finite-band \gls{cir}, the equivalent infinite-band \gls{
 \caption{Ray Tracing Simulation - Example. \label{fig:ray_simu}}
 \end{figure}
 
-Stating infinite is not completely correct, the real bandwidth being the one of the carrier frequency in this case, however, it shows the characteristics in connection with actual bandwidth used. The different peaks are well isolated and punctual. The so-called infinite-band \gls{cir} is converted to the frequency domain using the Fourier transform. The built-in \gls{fft} function from $\text{MATLAB}$ has been used \cite{mathworks}. The frequency spectrum has been reduced from the carrier frequency to $\text{500 MHz}$, an approximation of the bandwidth used as detailed in section \ref{dwm1000}. Using the \gls{ifft} to go back into the time domain results in the red curve on Fig. \ref{fig:conv_fin}.
+Stating infinite is not completely correct, the real bandwidth being that of the carrier frequency in this case, however, it shows the characteristics in connection with actual bandwidth used. The different peaks are well isolated and punctual. The so-called infinite-band \gls{cir} is converted into the frequency domain using the Fourier transform. The built-in \gls{fft} function from $\text{MATLAB}$ has been used \cite{mathworks}. The frequency spectrum has been reduced from the carrier frequency to $\text{500 MHz}$, an approximation of the bandwidth used as detailed in section \ref{dwm1000}. Using the \gls{ifft} to go back into the time domain results in the red curve on Fig. \ref{fig:conv_fin}.
 
 \begin{figure}[H]
 \centering
@@ -32,22 +32,22 @@ Stating infinite is not completely correct, the real bandwidth being the one of 
 \caption{Trouver un nom \label{fig:conv_fin}}
 \end{figure}
 
-As we can observe, this \gls{cir} is far from ideal, mostly because of the sides lobes appearing next to every peak. This is a side effect due to the reduction of the bandwidth. In order to counter this effect, a Chebyshev window has been used \cite{lynch1997dolph}, \cite{mathworks}. The convolution of the finite-band time domain \gls{cir} will reduce those side lobes. The orange curve from Fig. \ref{fig:conv_fin} has been produced using a the $\text{chebyshev}$ function from MATLAB. The parameter of the Chebyshev window has been set heuristically to 25. A systematic method would have to use an experimental and a simulated \gls{cir} that would correspond to the same situation\footnote{The same room, antennas configuration, antennas position, ...}. The optimal parameter would then be computed using the $\text{lsqcurvefit}$ function from MATLAB.
+As we can observe, this \gls{cir} is far from ideal, mostly because of the sides lobes appearing near to every peak. This is a side effect because of the reduction of the bandwidth. In order to counteract this effect, a Chebyshev window has been used \cite{lynch1997dolph}, \cite{mathworks}. The convolution of the finite-band time domain \gls{cir} will reduce those side lobes. The orange curve from Fig. \ref{fig:conv_fin} has been produced using the $\text{chebyshev}$ function from MATLAB. The parameter of the Chebyshev window has been set heuristically to 25. A systematic method would have to use an experimental and a simulated \gls{cir} that would correspond to the same situation\footnote{The same room, antennas configuration, antennas position, ...}. The optimal parameter would then be computed using the $\text{lsqcurvefit}$ function from MATLAB.
 
 \subsection{Analysis tools}
 
-To evaluate the quality of the localization, several tools have been developed to give some visual clue to assess the performance of such algorithm and analyze the origin of those results. Those tools can be split in two categories.
+To evaluate the quality of the localization, several tools have been developed to give some visual clues to assess the performance of such algorithm and analyze the origin of those results. Those tools can be split into two categories.
 \vspace{2mm}
 
-The \gls{sla}, for each anchor - tag configuration in a specific room, \gls{cir} can be generated which the extracted peaks shown on the same figure. Those \gls{cir} are configurable based on the number of reflections which is wanted. A \gls{mse} map can also be generated, which will actually be the value $S(\vec{p_0})$ for each possible location\footnote{In the restricted solution space.} of the tag for a specific tag - anchor combination. About, the \gls{hla} also provides the wished \gls{cir} with its associate peaks recuperated. Since we are solving a system, all the computed solution of the system for each combination of \glspl{va} can be accessed. 
+The \gls{sla}, for each anchor - tag configuration in a specific room, \gls{cir} can be generated with the extracted peaks shown on the same figure. Those \gls{cir} are configurable based on the number of reflections which is wanted. A \gls{mse} map can also be generated, which will actually be the value $S(\vec{p_0})$ for each possible location\footnote{In the restricted solution space.} of the tag for a specific tag - anchor combination. About, the \gls{hla} also provides the wished \gls{cir} with its associate peaks recuperated. Since we are solving a system, all the computed solutions of the system for each combination of \glspl{va} can be accessed. 
 \vspace{2mm}
 
-Both method finally provide a map displaying, for each tag location, the error distance between the estimated tag location and its exact location for a given anchor. Allowing to visually assess the success rate of setting an anchor at a some specific coordinates.
+Both method finally provide a map displaying, for each tag location, the error distance between the estimated tag location and its exact location for a given anchor. Allowing to visually assess the success rate of setting an anchor at some specific coordinates.
 
 \section{Soft Simulation}
 \label{soft_sim}
 
-This section presents some results obtained using the \gls{sla} in order to characterize the best places to put an anchor at evaluate the possibilities of such algorithm. First, the symmetry issue is discussed, giving some primal clues are made about the location of such anchor. Second and third, more complex cases are investigated using room filled with furniture, several anchor locations being discussed.
+This section allows us to see some results obtained using the \gls{sla} in order to characterize the best places to put an anchor and evaluate the possibilities of such algorithms. First, the symmetry issue is discussed, giving some primary clues made about the location of such an anchor. Second and third, more complex cases are investigated using room filled with furniture, several anchor locations being discussed.
 
 \subsection{Symmetry issues}
 \label{sym_cases}
@@ -57,10 +57,10 @@ This section presents some results obtained using the \gls{sla} in order to char
 \caption{Distance [m] between the tag exact location and the estimation provided by the \gls{sla}. Empty room of 15 by 15 meters, anchor set in (2, 2). Five peaks extracted from the CIR. \label{fig:square_sym}}
 \end{figure}
 
-An issue occurring with the 'one anchor' localization paradigm highlighted in section \ref{hard_loc} is the symmetry. This issue was discussed in the case of hard localization because of the axial symmetry between \glspl{va}, leading to mingled paths on the \gls{cir}. Another kind of symmetry issue can be seen on Fig. \ref{fig:square_sym}, approximatively half of the locations of the tag were correctly estimated.
+An issue occurring with the 'one anchor' localization paradigm highlighted in section \ref{hard_loc} is the symmetry. This issue was discussed in the case of hard localization because of the axial symmetry between \glspl{va}, leading to mingled paths on the \gls{cir}. Another kind of symmetry issue can be seen on Fig. \ref{fig:square_sym}, approximatively half of the locations of the tag was correctly estimated.
 \vspace{2mm}
 
-Because of the location of the anchor, a symmetry appears in this room, the axial symmetry being the diagonal starting at the bottom left until the top right of the Fig. \ref{fig:square_sym}. This is confirmed by Fig. \ref{fig:square_sym_cir_comparison}. The \gls{mse} for each possible location in the solution space generated by the space solution reduction algorithm is shown. One can observe the symmetry across the bottom-left to top-right diagonal. This symmetry is not completely perfect, some location gets a small location error as (5, 2), which wrongly estimate the location by 1 meter, the origin of such particular cases is studied section \ref{soft_empty_room}.
+Because of the location of the anchor, a symmetry appears in this room, the axial symmetry being the diagonal starting at the bottom left until the top right of the Fig. \ref{fig:square_sym}. This is confirmed by Fig. \ref{fig:square_sym_cir_comparison}. The \gls{mse} for each possible location in the solution space generated by the space solution reduction algorithm is shown. We can observe the symmetry across the bottom-left to top-right diagonal. This symmetry is not completely perfect, some location gets a small location error as (5, 2), which wrongly estimates the location by 1 meter, the origin of such particular cases is studied in section \ref{soft_empty_room}.
 
 \begin{figure}[H]
 \centering
@@ -68,13 +68,13 @@ Because of the location of the anchor, a symmetry appears in this room, the axia
 \caption{MSE map generated with an anchor in (2, 2) and the tag being located at (8, 4). The room configuration is an empty rectangle of 15 by 10 m.  \label{fig:square_sym_cir_comparison}}
 \end{figure} 
 
-To avoid such error, we should avoid placing the anchor in a such symmetric position. We can even generalize this result by stating that we should avoid to set the anchor on any axis of symmetry of the room, being the diagonals and the medians in a square. Such cases are shown in appendix \ref{app:symmetry_antenna_placement}, where the anchor has been set on a axis of symmetry.
+To avoid such errors, we should avoid placing the anchor in such a symmetric position. We can even generalize this result by stating that we should avoid setting the anchor on any axis of symmetry of the room, being the diagonals and the medians in a square. Such cases are shown in appendix \ref{app:symmetry_antenna_placement}, where the anchor has been set on a axis of symmetry.
 \vspace{2mm}
 
-We could assume that this issue only occurs in square rooms and not in rectangular rooms. Indeed, the diagonals of a rectangle are not part of its axis of symmetry, only its medians are. If those anchor are not on an axis of symmetry, there is no reason to obtain systematically twice the same \gls{cir}. Therefore, we could think that by avoiding those axis, this symmetry issue would also be avoided.
+We could assume that this issue only occurs in square and not in rectangular rooms. Indeed, the diagonals of a rectangle are not part of its axis of symmetry, only its medians are. If those anchors are not on an axis of symmetry, there is no reason to obtain systematically twice the same \gls{cir}. Therefore, we could think that by avoiding those axis, this symmetry issue would also be avoided.
 \vspace{2mm}
 
-However, as it is shown on Fig. \ref{fig:rect_sym}, part of the \gls{cir} generated for (4, 8) and (8, 4) are the same when the anchor is set at (2, 2). The three extracted peaks, corresponding to the direct ray and the once reflected rays on the bottom and left walls, are equivalent, the beginning of the \gls{cir} being mostly identical in the two cases. We can conclude that the number of peaks extracted is an important parameter of this locating system. If too few peaks are taken, it may be impossible to distinguish several cases. If too many are taken, some irrelevant peaks could be extracted from the realistic \gls{cir}. This one being noisier because of the different reflections happening.
+However, as it is shown on Fig. \ref{fig:rect_sym}, part of the \gls{cir} generated for (4, 8) and (8, 4) are the same when the anchor is set at (2, 2). The three extracted peaks, corresponding to the direct ray and the reflected rays only once on the bottom and left walls, are equivalent, the beginning of the \gls{cir} being mostly identical in both cases. We can conclude that the number of peaks extracted is an important parameter of this locating system. If too few peaks are taken, it may be impossible to distinguish several cases. If too many are taken, some irrelevant peaks could be extracted from the realistic \gls{cir}. This being noisier because of the different reflections happening.
 
 \begin{figure}[H]
 \centering
@@ -84,7 +84,7 @@ However, as it is shown on Fig. \ref{fig:rect_sym}, part of the \gls{cir} genera
 
 \subsection{Soft localization in an empty room}
 \label{soft_empty_room}
-Fig. \ref{fig:pos_ant_empty_non_sym} represents a room of dimension 10 by 15 m, with an anchor which is not set on any axis of symmetry. The chosen location of the anchor, which is (3, 1), is arbitrary and has mostly been chosen to avoid any location suffering from the symmetry. As we can observe, more than half of the location were correctly recovered and more than two third were almost correctly recovered\footnote{Exactly 86 over 150 were correctly recovered and 115 over 150 were almost correctly recovered. Almost meaning that the max distance between the tag and its location estimation is at most 1.5m.}.
+Fig. \ref{fig:pos_ant_empty_non_sym} represents a room of 10 by 15 m dimension, with an anchor which is not set on any axis of symmetry. The chosen location of the anchor, which is (3, 1), is arbitrary and has mostly been chosen to avoid any location suffering from the symmetry. As we can observe, more than half of the location were correctly found back and more than two third were almost correctly found back\footnote{Exactly 86 over 150 were correctly found back and 115 over 150 was almost correctly found back. Almost meaning that the max distance between the tag and its location estimation is at most 1.5m.}.
 
 \begin{figure}[H]
 \centering
@@ -92,7 +92,7 @@ Fig. \ref{fig:pos_ant_empty_non_sym} represents a room of dimension 10 by 15 m, 
 \caption{Distance [m] between the tag location and its estimation using the \gls{sla}. Anchor being located in (3, 1). \label{fig:pos_ant_empty_non_sym}}
 \end{figure}
 
-We can observe that some locations have an error relatively big in comparison to the size of the room. For example, at the point (15, 3), the error made is about 7.3 m. To analyse the source of the error, a map of the \gls{mse} computed between the realistic \gls{cir} and the theoretical \gls{cir} computed at each location is drawn on Fig. \ref{fig:mse_analysis}. We can see that the best \gls{mse} is located at (13, 10) instead of the (15, 3) expected which corresponds to the distance error of 7.3 m.
+We can observe that some locations have a relatively big error in comparison with the size of the room. For example, at the point (15, 3), the error made is about 7.3 m. To analyse the source of the error, a map of the \gls{mse} computed between the realistic \gls{cir} and the theoretical \gls{cir} computed at each location is drawn on Fig. \ref{fig:mse_analysis}. We can see that the best \gls{mse} is located at (13, 10) instead of the (15, 3) expected which corresponds to the distance error of 7.3 m.
 
 \begin{figure}[H]
 \centering
@@ -108,21 +108,21 @@ It can be interesting to compare the full \gls{cir} instead of only comparing th
 \caption{CIR comparison between the realistic CIR, the theoretical CIR at the best MSE (the estimated tag location) and the theoretical CIR at the real tag location. \label{fig:cir_compa}}
 \end{figure}
 
-Several observations can be made. First, it can be seen that the form of the middle \gls{cir} does not fully correspond to the top \gls{cir}. Those difference in the form can mostly be attributed to the multiple reflections that take place in the top \gls{cir}. From that moment, if the two \gls{cir} are too different, the \gls{sla} will have some difficulties to compare them and find a theoretical \gls{cir} that really matches the realistic.
+Several observations can be made. First of all,, it can be seen that the form of the middle \gls{cir} does not fully correspond to the top \gls{cir}. Those difference in the form can mostly be attributed to the multiple reflections that take place in the top \gls{cir}. From that moment, if the two \gls{cir} are too different, the \gls{sla} will have some difficulties to compare them and find a theoretical \gls{cir} that really matches the realistic.
 \vspace{2mm}
 
-Concerning the bottom \gls{cir}, this one have been chosen by the algorithm by default. Since no \gls{cir} stood out, meaning that the extracting peaks from the theoretical \gls{cir} did not fully correspond to the realistic as in \ref{fig:soft_simu}, the less worst in term of \gls{mse} was chosen.
+About the bottom \gls{cir}, this have been chosen by the algorithm as the best one by default. Since no \gls{cir} stood out, meaning that the extracting peaks from the theoretical \gls{cir} did not fully correspond to the realistic as in \ref{fig:soft_simu}, the less worst in term of \gls{mse} was chosen.
 \vspace{2mm}
 
 \subsubsection{Soft part of the algorithm}
 
-This algorithm is call soft because of the \gls{mse} map produced as in Fig. \ref{fig:mse_analysis}. Instead of returning the location where the \gls{mse} has the lower value, we could evaluate the area where the \gls{mse} is the minimal in average.
+This algorithm is call soft because of the \gls{mse} map produced as in Fig. \ref{fig:mse_analysis}. Instead of going back the location where the \gls{mse} has the lowest value, we could evaluate the area where the \gls{mse} is the average minimal.
 \vspace{2mm}
 
-In this example, while the location (13, 10) clearly has the lowest \gls{mse}, (15, 4) also has a \gls{mse} of magnitude $10^{-8}$. It also appears that (15, 4) is surrounded by some relatively low \gls{mse} values. We could therefore use this algorithm not solely based on the lowest \gls{mse} computed but also based on the probability to be in a specific area filled with low \gls{mse} values.
+In this example, while the location (13, 10) clearly has the lowest \gls{mse}, (15, 4) also has a \gls{mse} of magnitude $10^{-8}$. It also appears that (15, 4) is surrounded by some relatively low \gls{mse} values. We could therefore use this algorithm not only based on the lowest \gls{mse} computed but also based on the probability to be in a specific area filled with low \gls{mse} values.
 \vspace{2mm}
 
-This solution is not an optimal one and may not solve every possible location. For example, Fig. \ref{fig:again_an_image} shows the \gls{mse} map for the tag location (14, 6). The estimated location being (15, 2) would not slightly change using this probability map.
+This solution is not optimal and may not solve every possible location. For example, Fig. \ref{fig:again_an_image} shows the \gls{mse} map for the tag location (14, 6). The estimated location being (15, 2) would not slightly differ using this probability map.
 
 \begin{figure}[H]
 \centering
@@ -130,11 +130,11 @@ This solution is not an optimal one and may not solve every possible location. F
 \caption{MSE map generated with an anchor in (2, 2) and the tag being located at (14, 6). The room configuration is an empty rectangle of 15 by 10 m. \label{fig:again_an_image}}
 \end{figure}
 
-In definitive, in a perfect non cluttered room, the \gls{sla} does not reach a perfect score on the localization in comparison with the three anchor model in \cite{hannotier2019indoor}. It may be possible to improve the localisation and give a confidence interval based on a \gls{mse} map as in Fig. \ref{fig:cir_compa}.
+Eventually, in a perfect non cluttered room, the \gls{sla} does not reach a perfect score on the localization in comparison with the three anchor model in \cite{hannotier2019indoor}. It may be possible to improve the localisation and give a trustful interval based on a \gls{mse} map as in Fig. \ref{fig:cir_compa}.
 
 \subsection{Soft localization in a cluttered room}
 \label{simu_soft_clut}
-The simulations of this section have been done for a room of the same dimension as section \ref{soft_empty_room} filled with furniture. Four different consoles of various sizes are placed against each wall of the room. This will results in are realistic \gls{cir} being more complex because of the various reflections taking place on the walls and the furniture. The used room can be seen in Fig. \ref{fig:room_cluttered}.
+The simulations of this section have been done for a room with the same dimension as section \ref{soft_empty_room} filled with furniture. Four different consoles of various sizes are placed against each wall of the room. This will results in are realistic \gls{cir} being more complex because of the various reflections happening on the walls and the furniture. The used room can be seen in Fig. \ref{fig:room_cluttered}.
 
 \begin{figure}[H]
 \centering
@@ -143,7 +143,7 @@ The simulations of this section have been done for a room of the same dimension 
 \end{figure}
 
 
-The set anchor has been place at the same location as in the previous section and the considered furniture are the blue. As we can observe in Fig. \ref{fig:dist_clut_room}, the quality of the localization decreases, this quality decreases even more when furniture are set in the middle of the room, as it can be seen on Fig. \ref{fig:dist_lot_clut_room}, creating more and more surface where reflection can take place.
+The set anchor has been located at the same place as in the previous section and taken into account furniture that are in blue. As we can observe in Fig. \ref{fig:dist_clut_room}, the quality of the localization lowers, this quality decreases even more when furniture are set in the middle of the room, as it can be seen on Fig. \ref{fig:dist_lot_clut_room}, creating more and more surface where reflection can take place.
 
 \begin{figure}[H]
 \centering
@@ -158,35 +158,35 @@ The set anchor has been place at the same location as in the previous section an
 \caption{Distance [m] between the real position of the tag and its estimation using the \gls{sla}. The room configuration has all the furniture from Fig. \ref{fig:room_cluttered}.\label{fig:dist_lot_clut_room}}
 \end{figure}
 
-This evolution can be understood by checking the realistic \gls{cir} obtained for different versions of the room for different location of the tag. On Fig. \ref{fig:cir_comp_dif_room_working}, those \gls{cir} can be seen for the coordinates (10, 4), a more or less well estimated tag location.
+This evolution can be understood by checking the realistic \gls{cir} obtained for different versions of the room for different locations of the tag. On Fig. \ref{fig:cir_comp_dif_room_working}, those \gls{cir} can be seen for the coordinates (10, 4), a more or less well estimated tag location.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=.85\linewidth]{Images/cir_success_comparison.png}
-\caption{CIRs obtained for an anchor set at (1, 3) and a tag at (10, 4). The top three are the realistic CIR obtained in, from top to bottom respectively, an empty room, a room with blue furniture from Fig. \ref{fig:room_cluttered} and a room with all the furniture set. Fourth CIR is the theoretical CIR obtained using an empty room.  \label{fig:cir_comp_dif_room_working}}
+\caption{CIRs obtained for an anchor set at (1, 3) and a tag at (10, 4). The top three are the realistic CIR obtained, from top to bottom respectively in an empty room, a room with blue furniture from Fig. \ref{fig:room_cluttered} and a room with all the furniture set. Fourth CIR is the theoretical CIR obtained using an empty room.  \label{fig:cir_comp_dif_room_working}}
 \end{figure}
 
-As we can observe, the \gls{cir} change a lot depending on the cluttering of the room. The more cluttering, the more changes. This explains the loss in precision as the room is more and more filled with extra furniture. By looking at the second and third \gls{cir} of \ref{fig:cir_comp_dif_room_working}, we can see that while the first more or less matches the fourth \gls{cir}, the general form keep changing. The peaks are moved, are mingled, attenuation due to the transmission trough the furnitures lowers some peaks, new peaks are created. All those effects significantly change the form of the \gls{cir}.
+As we can observe, the \gls{cir} change a lot according to the cluttering of the room. The more cluttering there is, the more it changes. This explains the loss in precision as the room is more and more filled with extra furniture. By looking at the second and third \gls{cir} of \ref{fig:cir_comp_dif_room_working}, we can see that while the first more or less matches the fourth \gls{cir}, the general form keeps changing. The peaks are moved, are mingled, attenuated because of the transmission trough the furniture lowers some peaks and new peaks are created. All those effects significantly change the form of the \gls{cir}.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=.85\linewidth]{Images/cir_failed_comparison.png}
-\caption{CIRs obtained for an anchor set at (1, 3) and a tag at (11, 8). The top three are the realistic CIR obtained in, from top to bottom respectively, an empty room, a room with blue furniture from Fig. \ref{fig:room_cluttered}  and a room with all the furniture set. Fourth CIR is the theoretical CIR obtained using an empty room. \label{fig:cir_comp_dif_room_failing}}
+\caption{CIRs obtained for an anchor set at (1, 3) and a tag at (11, 8). The top three are the realistic CIR obtained, from top to bottom respectively, in an empty room, a room with blue furniture from Fig. \ref{fig:room_cluttered}  and a room with all the furniture set. Fourth CIR is the theoretical CIR obtained using an empty room. \label{fig:cir_comp_dif_room_failing}}
 \end{figure}
 
-When comparing the localization performance for a tag placed in (10, 4) and a tag placed in (11, 8), it quickly appears that the difference originates from the form of the \gls{cir}. This form may vary a lot depending on the placement of the tag,  the walls, the furniture and obviously the anchor. 
+When comparing the localization performance for a tag placed in (10, 4) and a tag placed in (11, 8), it quickly appears that the difference originates in the shape of the \gls{cir}. This shape may vary a lot according to the setting of the tag,  the walls, the furniture and obviously the anchor. 
 \vspace{2mm}
 
-Since the only parameter that can be influenced is the location of the anchor, this parameter has been changed and various simulations with different location of the anchor has been generated. Those simulations can be seen in appendix \ref{app:sla}.
+Since the only parameter that can be influenced is the location of the anchor, this parameter has been changed and various simulations with different locations of the anchor has been generated. Those simulations can be seen in appendix \ref{app:sla}.
 \vspace{2mm}
 
-In overall, the localization showed some better performances when there is not some walls in the middle of the room. In such room, the localization using one anchor appears to be really complicated and lucky. This room configuration globally does not give any good results independently of the tag's location. A possible explanation is discussed in section \ref{simu_anal}.
+One the whole, the localization showed some better performances when there are not any walls in the middle of the room. In such room, the localization using one anchor appears to be really complicated and hazardous. This room configuration globally does not give any good results independently of the tag's location. A possible explanation is discussed in section \ref{simu_anal}.
 \vspace{2mm}
 
-From those simulations, we can compare several placements of the anchor. The first thing can be concluded is that setting the anchor in the middle of the room is not an optimal choice, the wrong estimation of the location of the tag being more frequent than for the other possible locations of the anchor. About the choice between setting the anchor in a corner or near a wall, the optimal position is less obvious. The two possibilities happens to give some rather good and less good performances depending on the location of the anchor, as it can be seen in Fig. C.3, C.4. The anchors being located at one meter from each other.
+From those simulations, we can compare several placements of the anchor. The first thing that can be concluded is that setting the anchor in the middle of the room is not an optimal choice, the wrong estimation of the location of the tag being more frequent than for the other possible locations of the anchor. About the choice between setting the anchor in a corner or near a wall, the optimal position is less obvious. Both possibilities happens to give some rather good and less good performances according to the location of the anchor, as it can be seen in Fig. C.3, C.4. The anchors being located at one meter from each other.
 \vspace{2mm}
 
-In overall, the performance really vary from one situation to another, depending on the furniture of the room and the location of the anchor. This system has some room for improvement, the comparison between the \gls{cir} can be modified, the method to extract the peaks can also be changed or improved. The number of peaks extracted can also be a variable to investigate.
+Generally speaking, the performances really vary from one situation to another, according  to the furniture of the room and the location of the anchor. This system has some room for improvement, the comparison between the \gls{cir} can be modified, the method to extract the peaks can also be changed or improved. The number of peaks extracted can also be a variable to investigate.
 
 
 \section{Hard Simulation}
@@ -248,7 +248,7 @@ About Fig. \ref{fig:hla_empty_3}, it is immediate that setting the anchor at the
 
 \subsection{Hard localization in a cluttered room}
 
-In this section, we investigate the rooms configuration filled with furniture. The two configurations are the same as in section \ref{simu_soft_clut}, the first using the blue furniture only while the second having the blue and green furniture. Some \gls{cir} of places where the localization could not be performed are shown in Fig. \ref{fig:cir_hla_1}, \ref{fig:cir_hla_2}.
+In this section, we investigate the room configurations filled with furniture. The two configurations are the same as in section \ref{simu_soft_clut}, the first using the blue furniture only while the second having the blue and green furniture. Some \gls{cir} of places where the localization could not be performed are shown in Fig. \ref{fig:cir_hla_1}, \ref{fig:cir_hla_2}.
 
 \begin{figure}[H]
 \centering
@@ -281,16 +281,16 @@ In Fig. \ref{fig:cir_hla_1}, the location (5, 5) corresponds to a point which is
 \caption{CIR generated for an anchor located at (3, 1) and a tag at (2, 6) in a room of dimension 15 by 10 m. (Top) Theoretical CIR, direct ray and simple reflections in an empty room. (Middle) Realistic CIR in a room with blue furniture from Fig. \ref{fig:room_cluttered}. (Bottom) Realistic CIR in a room with all the furniture from Fig. \ref{fig:room_cluttered}. \label{fig:cir_hla_1}}
 \end{figure}
 
-In Fig. \ref{fig:cir_hla_1}, the location (2, 6) correspond to a point which is not localized in the lightly cluttered case but is estimated in the heavily cluttered room. The \glspl{cir} explain this behaviour, but more importantly, this shows that the complex geometry of the room influences completely the \gls{cir} of each location.
+In Fig. \ref{fig:cir_hla_1}, the location (2, 6) corresponds to a point which is not localized in the lightly cluttered case but is estimated in the heavily cluttered room. The \glspl{cir} explain this behaviour, but more importantly, this shows that the complex geometry of the room influences completely the \gls{cir} of each location.
 
 
 
 \section{Simulations analysis}
 \label{simu_anal}
 
-For both algorithms implemented, the symmetry issues were investigated. In both case the conclusion was the same, putting the anchor in a corner but not on any axis of symmetry seams to give, in overall, the best results for a rectangular room. Cluttered or not.
+For both algorithms implemented, the symmetry issues were investigated. In both cases, the conclusion was the same, setting the anchor in a corner but not on an axis of symmetry seams to give, in overall, the best results for a rectangular room. Cluttered or not.
 \vspace{2mm}
 
-About the performance of both algorithms, it appears to vary in function of the geometry of the room, and the furniture in it. A lot of variation are simply function of the position of the anchor as it can be seen in the appendices \ref{app:sla}, \ref{app:hla}. Both algorithms can be improved by studying the peak extraction for both cases or more specifically the \gls{sla} by including the 'soft' choice for the best estimation or the \gls{hla} by changing the extracted peaks when no solution is found for the system.
+About the performance of both algorithms, it appears to vary in function of the geometry of the room as well as the furniture in it. A lot of variation are simply function of the position of the anchor as it can be seen in the appendices \ref{app:sla}, \ref{app:hla}. Both algorithms can be improved by studying the peak extraction for both cases or more specifically, for the \gls{sla} by including the 'soft' choice for the best estimation or for the \gls{hla} by changing the extracted peaks when no solution is found for the system.
 
 

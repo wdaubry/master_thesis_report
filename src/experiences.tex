@@ -1,6 +1,6 @@
 \chapter{Experiments}
 
-This chapter deals with the experiments. First the configuration and adaptation of the different devices are detailed, element-wise, the DWM1000, the PSoC and the android application. Second,a small word about the initially planned test campaign is said.
+This chapter deals with the experiments. First the configuration and adaptation of the different devices are detailed, element-wise, the DWM1000, the PSoC and the android application. Second,a small text about the initially planned test campaign is written.
 
 \section{Experimental set-up configuration}
 
@@ -21,7 +21,7 @@ One of the feature of the DWM1000 is to store the \gls{cir} received if required
 \caption{Register \texttt{0x36} - \gls{pmsc}, sub-register \texttt{0x00}. Taken from \cite{usermanual}. \label{fig:control_reg}}
 \end{figure}
 
-When those bits are activated, we may recover the \gls{cir} from the DWM1000. Still following the manual user, it appears that the \gls{cir} is stored in the \texttt{0x25} : \text{Accumulator \gls{cir} memory register}. This register contains complex values, 16 imaginary bits and 16 real bits for each tap, 992 of them being registered when the \gls{prf} is set to 16 MHz. Each registered tap corresponds almost to a frame of 1 ns, which corresponds exactly to a sampling frequency  being twice 499.2 MHz, meaning that the whole \gls{cir} registered corresponds to almost a $\mu$s.
+When those bits are activated, we may recuperarte the \gls{cir} from the DWM1000. Still following the manual user, it appears that the \gls{cir} is stored in the \texttt{0x25} : \text{Accumulator \gls{cir}} \text{ memory register}. This register contains complex values, 16 imaginary bits and 16 real bits for each tap, 992 of them being registered when the \gls{prf} is set to 16 MHz. Each registered tap corresponds almost to a frame of 1 ns, which corresponds exactly to a sampling frequency  being twice 499.2 MHz, meaning that the whole \gls{cir} registered corresponds to almost a $\mu$s.
 \vspace{2mm}
 
 Since the algorithms developed in chapter \ref{algos} mostly work based on the direct ray and simple reflections, one may question the usefulness of extracting the whole \gls{cir} stored in the accumulator. Indeed, in a room of dimensions (15x20)m for example, in the longest first reflection that would occur, the travelled distance would be of $\sqrt(20^2 + 15^2) = 42.72m$, which corresponds to a distance time of $1.42*10^{-7}$s. Which is less than a fifth of the whole \gls{cir} stored in the accumulator.
