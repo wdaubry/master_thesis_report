@@ -46,16 +46,18 @@
 \contentsline {subsection}{\numberline {4.2.3}Soft localization in a cluttered room}{31}{subsection.4.2.3}%
 \contentsline {section}{\numberline {4.3}Hard Simulation}{34}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Symmetry issues}{34}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Amplitude based detection}{35}{subsection.4.3.2}%
-\contentsline {chapter}{\numberline {5}Experiments}{36}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Experimental set-up configuration}{36}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}DWM1000}{36}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}PSoC}{37}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Android Application}{38}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Test Campaign}{39}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusion}{40}{chapter.6}%
-\contentsline {chapter}{Bibliography}{42}{chapter*.57}%
-\contentsline {chapter}{\numberline {A}Application view}{43}{appendix.a.A}%
-\contentsline {chapter}{\numberline {B}State Machines}{44}{appendix.a.B}%
-\contentsline {chapter}{\numberline {C}SLA - Lightly cluttered room}{46}{appendix.a.C}%
-\contentsline {chapter}{\numberline {D}HLA - Lightly cluttered room}{51}{appendix.a.D}%
+\contentsline {subsection}{\numberline {4.3.2}Hard localization in an empty room}{36}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Hard localization in a cluttered room}{37}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Simulations analysis}{40}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Experiments}{41}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Experimental set-up configuration}{41}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}DWM1000}{41}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}PSoC}{42}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Android Application}{43}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Test Campaign}{44}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusion}{45}{chapter.6}%
+\contentsline {chapter}{Bibliography}{47}{chapter*.64}%
+\contentsline {chapter}{\numberline {A}Application view}{48}{appendix.a.A}%
+\contentsline {chapter}{\numberline {B}State Machines}{49}{appendix.a.B}%
+\contentsline {chapter}{\numberline {C}SLA - Lightly cluttered room}{51}{appendix.a.C}%
+\contentsline {chapter}{\numberline {D}HLA - Lightly cluttered room}{56}{appendix.a.D}%

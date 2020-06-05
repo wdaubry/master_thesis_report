@@ -36,16 +36,18 @@
 \BOOKMARK [2][-]{subsection.4.2.3}{Soft localization in a cluttered room}{section.4.2}% 36
 \BOOKMARK [1][-]{section.4.3}{Hard Simulation}{chapter.4}% 37
 \BOOKMARK [2][-]{subsection.4.3.1}{Symmetry issues}{section.4.3}% 38
-\BOOKMARK [2][-]{subsection.4.3.2}{Amplitude based detection}{section.4.3}% 39
-\BOOKMARK [0][-]{chapter.5}{Experiments}{}% 40
-\BOOKMARK [1][-]{section.5.1}{Experimental set-up configuration}{chapter.5}% 41
-\BOOKMARK [2][-]{subsection.5.1.1}{DWM1000}{section.5.1}% 42
-\BOOKMARK [2][-]{subsection.5.1.2}{PSoC}{section.5.1}% 43
-\BOOKMARK [2][-]{subsection.5.1.3}{Android Application}{section.5.1}% 44
-\BOOKMARK [1][-]{section.5.2}{Test Campaign}{chapter.5}% 45
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 46
-\BOOKMARK [0][-]{chapter*.57}{Bibliography}{}% 47
-\BOOKMARK [0][-]{appendix.a.A}{Application view}{}% 48
-\BOOKMARK [0][-]{appendix.a.B}{State Machines}{}% 49
-\BOOKMARK [0][-]{appendix.a.C}{SLA - Lightly cluttered room}{}% 50
-\BOOKMARK [0][-]{appendix.a.D}{HLA - Lightly cluttered room}{}% 51
+\BOOKMARK [2][-]{subsection.4.3.2}{Hard localization in an empty room}{section.4.3}% 39
+\BOOKMARK [2][-]{subsection.4.3.3}{Hard localization in a cluttered room}{section.4.3}% 40
+\BOOKMARK [1][-]{section.4.4}{Simulations analysis}{chapter.4}% 41
+\BOOKMARK [0][-]{chapter.5}{Experiments}{}% 42
+\BOOKMARK [1][-]{section.5.1}{Experimental set-up configuration}{chapter.5}% 43
+\BOOKMARK [2][-]{subsection.5.1.1}{DWM1000}{section.5.1}% 44
+\BOOKMARK [2][-]{subsection.5.1.2}{PSoC}{section.5.1}% 45
+\BOOKMARK [2][-]{subsection.5.1.3}{Android Application}{section.5.1}% 46
+\BOOKMARK [1][-]{section.5.2}{Test Campaign}{chapter.5}% 47
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 48
+\BOOKMARK [0][-]{chapter*.64}{Bibliography}{}% 49
+\BOOKMARK [0][-]{appendix.a.A}{Application view}{}% 50
+\BOOKMARK [0][-]{appendix.a.B}{State Machines}{}% 51
+\BOOKMARK [0][-]{appendix.a.C}{SLA - Lightly cluttered room}{}% 52
+\BOOKMARK [0][-]{appendix.a.D}{HLA - Lightly cluttered room}{}% 53
