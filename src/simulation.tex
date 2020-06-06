@@ -191,17 +191,17 @@ Generally speaking, the performances really vary from one situation to another, 
 
 \section{Hard Simulation}
 
-This section discuss the \gls{hla} developed in chapter \ref{algos}. As for the \gls{sla}, several places to set the anchors will be discussed in several room configurations, filled with furniture or empty. To provide some meaning comparisons, the room configurations are the same as in section \ref{soft_sim}.
+This section deals with the \gls{hla} developed in chapter \ref{algos}. As for the \gls{sla}, several places to set the anchors will be discussed in several room configurations, filled with furniture or empty. To provide significant meaning comparisons, the room configurations are the same as in section \ref{soft_sim}.
 
 \subsection{Symmetry issues}
 
 As we can observe on Fig. \ref{fig:sym_hard} the same phenomenon occurs for the \gls{hla} and the \gls{sla}. A kind of symmetry appears across the bottom-left to top-right diagonal. On the lower side of this diagonal, the location outperformed in general the upper side. Which means that the symmetry will also be causing some troubles in this algorithm.
 \vspace{2mm}
 
-Since the generation of the different \gls{cir} is based on the same simulation for the \gls{sla} and the \gls{hla}, it is irrelevant to present the \gls{cir} of couple of mirror point around the axis of symmetry, this being already discussed in section \ref{sym_cases}. However, a significant difference between the Fig. \ref{fig:square_sym} and Fig. \ref{fig:sym_hard} resides in the black zone appearing in the results of the \gls{hla}.
+Since the generation of the different \gls{cir} is based on the same simulation for the \gls{sla} and the \gls{hla}, it is irrelevant to take into account the \gls{cir} of couple of mirror points around the axis of symmetry, this being already discussed in section \ref{sym_cases}. However, a significant difference between the Fig. \ref{fig:square_sym} and Fig. \ref{fig:sym_hard} stays in the black zone appearing in the results of the \gls{hla}.
 \vspace{2mm}
 
-As explained in section \ref{algo:hard}, this algorithm may not return any solution. We can observe that such locations are disposed symmetrically around the axis of symmetry. The origin of those unresolved solution are first studied by investigating the \gls{cir} of such places. 
+As explained in section \ref{algo:hard}, this algorithm may not give any solution back. We can observe that such locations are disposed symmetrically around the axis of symmetry. The origin of those unsolved solutions are first studied by investigating the \gls{cir} of such places. 
 
 \begin{figure}[H]
 \centering
@@ -209,19 +209,19 @@ As explained in section \ref{algo:hard}, this algorithm may not return any solut
 \caption{Distance [m] between the tag exact location and the estimation provided by the \gls{hla}. Empty room of 12 by 12 meters, anchor set at (2, 2). Three peaks extracted. \label{fig:sym_hard}}
 \end{figure}
 
-On Fig. \ref{fig:cir_4_9}, the tag location (4, 9) is investigated. By observing the extracted peaks on the bottom figure, we can see that while the first and the third corresponds to some peaks in the theoretical \gls{cir}, the second is not match with any of them. This is the source of the error. 
+On Fig. \ref{fig:cir_4_9}, the tag location (4, 9) is investigated. By observing the extracted peaks on the bottom figure, we can see that while the first and the third corresponds to some peaks in the theoretical \gls{cir}, the second does not match with any of them. This is the source of error. 
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=.9\linewidth]{Images/hla_images/cir_4_9.png}
-\caption{(Top) Theoretical CIR for an anchor set in (2, 2) and a tag set in (4, 9) in an empty room. Only the direct ray and signle reflections are generated. (Bottom) Realistic CIR generated in the same conditions. Up to three reflections taken, the extracted peaks are shown in orange.\label{fig:cir_4_9}}
+\caption{(Top) Theoretical CIR for an anchor set in (2, 2) and a tag set in (4, 9) in an empty room. Only the direct ray and single reflections are generated. (Bottom) Realistic CIR generated in the same conditions. Up to three reflections taken, the extracted peaks are shown in orange.\label{fig:cir_4_9}}
 \end{figure}
 
 A possible solution, to avoid this outcome, which is not investigated here, would be to extract several other peaks from the realistic \gls{cir} in order to obtain a new system to solve. 
 
 \subsection{Hard localization in an empty room}
 
-In this section, the same configuration as the one used in the soft simulation is used. Several location for the anchor are compared, basically one in a corner (while avoiding the symmetry issue), another in the middle of wall and a last one being in the middle of the room. As we could expect, the anchor that sits in a corner has a better performance than the others. The middle of the room is prone to the symmetry as the middle of the different walls.
+In this section, the same configuration as that used in the soft simulation is used. Several locations for the anchor are compared, basically one in a corner (while avoiding the symmetry issue), another in the middle of a wall and at last one in the middle of the room. As we could expect, the anchor that sits in a corner has a better performance than the others. The middle of the room is likely to show the symmetry as the middle of the different walls.
 
 \begin{figure}[H]
 \centering
@@ -235,7 +235,7 @@ In this section, the same configuration as the one used in the soft simulation i
 \caption{Distance [m] between the tag location and its estimation using the \gls{hla} in an empty room. Anchor being located in (8, 1).\label{fig:hla_empty_2}}
 \end{figure}
 
-The top right area of the Fig. \ref{fig:hla_empty_2} shows some rather bad estimations of the tag location. As said, this is most probably due to the symmetry of the room. For most failed estimations from the top right, the \gls{cir} (and so the extracted peaks) of the top right area and its top left counterpart look alike.
+The top right area of the Fig. \ref{fig:hla_empty_2} shows some rather bad estimations of the tag location. As said previously, this is most probably because of the symmetry of the room. For most failed estimations from the top right, the \gls{cir} (and so the extracted peaks) of the top right area and its top left counterpart look alike.
 
 \begin{figure}[H]
 \centering
@@ -243,12 +243,12 @@ The top right area of the Fig. \ref{fig:hla_empty_2} shows some rather bad estim
 \caption{Distance [m] between the tag location and its estimation using the \gls{hla} in an empty room. Anchor being located in (8, 5). \label{fig:hla_empty_3}}
 \end{figure}
 
-About Fig. \ref{fig:hla_empty_3}, it is immediate that setting the anchor at the middle of the room is inefficient. This anchor location is located on the intersection of the diagonals and the medians of the room. The same conclusion as for the \gls{sla} algorithm can be made in definitive, the anchor should be located close to a corner to maximize the chances of estimating correctly the exact position of the tag. At least in an empty rectangular room. Next section focuses in some rectangular room filled with furniture.
+About Fig. \ref{fig:hla_empty_3}, it is obvious immediately that setting the anchor in the middle of the room is inefficient. This anchor location is set on the intersection of the diagonals and the medians of the room. The same conclusion as for the \gls{sla} algorithm can be made in fact, the anchor should be located close to a corner to maximize the chances of estimating correctly the exact position of the tag, at least in an empty rectangular room. Next section focuses on some rectangular room filled with furniture.
 
 
 \subsection{Hard localization in a cluttered room}
 
-In this section, we investigate the room configurations filled with furniture. The two configurations are the same as in section \ref{simu_soft_clut}, the first using the blue furniture only while the second having the blue and green furniture. Some \gls{cir} of places where the localization could not be performed are shown in Fig. \ref{fig:cir_hla_1}, \ref{fig:cir_hla_2}.
+In this section, we investigate the room configurations filled with furniture. Both configurations are the same as in section \ref{simu_soft_clut}, the first using the blue furniture only while the second has got the blue and green furniture. Some \gls{cir} of places where the localization could not be performed are shown in Fig. \ref{fig:cir_hla_1}, \ref{fig:cir_hla_2}.
 
 \begin{figure}[H]
 \centering
@@ -256,7 +256,7 @@ In this section, we investigate the room configurations filled with furniture. T
 \caption{Distance [m] between the real position of the tag and its estimation using the \gls{hla}. The room configuration has only the blue furniture from Fig. \ref{fig:room_cluttered}.\label{fig:hla_little_clut}}
 \end{figure}
 
-About the room having less furniture, when comparing to an empty room it appears that the overall precision on the localization decreases. More locations were not estimated at all or were wrongly estimated.
+About room having less furniture, when comparing to an empty room it appears that the ultimate precision on the localization decreases. More locations were not estimated at all or were wrongly estimated.
 
 \begin{figure}[H]
 \centering
@@ -273,7 +273,7 @@ as in the \gls{sla} case. But it can not be characterized as reliable.
 \caption{CIR generated for an anchor located at (3, 1) and a tag at (5, 5) in a room of dimension 15 by 10 m. (Top) Theoretical CIR, direct ray and simple reflections in an empty room. (Middle) Realistic CIR in a room with blue furniture from Fig. \ref{fig:room_cluttered}. (Bottom) Realistic CIR in a room with all the furniture from Fig. \ref{fig:room_cluttered}.. \label{fig:cir_hla_2}}
 \end{figure}
 
-In Fig. \ref{fig:cir_hla_1}, the location (5, 5) corresponds to a point which is well localized in the lightly cluttered case but is not localized at all in the heavily cluttered case. This can be understood by looking at the different \gls{cir}. The peaks extracted from the middle \gls{cir} have a good correspondence with the peaks corresponding to the reflected rays in the theoretical \gls{cir}. The bottom \gls{cir} corresponds to a case were no solution was found, indeed, no correspondence can be made between the peaks extracted from the bottom \gls{cir} and the theoretical peaks. Finding another solution which is not the one wished is another possible outcome from such situation.
+In Fig. \ref{fig:cir_hla_1}, the location (5, 5) corresponds to a point which is well localized in the lightly-cluttered but is not localized at all in the heavily cluttered case. This can be understood by looking at the different \gls{cir}. The peaks extracted from the middle \gls{cir} have a good feed-back with the peaks corresponding to the reflected rays in the theoretical \gls{cir}. The bottom \gls{cir} corresponds to a case were no solution was found, indeed, no correspondence can be made between the peaks extracted from the bottom \gls{cir} and the theoretical peaks. Finding another solution which is not that we wished is another possible outcome from such a situation.
 
 \begin{figure}[H]
 \centering
@@ -281,14 +281,14 @@ In Fig. \ref{fig:cir_hla_1}, the location (5, 5) corresponds to a point which is
 \caption{CIR generated for an anchor located at (3, 1) and a tag at (2, 6) in a room of dimension 15 by 10 m. (Top) Theoretical CIR, direct ray and simple reflections in an empty room. (Middle) Realistic CIR in a room with blue furniture from Fig. \ref{fig:room_cluttered}. (Bottom) Realistic CIR in a room with all the furniture from Fig. \ref{fig:room_cluttered}. \label{fig:cir_hla_1}}
 \end{figure}
 
-In Fig. \ref{fig:cir_hla_1}, the location (2, 6) corresponds to a point which is not localized in the lightly cluttered case but is estimated in the heavily cluttered room. The \glspl{cir} explain this behaviour, but more importantly, this shows that the complex geometry of the room influences completely the \gls{cir} of each location.
+In Fig. \ref{fig:cir_hla_1}, the location (2, 6) corresponds to a point which is not localized in the lightly cluttered case but is estimated in the heavily cluttered room. The \glspl{cir} explain this behaviour, but what is more important is that this shows that the complex geometry of the room influences completely the \gls{cir} of each location.
 
 
 
 \section{Simulations analysis}
 \label{simu_anal}
 
-For both algorithms implemented, the symmetry issues were investigated. In both cases, the conclusion was the same, setting the anchor in a corner but not on an axis of symmetry seams to give, in overall, the best results for a rectangular room. Cluttered or not.
+For both algorithms implemented, the symmetry issues were investigated. In both cases, the conclusion was the same, setting the anchor in a corner but not on an axis of symmetry seams to give, mainly, the best results for a rectangular room. Wheter it is cluttered or not.
 \vspace{2mm}
 
 About the performance of both algorithms, it appears to vary in function of the geometry of the room as well as the furniture in it. A lot of variation are simply function of the position of the anchor as it can be seen in the appendices \ref{app:sla}, \ref{app:hla}. Both algorithms can be improved by studying the peak extraction for both cases or more specifically, for the \gls{sla} by including the 'soft' choice for the best estimation or for the \gls{hla} by changing the extracted peaks when no solution is found for the system.

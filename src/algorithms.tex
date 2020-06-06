@@ -131,7 +131,7 @@ To deal with this peak merging issue, the solution proposed is the same that dea
 
 \subsection{System solver}
 
-Those systems are solved one at a time, starting with the twelve 'basic', going on with the particular cases shown above if no suitable solution has been found. Since there is almost no chance that the system leads into a perfect one point solution, the system \ref{eq:syst_exact} can not simply be resolved. The three equations are solved two by two, giving six real or complex solutions. If the six computed intersection belongs to the Real, this would correspond to $U_{12}, U_{13}, U_{23}$ and the Tag\footnote{The position of the tag should appears 3 times, one for each combination of anchors.} in Fig. \ref{fig:trilateration}. From this point, the algorithm first excludes the solutions lying out of the room, the solutions having a too big imaginary part are also discarded\footnote{The notion of "too big" is completely subjective. It appears that when two circles are close to have an intersection, the imaginary part is smaller. \color{red} NEED A PROOF \color{black}}. 
+Those systems are solved one at a time, starting with the twelve 'basic', going on with the particular cases shown above if no suitable solution has been found. Since there is almost no chance that the system leads into a perfect one point solution, the system \ref{eq:syst_exact} can not simply be resolved. The three equations are solved two by two, giving six real or complex solutions. If the six computed intersection belongs to the Real, this would correspond to $U_{12}, U_{13}, U_{23}$ and the Tag\footnote{The position of the tag should appears 3 times, one for each combination of anchors.} in Fig. \ref{fig:trilateration}. From this point, the algorithm first excludes the solutions lying out of the room, the solutions having an imaginary part are also discarded. 
 \vspace{2mm}
 
 Using the remaining solutions, the algorithm needs to check if those can be combined to find a suitable solution. A solution is considered as suitable if the algorithm can find three solutions being relatively close to each other. This notion of "relatively close" is subjective and is one of the parameter that we can use to tune the algorithm. If no solution is found using all the combinations, then no location is provided, hence the qualification of "hard".
@@ -163,7 +163,7 @@ Using the \gls{sdstwr}, the \gls{tof} of the signal between the tag and the anch
 \begin{figure}[H]
 \centering
 \includegraphics[width=.65\linewidth]{Images/algo_1.png}
-\caption{\color{red} Refaire cette image \color{black}}
+\caption{Example of the application of the space solution reduction. The remaining space solution is shown in orange.}
 \label{fig:speedup_1}
 \end{figure}
 

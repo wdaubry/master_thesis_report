@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  6 JUN 2020 00:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  6 JUN 2020 23:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1551,187 +1551,187 @@ File: Images/Fig_inf_to_fin.png Graphic file (type png)
 Package pdftex.def Info: Images/Fig_inf_to_fin.png  used on input line 125.
 (pdftex.def)             Requested size: 250.38564pt x 187.78362pt.
  [20 <./Images/Fig_inf_to_fin.png (PNG copy)>]
-<Images/algo_1.png, id=911, 454.69875pt x 280.04625pt>
+<Images/algo_1.png, id=910, 454.69875pt x 280.04625pt>
 File: Images/algo_1.png Graphic file (type png)
 <use Images/algo_1.png>
 Package pdftex.def Info: Images/algo_1.png  used on input line 165.
 (pdftex.def)             Requested size: 295.90588pt x 182.25009pt.
 
 [21]
-<Images/inf_vs_fin.png, id=924, 1886.04625pt x 722.7pt>
+<Images/inf_vs_fin.png, id=922, 1886.04625pt x 722.7pt>
 File: Images/inf_vs_fin.png Graphic file (type png)
 <use Images/inf_vs_fin.png>
 Package pdftex.def Info: Images/inf_vs_fin.png  used on input line 181.
 (pdftex.def)             Requested size: 455.24411pt x 174.43298pt.
- [22 <./Images/algo_1.png> <./Images/inf_vs_fin.png>]
-<Images/mse_map_algo.png, id=942, 2425.06pt x 1392.20125pt>
+ [22 <./Images/algo_1.png>]
+<Images/mse_map_algo.png, id=939, 2425.06pt x 1392.20125pt>
 File: Images/mse_map_algo.png Graphic file (type png)
 <use Images/mse_map_algo.png>
 Package pdftex.def Info: Images/mse_map_algo.png  used on input line 203.
 (pdftex.def)             Requested size: 455.24411pt x 261.3345pt.
-)
-(./src/simulation.tex [23 <./Images/mse_map_algo.png>]
+ [23 <./Images/inf_vs_fin.png>])
+(./src/simulation.tex [24 <./Images/mse_map_algo.png>]
 Chapter 4.
-<Images/rays_example.png, id=963, 2013.5225pt x 1092.08pt>
+<Images/rays_example.png, id=966, 2013.5225pt x 1092.08pt>
 File: Images/rays_example.png Graphic file (type png)
 <use Images/rays_example.png>
 Package pdftex.def Info: Images/rays_example.png  used on input line 23.
 (pdftex.def)             Requested size: 341.43307pt x 185.18456pt.
-[24
+[25
 
 ]
-<Images/Temporary_pic.png, id=977, 407.5225pt x 464.73625pt>
+<Images/Temporary_pic.png, id=978, 407.5225pt x 464.73625pt>
 File: Images/Temporary_pic.png Graphic file (type png)
 <use Images/Temporary_pic.png>
 Package pdftex.def Info: Images/Temporary_pic.png  used on input line 31.
 (pdftex.def)             Requested size: 91.04742pt x 103.83073pt.
- [25 <./Images/rays_example.png (PNG copy)> <./Images/Temporary_pic.png>]
-<Images/15_15_sym.png, id=1002, 1466.47874pt x 1290.8225pt>
+ [26 <./Images/rays_example.png (PNG copy)> <./Images/Temporary_pic.png>]
+<Images/15_15_sym.png, id=1003, 1466.47874pt x 1290.8225pt>
 File: Images/15_15_sym.png Graphic file (type png)
 <use Images/15_15_sym.png>
 Package pdftex.def Info: Images/15_15_sym.png  used on input line 56.
 (pdftex.def)             Requested size: 332.32625pt x 292.51035pt.
 
-[26 <./Images/15_15_sym.png>]
-<Images/square_sym_mse_4_8.png, id=1021, 1516.66624pt x 1298.8525pt>
+[27 <./Images/15_15_sym.png>]
+<Images/square_sym_mse_4_8.png, id=1023, 1516.66624pt x 1298.8525pt>
 File: Images/square_sym_mse_4_8.png Graphic file (type png)
 <use Images/square_sym_mse_4_8.png>
 Package pdftex.def Info: Images/square_sym_mse_4_8.png  used on input line 67.
 (pdftex.def)             Requested size: 409.71692pt x 350.87323pt.
 
 
-LaTeX Warning: Reference `app:symmetry_antenna_placement' on page 27 undefined 
+LaTeX Warning: Reference `app:symmetry_antenna_placement' on page 28 undefined 
 on input line 71.
 
-[27 <./Images/square_sym_mse_4_8.png>]
-<Images/cir_comparison_rect.png, id=1033, 2022.55624pt x 1118.1775pt>
+[28 <./Images/square_sym_mse_4_8.png>]
+<Images/cir_comparison_rect.png, id=1034, 2022.55624pt x 1118.1775pt>
 File: Images/cir_comparison_rect.png Graphic file (type png)
 <use Images/cir_comparison_rect.png>
 Package pdftex.def Info: Images/cir_comparison_rect.png  used on input line 81.
 
 (pdftex.def)             Requested size: 409.71692pt x 226.51501pt.
-<Images/no_more_name_idea.png, id=1036, 1673.25125pt x 1036.87375pt>
+<Images/no_more_name_idea.png, id=1037, 1673.25125pt x 1036.87375pt>
 File: Images/no_more_name_idea.png Graphic file (type png)
 <use Images/no_more_name_idea.png>
 Package pdftex.def Info: Images/no_more_name_idea.png  used on input line 91.
 (pdftex.def)             Requested size: 455.24411pt x 282.09554pt.
- [28 <./Images/cir_comparison_rect.png>]
-<Images/no_name_1.png, id=1051, 1916.15875pt x 1045.9075pt>
+ [29 <./Images/cir_comparison_rect.png>]
+<Images/no_name_1.png, id=1052, 1916.15875pt x 1045.9075pt>
 File: Images/no_name_1.png Graphic file (type png)
 <use Images/no_name_1.png>
 Package pdftex.def Info: Images/no_name_1.png  used on input line 99.
 (pdftex.def)             Requested size: 455.24411pt x 248.48541pt.
 
-[29 <./Images/no_more_name_idea.png> <./Images/no_name_1.png>]
-<Images/no_name_2.png, id=1064, 2186.1675pt x 873.2625pt>
+[30 <./Images/no_more_name_idea.png> <./Images/no_name_1.png>]
+<Images/no_name_2.png, id=1067, 2186.1675pt x 873.2625pt>
 File: Images/no_name_2.png Graphic file (type png)
 <use Images/no_name_2.png>
 Package pdftex.def Info: Images/no_name_2.png  used on input line 107.
 (pdftex.def)             Requested size: 455.24411pt x 181.84485pt.
-<Images/image_XXX.png, id=1087, 1985.4175pt x 1074.0125pt>
+<Images/image_XXX.png, id=1090, 1985.4175pt x 1074.0125pt>
 File: Images/image_XXX.png Graphic file (type png)
 <use Images/image_XXX.png>
 Package pdftex.def Info: Images/image_XXX.png  used on input line 129.
 (pdftex.def)             Requested size: 409.71692pt x 221.63252pt.
- [30 <./Images/no_name_2.png>]
-<Images/room_furniture.png, id=1104, 1163.34625pt x 917.4275pt>
+ [31 <./Images/no_name_2.png>]
+<Images/room_furniture.png, id=1105, 1163.34625pt x 917.4275pt>
 File: Images/room_furniture.png Graphic file (type png)
 <use Images/room_furniture.png>
 Package pdftex.def Info: Images/room_furniture.png  used on input line 141.
 (pdftex.def)             Requested size: 273.14923pt x 215.41351pt.
- [31 <./Images/image_XXX.png (PNG copy)> <./Images/room_furniture.png>]
-<Images/cluttered_room.png, id=1113, 1895.08pt x 1135.24126pt>
+ [32 <./Images/image_XXX.png (PNG copy)> <./Images/room_furniture.png>]
+<Images/cluttered_room.png, id=1115, 1895.08pt x 1135.24126pt>
 File: Images/cluttered_room.png Graphic file (type png)
 <use Images/cluttered_room.png>
 Package pdftex.def Info: Images/cluttered_room.png  used on input line 150.
 (pdftex.def)             Requested size: 409.71692pt x 245.44058pt.
-<Images/sla_cluttered_lot.png, id=1118, 2393.94376pt x 1335.99126pt>
+<Images/sla_cluttered_lot.png, id=1120, 2393.94376pt x 1335.99126pt>
 File: Images/sla_cluttered_lot.png Graphic file (type png)
 <use Images/sla_cluttered_lot.png>
 Package pdftex.def Info: Images/sla_cluttered_lot.png  used on input line 157.
 (pdftex.def)             Requested size: 409.71692pt x 228.64442pt.
-<Images/cir_success_comparison.png, id=1126, 2024.56375pt x 1172.38pt>
+<Images/cir_success_comparison.png, id=1128, 2024.56375pt x 1172.38pt>
 File: Images/cir_success_comparison.png Graphic file (type png)
 <use Images/cir_success_comparison.png>
 Package pdftex.def Info: Images/cir_success_comparison.png  used on input line 
 165.
 (pdftex.def)             Requested size: 386.96027pt x 224.07831pt.
- [32 <./Images/cluttered_room.png> <./Images/sla_cluttered_lot.png>]
-<Images/cir_failed_comparison.png, id=1142, 1736.4875pt x 1097.09875pt>
+ [33 <./Images/cluttered_room.png> <./Images/sla_cluttered_lot.png>]
+<Images/cir_failed_comparison.png, id=1144, 1736.4875pt x 1097.09875pt>
 File: Images/cir_failed_comparison.png Graphic file (type png)
 <use Images/cir_failed_comparison.png>
 Package pdftex.def Info: Images/cir_failed_comparison.png  used on input line 1
 73.
 (pdftex.def)             Requested size: 386.96027pt x 244.47618pt.
 
-[33 <./Images/cir_success_comparison.png> <./Images/cir_failed_comparison.png>]
-<Images/hla_images/hla_anchor_(2_2)_empty.png, id=1173, 1421.31pt x 1182.4175pt
+[34 <./Images/cir_success_comparison.png> <./Images/cir_failed_comparison.png>]
+<Images/hla_images/hla_anchor_(2_2)_empty.png, id=1175, 1421.31pt x 1182.4175pt
 >
 File: Images/hla_images/hla_anchor_(2_2)_empty.png Graphic file (type png)
 <use Images/hla_images/hla_anchor_(2_2)_empty.png>
 Package pdftex.def Info: Images/hla_images/hla_anchor_(2_2)_empty.png  used on 
 input line 208.
 (pdftex.def)             Requested size: 364.19667pt x 302.98291pt.
-[34]
-<Images/hla_images/cir_4_9.png, id=1183, 1996.45876pt x 814.04124pt>
+[35]
+<Images/hla_images/cir_4_9.png, id=1185, 1996.45876pt x 814.04124pt>
 File: Images/hla_images/cir_4_9.png Graphic file (type png)
 <use Images/hla_images/cir_4_9.png>
 Package pdftex.def Info: Images/hla_images/cir_4_9.png  used on input line 216.
 
 (pdftex.def)             Requested size: 409.71692pt x 167.05342pt.
- [35 <./Images/hla_images/hla_anchor_(2_2)_empty.png (PNG copy)> <./Images/hla_
+ [36 <./Images/hla_images/hla_anchor_(2_2)_empty.png (PNG copy)> <./Images/hla_
 images/cir_4_9.png>]
-<Images/hla_images/hla_anchor_(3_1).png, id=1192, 2890.8pt x 1497.595pt>
+<Images/hla_images/hla_anchor_(3_1).png, id=1195, 2890.8pt x 1497.595pt>
 File: Images/hla_images/hla_anchor_(3_1).png Graphic file (type png)
 <use Images/hla_images/hla_anchor_(3_1).png>
 Package pdftex.def Info: Images/hla_images/hla_anchor_(3_1).png  used on input 
 line 228.
 (pdftex.def)             Requested size: 409.71692pt x 212.24408pt.
-<Images/hla_images/anchor_(8_1).png, id=1195, 2077.7625pt x 1495.5875pt>
+<Images/hla_images/anchor_(8_1).png, id=1198, 2077.7625pt x 1495.5875pt>
 File: Images/hla_images/anchor_(8_1).png Graphic file (type png)
 <use Images/hla_images/anchor_(8_1).png>
 Package pdftex.def Info: Images/hla_images/anchor_(8_1).png  used on input line
  234.
 (pdftex.def)             Requested size: 409.71692pt x 294.91318pt.
- [36 <./Images/hla_images/hla_anchor_(3_1).png (PNG copy)> <./Images/hla_images
+ [37 <./Images/hla_images/hla_anchor_(3_1).png (PNG copy)> <./Images/hla_images
 /anchor_(8_1).png (PNG copy)>]
-<Images/hla_images/anchor_(8_5).png, id=1207, 2057.6875pt x 1495.5875pt>
+<Images/hla_images/anchor_(8_5).png, id=1209, 2057.6875pt x 1495.5875pt>
 File: Images/hla_images/anchor_(8_5).png Graphic file (type png)
 <use Images/hla_images/anchor_(8_5).png>
 Package pdftex.def Info: Images/hla_images/anchor_(8_5).png  used on input line
  242.
 (pdftex.def)             Requested size: 409.71692pt x 297.78859pt.
-<Images/hla_images/anchor_clut_(3_1).png, id=1216, 2232.34pt x 1377.145pt>
+<Images/hla_images/anchor_clut_(3_1).png, id=1218, 2232.34pt x 1377.145pt>
 File: Images/hla_images/anchor_clut_(3_1).png Graphic file (type png)
 <use Images/hla_images/anchor_clut_(3_1).png>
 Package pdftex.def Info: Images/hla_images/anchor_clut_(3_1).png  used on input
  line 255.
 (pdftex.def)             Requested size: 409.71692pt x 252.75053pt.
- [37 <./Images/hla_images/anchor_(8_5).png (PNG copy)>]
-<Images/hla_images/really_clut_(3_1).png, id=1228, 2890.8pt x 1497.595pt>
+ [38 <./Images/hla_images/anchor_(8_5).png (PNG copy)>]
+<Images/hla_images/really_clut_(3_1).png, id=1230, 2890.8pt x 1497.595pt>
 File: Images/hla_images/really_clut_(3_1).png Graphic file (type png)
 <use Images/hla_images/really_clut_(3_1).png>
 Package pdftex.def Info: Images/hla_images/really_clut_(3_1).png  used on input
  line 263.
 (pdftex.def)             Requested size: 409.71692pt x 212.24408pt.
-<Images/hla_images/image_2.png, id=1235, 1896.08376pt x 768.8725pt>
+<Images/hla_images/image_2.png, id=1237, 1896.08376pt x 768.8725pt>
 File: Images/hla_images/image_2.png Graphic file (type png)
 <use Images/hla_images/image_2.png>
 Package pdftex.def Info: Images/hla_images/image_2.png  used on input line 272.
 
 (pdftex.def)             Requested size: 409.71692pt x 166.13733pt.
- [38 <./Images/hla_images/anchor_clut_(3_1).png (PNG copy)> <./Images/hla_image
+ [39 <./Images/hla_images/anchor_clut_(3_1).png (PNG copy)> <./Images/hla_image
 s/really_clut_(3_1).png (PNG copy)>]
-<Images/image_1.png, id=1252, 2124.93875pt x 776.9025pt>
+<Images/image_1.png, id=1254, 2124.93875pt x 776.9025pt>
 File: Images/image_1.png Graphic file (type png)
 <use Images/image_1.png>
 Package pdftex.def Info: Images/image_1.png  used on input line 280.
 (pdftex.def)             Requested size: 409.71692pt x 149.79424pt.
- [39 <./Images/hla_images/image_2.png> <./Images/image_1.png>]) (./src/experien
+ [40 <./Images/hla_images/image_2.png> <./Images/image_1.png>]) (./src/experien
 ces.tex
-[40]
+[41]
 Chapter 5.
-<Images/control_ref.png, id=1284, 682.55pt x 157.58875pt>
+<Images/control_ref.png, id=1286, 682.55pt x 157.58875pt>
 File: Images/control_ref.png Graphic file (type png)
 <use Images/control_ref.png>
 Package pdftex.def Info: Images/control_ref.png  used on input line 20.
@@ -1742,23 +1742,23 @@ Overfull \hbox (0.68213pt too wide) in paragraph at lines 24--26
 stored in the \T1/cmtt/m/n/12 0x25 \T1/cmr/m/n/12 : []
  []
 
-[41
+[42
 
  <./Images/control_ref.png>]
-<Images/extracted_cir.png, id=1313, 1183.42125pt x 429.605pt>
+<Images/extracted_cir.png, id=1316, 1183.42125pt x 429.605pt>
 File: Images/extracted_cir.png Graphic file (type png)
 <use Images/extracted_cir.png>
 Package pdftex.def Info: Images/extracted_cir.png  used on input line 37.
 (pdftex.def)             Requested size: 455.24411pt x 165.26405pt.
- [42 <./Images/extracted_cir.png>]
-<Images/saved_cir.png, id=1344, 700.6175pt x 94.3525pt>
+ [43 <./Images/extracted_cir.png>]
+<Images/saved_cir.png, id=1346, 700.6175pt x 94.3525pt>
 File: Images/saved_cir.png Graphic file (type png)
 <use Images/saved_cir.png>
 Package pdftex.def Info: Images/saved_cir.png  used on input line 66.
 (pdftex.def)             Requested size: 455.24411pt x 61.30966pt.
- [43 <./Images/saved_cir.png>]) (./src/conclusion.tex [44]
+ [44 <./Images/saved_cir.png>]) (./src/conclusion.tex [45]
 Chapter 6.
-) [45
+) [46
 
 ]
 Overfull \hbox (6.93697pt too wide) in paragraph at lines 72--72
@@ -1784,7 +1784,7 @@ Overfull \hbox (2.64894pt too wide) in paragraph at lines 72--72
 r high-accuracy multipath-
  []
 
-[46
+[47
 
 ]
 Overfull \hbox (0.44286pt too wide) in paragraph at lines 72--72
@@ -1804,142 +1804,142 @@ Overfull \hbox (6.92352pt too wide) in paragraph at lines 72--72
 RollPitchExample .
  []
 
-(./src/app_view.tex [47]
+(./src/app_view.tex [48]
 Appendix A.
-<Images/app_main.jpg, id=1403, 1084.05pt x 2228.325pt>
+<Images/app_main.jpg, id=1406, 1084.05pt x 2228.325pt>
 File: Images/app_main.jpg Graphic file (type jpg)
 <use Images/app_main.jpg>
 Package pdftex.def Info: Images/app_main.jpg  used on input line 6.
 (pdftex.def)             Requested size: 182.09486pt x 374.28804pt.
-) (./src/state_machine.tex [48
+) (./src/state_machine.tex [49
 
  <./Images/app_main.jpg>]
 Appendix B.
-<Images/state_machine_anchor.png, id=1410, 372.39125pt x 459.7175pt>
+<Images/state_machine_anchor.png, id=1412, 372.39125pt x 459.7175pt>
 File: Images/state_machine_anchor.png Graphic file (type png)
 <use Images/state_machine_anchor.png>
 Package pdftex.def Info: Images/state_machine_anchor.png  used on input line 6.
 
 (pdftex.def)             Requested size: 409.71692pt x 505.81006pt.
-<Images/state_machine_tag.png, id=1413, 441.65pt x 545.03625pt>
+<Images/state_machine_tag.png, id=1415, 441.65pt x 545.03625pt>
 File: Images/state_machine_tag.png Graphic file (type png)
 <use Images/state_machine_tag.png>
 Package pdftex.def Info: Images/state_machine_tag.png  used on input line 12.
 (pdftex.def)             Requested size: 409.71692pt x 505.64763pt.
-) [49
+) [50
 
- <./Images/state_machine_anchor.png>] (./src/appendix_3.tex [50 <./Images/state
+ <./Images/state_machine_anchor.png>] (./src/appendix_3.tex [51 <./Images/state
 _machine_tag.png>]
 Appendix C.
-<Images/Anchor_at_(3_9).png, id=1430, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(3_9).png, id=1432, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(3_9).png Graphic file (type png)
 <use Images/Anchor_at_(3_9).png>
 Package pdftex.def Info: Images/Anchor_at_(3_9).png  used on input line 10.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
-<Images/Anchor_at_(12_1).png, id=1431, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(12_1).png, id=1433, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(12_1).png Graphic file (type png)
 <use Images/Anchor_at_(12_1).png>
 Package pdftex.def Info: Images/Anchor_at_(12_1).png  used on input line 16.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
-[51
+[52
 
  <./Images/Anchor_at_(3_9).png (PNG copy)>]
-<Images/Anchor_at_(13_9).png, id=1438, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(13_9).png, id=1440, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(13_9).png Graphic file (type png)
 <use Images/Anchor_at_(13_9).png>
 Package pdftex.def Info: Images/Anchor_at_(13_9).png  used on input line 22.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
-<Images/Anchor_at_(14_9).png, id=1439, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(14_9).png, id=1441, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(14_9).png Graphic file (type png)
 <use Images/Anchor_at_(14_9).png>
 Package pdftex.def Info: Images/Anchor_at_(14_9).png  used on input line 28.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
- [52 <./Images/Anchor_at_(12_1).png (PNG copy)> <./Images/Anchor_at_(13_9).png 
+ [53 <./Images/Anchor_at_(12_1).png (PNG copy)> <./Images/Anchor_at_(13_9).png 
 (PNG copy)>]
-<Images/Anchor_at_(9_3).png, id=1446, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(9_3).png, id=1448, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(9_3).png Graphic file (type png)
 <use Images/Anchor_at_(9_3).png>
 Package pdftex.def Info: Images/Anchor_at_(9_3).png  used on input line 36.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
-<Images/Anchor_at_(9_9).png, id=1447, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(9_9).png, id=1449, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(9_9).png Graphic file (type png)
 <use Images/Anchor_at_(9_9).png>
 Package pdftex.def Info: Images/Anchor_at_(9_9).png  used on input line 42.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
- [53 <./Images/Anchor_at_(14_9).png (PNG copy)> <./Images/Anchor_at_(9_3).png (
+ [54 <./Images/Anchor_at_(14_9).png (PNG copy)> <./Images/Anchor_at_(9_3).png (
 PNG copy)>]
-<Images/Anchor_at_(12_6).png, id=1455, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(12_6).png, id=1458, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(12_6).png Graphic file (type png)
 <use Images/Anchor_at_(12_6).png>
 Package pdftex.def Info: Images/Anchor_at_(12_6).png  used on input line 48.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
-<Images/Anchor_at_(7_4).png, id=1456, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(7_4).png, id=1459, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(7_4).png Graphic file (type png)
 <use Images/Anchor_at_(7_4).png>
 Package pdftex.def Info: Images/Anchor_at_(7_4).png  used on input line 56.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
- [54 <./Images/Anchor_at_(9_9).png (PNG copy)> <./Images/Anchor_at_(12_6).png (
+ [55 <./Images/Anchor_at_(9_9).png (PNG copy)> <./Images/Anchor_at_(12_6).png (
 PNG copy)>]
-<Images/Anchor_at_(10_6).png, id=1464, 1124.2pt x 843.15pt>
+<Images/Anchor_at_(10_6).png, id=1466, 1124.2pt x 843.15pt>
 File: Images/Anchor_at_(10_6).png Graphic file (type png)
 <use Images/Anchor_at_(10_6).png>
 Package pdftex.def Info: Images/Anchor_at_(10_6).png  used on input line 62.
 (pdftex.def)             Requested size: 409.71692pt x 307.2776pt.
-) (./src/appendix_4.tex [55 <./Images/Anchor_at_(7_4).png (PNG copy)> <./Images
+) (./src/appendix_4.tex [56 <./Images/Anchor_at_(7_4).png (PNG copy)> <./Images
 /Anchor_at_(10_6).png (PNG copy)>]
 Appendix D.
-<Images/hla_images/hla_anchor_(3_9)_clut.png, id=1472, 2890.8pt x 1497.595pt>
+<Images/hla_images/hla_anchor_(3_9)_clut.png, id=1474, 2890.8pt x 1497.595pt>
 File: Images/hla_images/hla_anchor_(3_9)_clut.png Graphic file (type png)
 <use Images/hla_images/hla_anchor_(3_9)_clut.png>
 Package pdftex.def Info: Images/hla_images/hla_anchor_(3_9)_clut.png  used on i
 nput line 5.
 (pdftex.def)             Requested size: 409.71692pt x 212.24408pt.
-<Images/hla_images/hla_anchor_(12_1)_clut.png, id=1473, 2890.8pt x 1497.595pt>
+<Images/hla_images/hla_anchor_(12_1)_clut.png, id=1475, 2890.8pt x 1497.595pt>
 File: Images/hla_images/hla_anchor_(12_1)_clut.png Graphic file (type png)
 <use Images/hla_images/hla_anchor_(12_1)_clut.png>
 Package pdftex.def Info: Images/hla_images/hla_anchor_(12_1)_clut.png  used on 
 input line 11.
 (pdftex.def)             Requested size: 409.71692pt x 212.24408pt.
-<Images/hla_images/hla_anchor_(13_9)_clut.png, id=1474, 2890.8pt x 1497.595pt>
+<Images/hla_images/hla_anchor_(13_9)_clut.png, id=1476, 2890.8pt x 1497.595pt>
 File: Images/hla_images/hla_anchor_(13_9)_clut.png Graphic file (type png)
 <use Images/hla_images/hla_anchor_(13_9)_clut.png>
 Package pdftex.def Info: Images/hla_images/hla_anchor_(13_9)_clut.png  used on 
 input line 17.
 (pdftex.def)             Requested size: 409.71692pt x 212.24408pt.
-[56
+[57
 
  <./Images/hla_images/hla_anchor_(3_9)_clut.png (PNG copy)> <./Images/hla_image
 s/hla_anchor_(12_1)_clut.png (PNG copy)>]
-<Images/hla_images/hla_anchor_(14_9)_clut.png, id=1481, 2890.8pt x 1497.595pt>
+<Images/hla_images/hla_anchor_(14_9)_clut.png, id=1483, 2890.8pt x 1497.595pt>
 File: Images/hla_images/hla_anchor_(14_9)_clut.png Graphic file (type png)
 <use Images/hla_images/hla_anchor_(14_9)_clut.png>
 Package pdftex.def Info: Images/hla_images/hla_anchor_(14_9)_clut.png  used on 
 input line 23.
 (pdftex.def)             Requested size: 409.71692pt x 212.24408pt.
-<Images/hla_images/hla_anchor_(9_9)_clut.png, id=1482, 2890.8pt x 1497.595pt>
+<Images/hla_images/hla_anchor_(9_9)_clut.png, id=1484, 2890.8pt x 1497.595pt>
 File: Images/hla_images/hla_anchor_(9_9)_clut.png Graphic file (type png)
 <use Images/hla_images/hla_anchor_(9_9)_clut.png>
 Package pdftex.def Info: Images/hla_images/hla_anchor_(9_9)_clut.png  used on i
 nput line 29.
 (pdftex.def)             Requested size: 409.71692pt x 212.24408pt.
- [57 <./Images/hla_images/hla_anchor_(13_9)_clut.png (PNG copy)> <./Images/hla_
+ [58 <./Images/hla_images/hla_anchor_(13_9)_clut.png (PNG copy)> <./Images/hla_
 images/hla_anchor_(14_9)_clut.png (PNG copy)>]
-<Images/hla_images/hla_anchor_(12_6)_clut.png, id=1489, 1694.33pt x 1278.7775pt
+<Images/hla_images/hla_anchor_(12_6)_clut.png, id=1491, 1694.33pt x 1278.7775pt
 >
 File: Images/hla_images/hla_anchor_(12_6)_clut.png Graphic file (type png)
 <use Images/hla_images/hla_anchor_(12_6)_clut.png>
 Package pdftex.def Info: Images/hla_images/hla_anchor_(12_6)_clut.png  used on 
 input line 35.
 (pdftex.def)             Requested size: 409.71692pt x 309.21535pt.
-<Images/hla_images/hla_anchor_(7_4)_clut.png, id=1490, 2890.8pt x 1497.595pt>
+<Images/hla_images/hla_anchor_(7_4)_clut.png, id=1492, 2890.8pt x 1497.595pt>
 File: Images/hla_images/hla_anchor_(7_4)_clut.png Graphic file (type png)
 <use Images/hla_images/hla_anchor_(7_4)_clut.png>
 Package pdftex.def Info: Images/hla_images/hla_anchor_(7_4)_clut.png  used on i
 nput line 41.
 (pdftex.def)             Requested size: 409.71692pt x 212.24408pt.
- [58 <./Images/hla_images/hla_anchor_(9_9)_clut.png (PNG copy)> <./Images/hla_i
+ [59 <./Images/hla_images/hla_anchor_(9_9)_clut.png (PNG copy)> <./Images/hla_i
 mages/hla_anchor_(12_6)_clut.png (PNG copy)>]
-<Images/hla_images/hla_anchor_(10_6)_clut.png, id=1497, 2148.025pt x 1210.5225p
+<Images/hla_images/hla_anchor_(10_6)_clut.png, id=1499, 2148.025pt x 1210.5225p
 t>
 File: Images/hla_images/hla_anchor_(10_6)_clut.png Graphic file (type png)
 <use Images/hla_images/hla_anchor_(10_6)_clut.png>
@@ -1947,10 +1947,10 @@ Package pdftex.def Info: Images/hla_images/hla_anchor_(10_6)_clut.png  used on
 input line 47.
 (pdftex.def)             Requested size: 409.71692pt x 230.88828pt.
 )
-(./src/appendix_18.tex [59 <./Images/hla_images/hla_anchor_(7_4)_clut.png (PNG 
+(./src/appendix_18.tex [60 <./Images/hla_images/hla_anchor_(7_4)_clut.png (PNG 
 copy)> <./Images/hla_images/hla_anchor_(10_6)_clut.png (PNG copy)>]
 Appendix E.
-) [60
+) [61
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
@@ -1964,9 +1964,6 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
@@ -1974,12 +1971,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
  ) 
 Here is how much of TeX's memory you used:
  38751 strings out of 480608
- 750881 string characters out of 5903631
- 1399446 words of memory out of 5000000
+ 750876 string characters out of 5903631
+ 1399519 words of memory out of 5000000
  53561 multiletter control sequences out of 15000+600000
  556680 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,18n,79p,1039b,2437s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,18n,79p,1020b,2437s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:hla} has been referenced but does not exist, 
 replaced by a fixed one
 
@@ -2013,10 +2010,10 @@ type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/public/cm-super/sfti1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/public/cm-super/sftt0800.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 public/cm-super/sftt1200.pfb>
-Output written on main.pdf (67 pages, 13745902 bytes).
+Output written on main.pdf (68 pages, 13745097 bytes).
 PDF statistics:
- 1668 PDF objects out of 1728 (max. 8388607)
- 1406 compressed objects within 15 object streams
+ 1670 PDF objects out of 1728 (max. 8388607)
+ 1407 compressed objects within 15 object streams
  299 named destinations out of 1000 (max. 500000)
  795 words of extra memory for PDF output out of 10000 (max. 10000000)
 

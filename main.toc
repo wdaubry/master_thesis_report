@@ -35,30 +35,30 @@
 \contentsline {section}{\numberline {3.3}Soft localization algorithm}{21}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Space solution reduction}{21}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Time MSE}{22}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {4}Simulations}{24}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Simulation}{24}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Realistic CIR generation}{24}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Analysis tools}{25}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Soft Simulation}{26}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Symmetry issues}{26}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Soft localization in an empty room}{28}{subsection.4.2.2}%
-\contentsline {subsubsection}{Soft part of the algorithm}{30}{section*.45}%
-\contentsline {subsection}{\numberline {4.2.3}Soft localization in a cluttered room}{31}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Hard Simulation}{34}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Symmetry issues}{34}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Hard localization in an empty room}{36}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Hard localization in a cluttered room}{37}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Simulations analysis}{40}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Experiments}{41}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Experimental set-up configuration}{41}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}DWM1000}{41}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}PSoC}{42}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Android Application}{43}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Test Campaign}{44}{section.5.2}%
-\contentsline {chapter}{\numberline {6}Conclusion}{45}{chapter.6}%
-\contentsline {chapter}{Bibliography}{47}{chapter*.64}%
-\contentsline {chapter}{\numberline {A}Application view}{48}{appendix.a.A}%
-\contentsline {chapter}{\numberline {B}State Machines}{49}{appendix.a.B}%
-\contentsline {chapter}{\numberline {C}SLA - Lightly cluttered room}{51}{appendix.a.C}%
-\contentsline {chapter}{\numberline {D}HLA - Lightly cluttered room}{56}{appendix.a.D}%
-\contentsline {chapter}{\numberline {E}Antenna symmetry blabla}{60}{appendix.a.E}%
+\contentsline {chapter}{\numberline {4}Simulations}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Simulation}{25}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Realistic CIR generation}{25}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Analysis tools}{26}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Soft Simulation}{27}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Symmetry issues}{27}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Soft localization in an empty room}{29}{subsection.4.2.2}%
+\contentsline {subsubsection}{Soft part of the algorithm}{31}{section*.45}%
+\contentsline {subsection}{\numberline {4.2.3}Soft localization in a cluttered room}{32}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Hard Simulation}{35}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Symmetry issues}{35}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Hard localization in an empty room}{37}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Hard localization in a cluttered room}{38}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Simulations analysis}{41}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Experiments}{42}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Experimental set-up configuration}{42}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}DWM1000}{42}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}PSoC}{43}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Android Application}{44}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Test Campaign}{45}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusion}{46}{chapter.6}%
+\contentsline {chapter}{Bibliography}{48}{chapter*.64}%
+\contentsline {chapter}{\numberline {A}Application view}{49}{appendix.a.A}%
+\contentsline {chapter}{\numberline {B}State Machines}{50}{appendix.a.B}%
+\contentsline {chapter}{\numberline {C}SLA - Lightly cluttered room}{52}{appendix.a.C}%
+\contentsline {chapter}{\numberline {D}HLA - Lightly cluttered room}{57}{appendix.a.D}%
+\contentsline {chapter}{\numberline {E}Antenna symmetry blabla}{61}{appendix.a.E}%
