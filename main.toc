@@ -38,7 +38,7 @@
 \contentsline {chapter}{\numberline {4}Simulations}{25}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Simulation}{25}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Realistic CIR generation}{25}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Analysis tools}{26}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.2}Analysis tools}{27}{subsection.4.1.2}%
 \contentsline {section}{\numberline {4.2}Soft Simulation}{27}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Symmetry issues}{27}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Soft localization in an empty room}{29}{subsection.4.2.2}%
@@ -61,4 +61,4 @@
 \contentsline {chapter}{\numberline {B}State Machines}{50}{appendix.a.B}%
 \contentsline {chapter}{\numberline {C}SLA - Lightly cluttered room}{52}{appendix.a.C}%
 \contentsline {chapter}{\numberline {D}HLA - Lightly cluttered room}{57}{appendix.a.D}%
-\contentsline {chapter}{\numberline {E}Antenna symmetry blabla}{61}{appendix.a.E}%
+\contentsline {chapter}{\numberline {E}Antenna symmetry in an empty room}{61}{appendix.a.E}%

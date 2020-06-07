@@ -28,8 +28,8 @@ Stating infinite is not completely correct, the real bandwidth being that of the
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.2\linewidth]{Images/Temporary_pic.png}
-\caption{Trouver un nom \label{fig:conv_fin}}
+\includegraphics[width=.9\linewidth]{Images/cir.png}
+\caption{CIR comparison for different \label{fig:conv_fin}}
 \end{figure}
 
 As we can observe, this \gls{cir} is far from ideal, mostly because of the sides lobes appearing near to every peak. This is a side effect because of the reduction of the bandwidth. In order to counteract this effect, a Chebyshev window has been used \cite{lynch1997dolph}, \cite{mathworks}. The convolution of the finite-band time domain \gls{cir} will reduce those side lobes. The orange curve from Fig. \ref{fig:conv_fin} has been produced using the $\text{chebyshev}$ function from MATLAB. The parameter of the Chebyshev window has been set heuristically to 25. A systematic method would have to use an experimental and a simulated \gls{cir} that would correspond to the same situation\footnote{The same room, antennas configuration, antennas position, ...}. The optimal parameter would then be computed using the $\text{lsqcurvefit}$ function from MATLAB.
@@ -51,11 +51,6 @@ This section allows us to see some results obtained using the \gls{sla} in order
 
 \subsection{Symmetry issues}
 \label{sym_cases}
-\begin{figure}[H]
-\centering
-\includegraphics[width=.73\linewidth]{Images/15_15_sym.png}
-\caption{Distance [m] between the tag exact location and the estimation provided by the \gls{sla}. Empty room of 15 by 15 meters, anchor set in (2, 2). Five peaks extracted from the CIR. \label{fig:square_sym}}
-\end{figure}
 
 An issue occurring with the 'one anchor' localization paradigm highlighted in section \ref{hard_loc} is the symmetry. This issue was discussed in the case of hard localization because of the axial symmetry between \glspl{va}, leading to mingled paths on the \gls{cir}. Another kind of symmetry issue can be seen on Fig. \ref{fig:square_sym}, approximatively half of the locations of the tag was correctly estimated.
 \vspace{2mm}
@@ -64,7 +59,13 @@ Because of the location of the anchor, a symmetry appears in this room, the axia
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.9\linewidth]{Images/square_sym_mse_4_8.png}
+\includegraphics[width=.7\linewidth]{Images/15_15_sym.png}
+\caption{Distance [m] between the tag exact location and the estimation provided by the \gls{sla}. Empty room of 15 by 15 meters, anchor set in (2, 2). Five peaks extracted from the CIR. \label{fig:square_sym}}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.7\linewidth]{Images/square_sym_mse_4_8.png}
 \caption{MSE map generated with an anchor in (2, 2) and the tag being located at (8, 4). The room configuration is an empty rectangle of 15 by 10 m.  \label{fig:square_sym_cir_comparison}}
 \end{figure} 
 
